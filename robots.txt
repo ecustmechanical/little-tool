@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tacklecalc.com/sitemap.xml
+Sitemap: https://ecustmechanical.github.io/little-tool/sitemap.xml
