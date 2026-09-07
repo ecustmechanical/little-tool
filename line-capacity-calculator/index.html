@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Line Capacity Calculator — How Much Braid, Mono or Fluoro Fits Your Reel | TackleCalc</title>
+  <meta name="description" content="Free line capacity calculator: enter your reel's mono rating and find how much braid, fluorocarbon or monofilament actually fits — diameter² conversion math, explained with a fill-level guide.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://tacklecalc.com/line-capacity-calculator/"><!-- UPDATE-ON-DEPLOY: replace with live domain after registration -->
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tacklecalc.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Line Capacity Calculator", "item": "https://tacklecalc.com/line-capacity-calculator/" }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much braid fits on a spinning reel rated for mono?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Often 1.5–2.5× the mono rating, because braid is much thinner at the same pound test. For example, a reel rated 200 yd of 12 lb mono typically holds 300+ yd of 30 lb braid. The calculator converts using the diameter² ratio of the two lines." }
+        },
+        {
+          "@type": "Question",
+          "name": "Why can't I just compare pound test?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Pound test measures breaking strength, not physical size. A 30 lb braid can be the same diameter as 8 lb mono, so it occupies far less spool volume per yard. Spool capacity is determined by line volume, which scales with diameter squared — not lb rating." }
+        },
+        {
+          "@type": "Question",
+          "name": "How full should I fill my reel spool?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Within about 1/8 inch (3 mm) of the spool lip — roughly 90–95% fill. Underfilling costs casting distance because line peels off a smaller spool diameter; overfilling makes loose line spring off the lip in loops and tangle." }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the mono rating on my reel spool?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Nearly every spinning, baitcasting and conventional reel lists a monofilament capacity printed on the spool, for example '10 lb / 200 yd'. That rating is the reference point this calculator converts into braid or fluorocarbon capacity." }
+        },
+        {
+          "@type": "Question",
+          "name": "Do braid capacity numbers vary by brand?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Actual braid diameter varies by brand and construction (4-strand vs 8-strand), and budget braids often run thicker than labeled. Treat results as planning estimates and always check the spool label diameter in mm when precision matters." }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does diameter matter more than material?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A reel spool is a fixed volume. A yard of line consumes an amount of that volume proportional to its cross-sectional area, which scales with the square of the diameter. Two lines of the same diameter — even different materials — fill a spool almost identically." }
+        }
+      ]
+    }
+  ]
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../index.html">
+        <span class="brand-mark">T</span>
+        <span class="brand-name">TackleCalc<small>fishing rig calculators</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="../species-gear-builder/">Rig Builder</a></li>
+          <li><a href="../species/">Species Guides</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a class="cta-link" href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="section alt">
+      <div class="wrap">
+        <p class="eyebrow">Free fishing tool</p>
+        <h1>Line Capacity Calculator — Match the Line to Your Reel</h1>
+        <p class="lead" style="max-width:52em;">Your reel's spool is a fixed cylinder. How much line it holds depends on <strong>line diameter</strong>, not pound test — which is why a 30 lb braid can be the same thickness as an 8 lb mono, and why guessing by lb rating buys the wrong spool every time. Enter the mono rating printed on your reel and see exactly how much braid, fluorocarbon or monofilament fits.</p>
+      </div>
+    </section>
+
+    <section class="section tight">
+      <div class="wrap">
+        <div class="calc-grid">
+          <aside class="panel" style="position:sticky;top:76px;">
+            <div class="field">
+              <label for="ref-lb">1. Reel's rated mono test (from the spool label)</label>
+              <select id="ref-lb" class="select-lg" aria-label="Reference mono pound test">
+                <option value="4">4 lb</option><option value="6">6 lb</option><option value="8">8 lb</option>
+                <option value="10" selected>10 lb</option><option value="12">12 lb</option><option value="15">15 lb</option>
+                <option value="17">17 lb</option><option value="20">20 lb</option><option value="25">25 lb</option>
+                <option value="30">30 lb</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="ref-yards">2. Rated mono length (yards)</label>
+              <input type="text" id="ref-yards" value="200" inputmode="numeric" aria-label="Rated mono length in yards">
+              <div class="hint">Example: "10 lb / 200 yd" printed on the spool → 200.</div>
+            </div>
+            <div class="field">
+              <label for="target-type">3. Line you want to spool</label>
+              <select id="target-type" class="select-lg" aria-label="Target line type">
+                <option value="braid" selected>Braid</option>
+                <option value="fluoro">Fluorocarbon</option>
+                <option value="mono">Monofilament</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="target-lb">4. Target line test</label>
+              <select id="target-lb" class="select-lg" aria-label="Target line pound test"></select>
+            </div>
+            <div class="field">
+              <label for="fill-pct">5. Fill level</label>
+              <input type="range" id="fill-pct" min="50" max="100" value="95" aria-label="Fill level percent">
+              <div class="hint"><span id="fill-label">95%</span> — the sweet spot is 90–95%.</div>
+            </div>
+            <p class="small muted">Diameter values are typical averages across brands. Actual capacity varies with spooling tension, spool geometry and line brand — treat the result as a planning estimate.</p>
+          </aside>
+
+          <div>
+            <div class="result-box" id="result-box" style="display:none;">
+              <p class="small muted" style="margin:0 0 4px;">Estimated capacity at your fill level</p>
+              <p class="big" id="result-amount" style="margin:0;">—</p>
+              <p class="small" id="result-detail" style="margin:8px 0 0;"></p>
+            </div>
+            <div class="panel mt-2">
+              <h2 style="font-size:20px;margin:0 0 6px;">Capacity at other line tests</h2>
+              <p class="small muted" style="margin-top:0;">All in the same target material, at your selected fill level.</p>
+              <table class="result-table" id="result-table"></table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="wrap prose">
+        <div class="section-head">
+          <p class="eyebrow">How it works</p>
+          <h2>Why line capacity is a diameter problem, not a strength problem</h2>
+        </div>
+        <p>Picture the spool as a fixed cylinder of empty space. Every yard of line you wind on consumes a slice of that space, and the size of the slice is set by the line's <strong>cross-sectional area</strong> — which grows with the <em>square</em> of its diameter. Double a line's diameter and one yard of it takes four times the room. Halve it and you fit four times the yardage.</p>
+        <p>This is why reel manufacturers rate spools in monofilament. Mono has been the reference standard for decades, so nearly every reel prints a number like <em>"10 lb / 200 yd"</em> on the spool face. That rating describes a specific mono diameter, and from it you can convert to anything else with the ratio of the diameters:</p>
+        <p style="text-align:center;font-weight:700;">L₂ = L₁ × (d₁² / d₂²)</p>
+        <p>where L₁ and d₁ are the rated mono length and diameter, and d₂ is your target line's diameter. The calculator above does exactly this — you pick the mono rating, type in the yardage, choose your braid, fluorocarbon or mono, and get back the spool that fits.</p>
+
+        <h2>Using the result</h2>
+        <p>If the number comes out far below the spool you wanted (say, only 120 yd of 30 lb braid on a 2500 reel), you have two options: buy a smaller spool of line, or step up the reel size. If it comes out at 300+ yd, you're set — many anglers choose a 150 yd braid spool to leave room for a mono backing that grips the arbor.</p>
+        <p>One caveat before you order: braid diameter varies meaningfully by brand and construction. An 8-strand premium braid at 30 lb is often thinner than a budget 4-strand labeled 30 lb. Where precision matters — capacity-critical offshore or surf setups — read the diameter in millimeters off the spool label rather than trusting the lb rating alone. This calculator uses typical averages as a planning baseline, and the result is best treated as "which spool to buy," not "to the last yard."</p>
+
+        <h2>Fill it right</h2>
+        <p>Whatever line you choose, stop at about 90–95% of the spool's lip. Underfilling adds friction as the line peels off a smaller diameter spool, which measurably shortens your cast. Overfilling lets loose coils spring off the lip mid-cast and wind-knot your braid. Fill to within roughly 1/8 inch (3 mm) of the lip and you'll never think about it again.</p>
+        <p>Looking for a full rig, not just line? Start at the <a href="../species-gear-builder/">Species Rig Builder</a> — pick a fish like <a href="../species/walleye/">walleye</a>, <a href="../species/northern-pike/">northern pike</a> or <a href="../species/redfish/">redfish</a>, and get the matching rod, reel and line class all in one place.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head"><h2>Line capacity — frequently asked questions</h2></div>
+        <div class="faq">
+          <details open><summary>How much braid fits on a spinning reel rated for mono?</summary><p>Often 1.5–2.5× the mono rating, because braid is much thinner at the same pound test. For example, a reel rated 200 yd of 12 lb mono typically holds 300+ yd of 30 lb braid. The calculator converts using the diameter² ratio of the two lines.</p></details>
+          <details><summary>Why can't I just compare pound test?</summary><p>Pound test measures breaking strength, not physical size. A 30 lb braid can be the same diameter as 8 lb mono, so it occupies far less spool volume per yard. Spool capacity is determined by line volume, which scales with diameter squared — not lb rating.</p></details>
+          <details><summary>How full should I fill my reel spool?</summary><p>Within about 1/8 inch (3 mm) of the spool lip — roughly 90–95% fill. Underfilling costs casting distance because line peels off a smaller spool diameter; overfilling makes loose line spring off the lip in loops and tangle.</p></details>
+          <details><summary>What is the mono rating on my reel spool?</summary><p>Nearly every spinning, baitcasting and conventional reel lists a monofilament capacity printed on the spool, for example "10 lb / 200 yd". That rating is the reference point this calculator converts into braid or fluorocarbon capacity.</p></details>
+          <details><summary>Do braid capacity numbers vary by brand?</summary><p>Yes. Actual braid diameter varies by brand and construction (4-strand vs 8-strand), and budget braids often run thicker than labeled. Treat results as planning estimates and always check the spool label diameter in mm when precision matters.</p></details>
+          <details><summary>Why does diameter matter more than material?</summary><p>A reel spool is a fixed volume. A yard of line consumes an amount of that volume proportional to its cross-sectional area, which scales with the square of the diameter. Two lines of the same diameter — even different materials — fill a spool almost identically.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <h4>TackleCalc</h4>
+        <p class="blurb">Free fishing tackle calculators and species rig guides. Hand-compiled rig sheets for bass, walleye, pike, catfish, trout, stripers, redfish and more.</p>
+      </div>
+      <div>
+        <h4>Tools</h4>
+        <ul>
+          <li><a href="../species-gear-builder/">Species Rig Builder</a></li>
+          <li><a href="../line-capacity-calculator/">Line Capacity Calculator</a></li>
+          <li><a href="../index.html#coming">Hook Size Chart <em>(soon)</em></a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="../species/">Species Guides</a></li>
+          <li><a href="../about.html">About Marcus Reed</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">© 2026 TackleCalc · Rig sheets are editorial advice — check local fishing regulations before you go.</div>
+  </footer>
+
+  <script src="../js/linecalc.js"></script>
+</body>
+</html>

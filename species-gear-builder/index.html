@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Species Rig Builder – Match the Right Rod, Reel, Line &amp; Rig | TackleCalc</title>
+  <meta name="description" content="Free species rig builder: get a complete, field-tested tackle setup — rod, reel, line, leader, hooks and rigs — for bass, walleye, pike, catfish, trout, stripers, redfish and more.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://tacklecalc.com/species-gear-builder/"><!-- UPDATE-ON-DEPLOY: replace with live domain after registration -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TackleCalc">
+  <meta property="og:title" content="Species Rig Builder – Match the Right Rod, Reel, Line &amp; Rig | TackleCalc">
+  <meta property="og:description" content="Pick a fish, get a complete rig sheet: rod, reel, line, leader, hooks, rigs, bait and pro tips — hand-compiled by a real angler.">
+  <meta property="og:url" content="https://tacklecalc.com/species-gear-builder/">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a species rig builder?",
+        "acceptedAnswer": { "@type": "Answer", "text": "A species rig builder is a tool that converts one input — the fish you are targeting — into a complete, matched tackle setup: rod power and action, reel size, main line and leader, hook sizes, terminal rigs, and bait. Instead of piecing together generic advice from different articles, you get one internally consistent rig sheet built around how that species actually feeds." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a different rod and reel for every species?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. A few well-chosen combos cover most freshwater fishing. For example, a 7-foot medium-heavy baitcast combo handles largemouth bass, pike and muskie work, while an ultralight spinning rod covers bluegill and stocked trout. This tool recommends the ideal setup per species, but you can absolutely group species that share gear." }
+      },
+      {
+        "@type": "Question",
+        "name": "What line should I use for bass?",
+        "acceptedAnswer": { "@type": "Answer", "text": "For general largemouth bass casting around cover, 15–20 lb braid or 12–17 lb fluorocarbon works. Step up to 30–50 lb braid only when punching heavy mats and thick weeds. For finesse presentations in clear water, drop to 8–12 lb fluorocarbon. The species sheet on this page gives the full per-species line plan." }
+      },
+      {
+        "@type": "Question",
+        "name": "Why do pike and muskie rigs use wire leaders?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Both species have mouths lined with hundreds of sharp teeth. A monofilament or fluorocarbon leader is quickly cut on the strike or during a head shake. A 12-inch section of 30–100 lb wire (or heavy fluorocarbon for muskie glide baits) is the only reliable way to land the fish instead of losing your lure." }
+      },
+      {
+        "@type": "Question",
+        "name": "Are these rig recommendations based on real fishing experience?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every rig sheet is hand-compiled and reviewed by the site's author, Marcus Reed, an experienced freshwater and inshore angler. Recommendations follow standard regional tackle conventions and are updated as gear and techniques change. We tell you the reason behind each choice so you can adapt it to your water." }
+      },
+      {
+        "@type": "Question",
+        "name": "Which species are covered right now?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The first release covers 10 species: largemouth bass, smallmouth bass, walleye, northern pike, channel catfish, bluegill, rainbow trout, striped bass, redfish and muskie. More species — including additional saltwater targets — are added continuously." }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#builder-app">Skip to the rig builder</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../index.html">
+        <span class="brand-mark">T</span>
+        <span class="brand-name">TackleCalc<small>fishing rig calculators</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="../species-gear-builder/">Rig Builder</a></li>
+          <li><a href="../species/">Species Guides</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a class="cta-link" href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section alt">
+      <div class="wrap">
+        <p class="eyebrow">Free fishing tool</p>
+        <h1>Species Rig Builder — Pick a Fish, Get Its Perfect Tackle Setup</h1>
+        <p class="lead" style="max-width:52em;">Stop juggling three articles, four forum threads and a dozen YouTube videos to answer one question: <em>“what rod, reel, line and rig do I use for this fish?”</em> The Species Rig Builder gives you a single, internally consistent rig sheet — rod power and action, reel size, main line and leader, hook sizes, terminal rigs, natural bait, artificials and the mistakes to avoid — compiled by a real angler for how each species actually feeds.</p>
+      </div>
+    </section>
+
+    <section class="section tight" id="builder-app">
+      <div class="wrap">
+        <div class="builder-wrap">
+          <aside class="panel" style="position:sticky;top:76px;">
+            <label for="species-select">1. Choose your target species</label>
+            <select id="species-select" class="select-lg" aria-label="Target species"></select>
+            <div class="chips" id="species-chips" aria-label="Quick species jump"></div>
+            <div class="callout info mt-3" style="font-size:14px;">
+              <strong>Work in progress:</strong> a line-capacity calculator, hook-size chart and rig diagram guides are on the way.
+            </div>
+          </aside>
+
+          <div>
+            <div id="sheet-empty" class="panel">
+              <p><strong>Loading rig data…</strong></p>
+              <p class="small muted">If nothing appears, JavaScript may be disabled — the full species list is printed below the tool.</p>
+            </div>
+            <div id="rig-sheet"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <noscript>
+      <section class="section alt">
+        <div class="wrap prose">
+          <h2>Species covered in this first release</h2>
+          <ul>
+            <li><strong>Largemouth bass</strong> — 7&prime;0&Prime;&ndash;7&prime;3&Prime; MH fast baitcast, 15&ndash;20 lb braid, 3/0&ndash;5/0 EWG hooks, Texas rig.</li>
+            <li><strong>Smallmouth bass</strong> — 6&prime;8&Prime;&ndash;7&prime; medium spinning, 10 lb braid + 8&ndash;12 lb fluoro leader, drop shot / NED rig.</li>
+            <li><strong>Walleye</strong> — 6&prime;6&Prime;&ndash;7&prime; medium spinning, 10&ndash;15 lb braid, 1/8&ndash;3/8 oz jig + minnow, bottom bouncer harness.</li>
+            <li><strong>Northern pike</strong> — 7&prime;&ndash;7&prime;6&Prime; MH&ndash;H, 30&ndash;50 lb braid + 40 lb wire leader, spoons and inline spinners.</li>
+            <li><strong>Channel catfish</strong> — 7&prime; MH&ndash;H, 20&ndash;30 lb mono, 2/0&ndash;5/0 circle hooks, slip-sinker bottom rig.</li>
+            <li><strong>Bluegill</strong> — 5&ndash;6&prime; ultralight, 2&ndash;6 lb line, size 6&ndash;8 hooks, bobber + worm.</li>
+            <li><strong>Rainbow trout</strong> — 6&ndash;7&prime; light spinning, 4&ndash;6 lb line, PowerBait rig or small spinners.</li>
+            <li><strong>Striped bass</strong> — 7&ndash;8&prime; MH&ndash;H, 20&ndash;30 lb line, 4/0&ndash;8/0 circle hooks, live bait / bucktail.</li>
+            <li><strong>Redfish</strong> — 7&prime; MH inshore spinning, 15&ndash;30 lb braid + fluoro leader, paddletail or popping cork + shrimp.</li>
+            <li><strong>Muskie</strong> — 7&prime;6&Prime;&ndash;8&prime; heavy, 80 lb braid + wire leader, bucktails, figure-8 at the boat.</li>
+          </ul>
+        </div>
+      </section>
+    </noscript>
+
+    <section class="section" id="species-list">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">First release · 10 species</p>
+          <h2>Jump straight to a species rig</h2>
+          <p>Each card below deep-links into the builder and loads that fish's complete rig sheet. Tap any species to see its rod, reel, line, leader, hooks and rigs. Want a written, printable walkthrough instead? See the <a href="../species/">species guides library</a>.</p>
+        </div>
+        <div class="link-cloud">
+          <a href="#largemouth-bass">Largemouth Bass <small>bass rig setup</small></a>
+          <a href="#smallmouth-bass">Smallmouth Bass <small>drop shot / NED rig</small></a>
+          <a href="#walleye">Walleye <small>jig &amp; bottom bouncer</small></a>
+          <a href="#northern-pike">Northern Pike <small>wire leader rigs</small></a>
+          <a href="#channel-catfish">Channel Catfish <small>circle-hook rigs</small></a>
+          <a href="#bluegill">Bluegill <small>ultralight rigs</small></a>
+          <a href="#rainbow-trout">Rainbow Trout <small>trout setups</small></a>
+          <a href="#striped-bass">Striped Bass <small>inshore / lake rigs</small></a>
+          <a href="#redfish">Redfish <small>flats rigs</small></a>
+          <a href="#muskie">Muskie <small>heavy figure-8 rigs</small></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="wrap prose">
+        <div class="section-head">
+          <p class="eyebrow">Why this tool exists</p>
+          <h2>Generic tackle advice is why most rigs are wrong</h2>
+        </div>
+        <p>Search any species and you will find the same two traps. First, the “all-rounder” answer: one medium rod, one reel and a shrug — advice so generic it fits a bluegill and a muskie at the same time, which means it is wrong for both. Second, the rabbit hole: a hundred forum threads where anglers argue over a quarter-ounce of jig weight while a beginner still does not know what line to spool.</p>
+        <p>This builder is our attempt at a third path. Instead of one article per species written by ten different authors, we lock each fish to <strong>one coherent rig philosophy</strong> and explain the reasoning behind every link in the chain. Why a fast-action rod for bass but a moderate one for catfish. Why pike and muskie demand wire while walleye want invisible fluorocarbon. Why a circle hook changes your entire hook-set instinct on stripers. When the reasoning is consistent, you can adapt it to your own water instead of memorizing a parts list.</p>
+        <p>The rig data is hand-compiled and reviewed by <a href="../about.html">Marcus Reed</a>, who fishes for these species across lakes, rivers and inshore flats. It follows mainstream regional tackle conventions — the same logic most pro-shop staff would walk you through — but written down, structured, and free.</p>
+
+        <h2>How to read a rig sheet</h2>
+        <ul>
+          <li><strong>Rod —</strong> power (light → heavy) is about the weight of bait and the size of fish; action (fast → slow) is about hook-setting and rod feel.</li>
+          <li><strong>Reel —</strong> size is matched to line capacity and fish power, not the species name. Gear ratio matters most for bass-style pitching and cranking.</li>
+          <li><strong>Main line and leader —</strong> the two most overlooked links. Leader choice is usually about teeth, visibility or abrasion, not strength.</li>
+          <li><strong>Hooks &amp; weights —</strong> sizes assume common bait sizes; when in doubt, the smaller number in a range is the safer starting point.</li>
+          <li><strong>Rigs —</strong> the arrangement of line, weight and hook that puts your bait in the strike zone for that species.</li>
+        </ul>
+        <p>Start with the recommended “general” option in each row, then fine-tune one variable at a time on the water. Change two things at once and you will never know which one mattered.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Species rig guides — free and detailed</p>
+          <h2>Frequently asked questions</h2>
+        </div>
+        <div class="faq">
+          <details open>
+            <summary>What is a species rig builder?</summary>
+            <p>A species rig builder is a tool that converts one input — the fish you are targeting — into a complete, matched tackle setup: rod power and action, reel size, main line and leader, hook sizes, terminal rigs, and bait. Instead of piecing together generic advice from different articles, you get one internally consistent rig sheet built around how that species actually feeds.</p>
+          </details>
+          <details>
+            <summary>Do I need a different rod and reel for every species?</summary>
+            <p>No. A few well-chosen combos cover most freshwater fishing. For example, a 7-foot medium-heavy baitcast combo handles largemouth bass, pike and muskie work, while an ultralight spinning rod covers bluegill and stocked trout. This tool recommends the ideal setup per species, but you can absolutely group species that share gear.</p>
+          </details>
+          <details>
+            <summary>What line should I use for bass?</summary>
+            <p>For general largemouth bass casting around cover, 15–20 lb braid or 12–17 lb fluorocarbon works. Step up to 30–50 lb braid only when punching heavy mats and thick weeds. For finesse presentations in clear water, drop to 8–12 lb fluorocarbon. The species sheet on this page gives the full per-species line plan.</p>
+          </details>
+          <details>
+            <summary>Why do pike and muskie rigs use wire leaders?</summary>
+            <p>Both species have mouths lined with hundreds of sharp teeth. A monofilament or fluorocarbon leader is quickly cut on the strike or during a head shake. A 12-inch section of 30–100 lb wire (or heavy fluorocarbon for muskie glide baits) is the only reliable way to land the fish instead of losing your lure.</p>
+          </details>
+          <details>
+            <summary>Are these rig recommendations based on real fishing experience?</summary>
+            <p>Yes. Every rig sheet is hand-compiled and reviewed by the site's author, Marcus Reed, an experienced freshwater and inshore angler. Recommendations follow standard regional tackle conventions and are updated as gear and techniques change. We tell you the reason behind each choice so you can adapt it to your water.</p>
+          </details>
+          <details>
+            <summary>Which species are covered right now?</summary>
+            <p>The first release covers 10 species: largemouth bass, smallmouth bass, walleye, northern pike, channel catfish, bluegill, rainbow trout, striped bass, redfish and muskie. More species — including additional saltwater targets — are added continuously.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="wrap">
+        <div class="callout">
+          <strong>Coming next:</strong> a reel line-capacity calculator, a hook-size matching chart, printable rig diagrams and full in-depth pages for every species. Want a species added first? <a href="../contact.html">Tell us which one</a>.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <h4>TackleCalc</h4>
+        <p class="blurb">Free fishing tackle calculators and species rig guides. Hand-compiled rig sheets for bass, walleye, pike, catfish, trout, stripers, redfish and more.</p>
+      </div>
+      <div>
+        <h4>Tools</h4>
+        <ul>
+          <li><a href="../species-gear-builder/">Species Rig Builder</a></li>
+          <li><a href="../line-capacity-calculator/">Line Capacity Calculator</a></li>
+          <li><a href="../index.html#coming">Hook Size Chart <em>(soon)</em></a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="../about.html">About Marcus Reed</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../privacy.html">Privacy Policy</a></li>
+          <li><a href="../species/">Species Guides</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">© 2026 TackleCalc · Rig sheets are editorial advice — check local fishing regulations before you go.</div>
+  </footer>
+
+  <script src="../js/species-data.js"></script>
+  <script src="../js/builder.js"></script>
+</body>
+</html>
