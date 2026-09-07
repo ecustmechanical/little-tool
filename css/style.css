@@ -232,3 +232,8 @@ img, svg { max-width: 100%; }
 .result-table { width:100%; border-collapse:collapse; margin-top:10px; }
 .result-table td { padding:8px 6px; border-bottom:1px dashed #d4e5e1; font-size:14.5px; }
 .result-table tr:last-child td { border-bottom:0; }
+
+/* 广告位占位: 未填充(未通过审核)时零布局 */
+.ad-slot { margin: 26px 0; text-align: center; clear: both; }
+.ad-slot:empty { display: none; margin: 0; }
+.ad-slot .adsbygoogle { display: inline-block; }
