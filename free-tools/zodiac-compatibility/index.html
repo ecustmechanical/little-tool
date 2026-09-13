@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YWD0Z35ZZ9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-YWD0Z35ZZ9");
+</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zodiac Compatibility Calculator: Any Two Signs | AstroLens</title>
+  <meta name="description" content="Zodiac compatibility calculator. Pick two signs for a score built from element harmony, modality tension and polar-sign attraction — with the reasoning shown.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://ecustmechanical.github.io/little-tool/free-tools/zodiac-compatibility/"><!-- UPDATE-AT-DOMAIN -->
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+  <link rel="stylesheet" href="../../css/style.css">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="AstroLens">
+  <meta property="og:title" content="Zodiac Compatibility Calculator: Any Two Signs | AstroLens">
+  <meta property="og:description" content="A compatibility score for any two zodiac signs, with the three astrological factors behind it explained.">
+  <meta property="og:url" content="https://ecustmechanical.github.io/little-tool/free-tools/zodiac-compatibility/">
+  <meta name="twitter:card" content="summary">
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org", "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ecustmechanical.github.io/little-tool/" },
+        { "@type": "ListItem", "position": 2, "name": "Free Tools", "item": "https://ecustmechanical.github.io/little-tool/free-tools/" },
+        { "@type": "ListItem", "position": 3, "name": "Zodiac Compatibility", "item": "https://ecustmechanical.github.io/little-tool/free-tools/zodiac-compatibility/" }
+      ]
+    },
+    {
+      "@context": "https://schema.org", "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "How is zodiac compatibility scored here?", "acceptedAnswer": { "@type": "Answer", "text": "The score combines three traditional factors: element harmony (Fire with Air and Earth with Water score highest), modality tension (two signs of the same modality compete, so a small deduction applies) and polar attraction (opposite signs such as Aries and Libra receive a bonus for complementary magnetism)." } },
+        { "@type": "Question", "name": "Which zodiac signs are most compatible?", "acceptedAnswer": { "@type": "Answer", "text": "In this scoring model the strongest matches are Fire–Air pairs (Aries–Gemini, Leo–Libra, Sagittarius–Aquarius) and Earth–Water pairs (Taurus–Cancer, Virgo–Scorpio, Capricorn–Pisces). Same-element pairs also score high for ease, though they share the same blind spots." } },
+        { "@type": "Question", "name": "Does a low score mean a relationship will fail?", "acceptedAnswer": { "@type": "Answer", "text": "No. A Sun-sign comparison is the shallowest layer of compatibility. Real relationships also depend on Moon signs, rising signs, Venus and Mars placements, and above all on the two people involved. Treat the score as a conversation starter, not a verdict." } },
+        { "@type": "Question", "name": "Can I check compatibility using birth dates instead of signs?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — use the Zodiac Sign Finder to convert each birth date into a Sun sign first, then enter both signs here. Note that cusp birthdays can shift by a day depending on the year." } }
+      ]
+    }
+  ]
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../../index.html">
+        <span class="brand-mark">✦</span>
+        <span class="brand-name">AstroLens<small>zodiac · numerology · tarot</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="../">Free Tools</a></li>
+          <li><a href="../../zodiac/">Zodiac Signs</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a class="cta-link" href="../../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section alt">
+      <div class="wrap">
+        <p><a href="../../index.html">Home</a> › <a href="../">Free Tools</a> › Zodiac Compatibility</p>
+        <p class="eyebrow">Free compatibility tool</p>
+        <h1>Zodiac Compatibility Calculator</h1>
+        <p class="lead" style="max-width:52em;">Most compatibility charts just declare two signs "great together" and move on. This one shows its reasoning: pick two signs and you get a score built from three real astrological factors — element harmony, modality tension and polar attraction — plus a written explanation of what is helping and what is not.</p>
+      </div>
+    </section>
+
+    <section class="section tight">
+      <div class="wrap">
+        <div class="calc-grid">
+          <aside class="panel" style="position:sticky;top:76px;">
+            <div class="field">
+              <label for="c-a">1. First sign</label>
+              <select id="c-a" class="select-lg" aria-label="First zodiac sign"></select>
+            </div>
+            <div class="field">
+              <label for="c-b">2. Second sign</label>
+              <select id="c-b" class="select-lg" aria-label="Second zodiac sign"></select>
+            </div>
+            <button class="btn" id="c-go" type="button">Check compatibility</button>
+            <p class="small muted mt-2">Sun-sign compatibility only. Moon and rising signs matter too — see the note below.</p>
+          </aside>
+
+          <div id="c-out">
+            <div class="panel">
+              <p class="placeholder">Choose two signs and press <strong>Check compatibility</strong> to see the score and the reasoning behind it.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ad-slot" data-slot="tool-mid"></div>
+
+    <section class="section alt">
+      <div class="wrap prose">
+        <h2>What the score is built from</h2>
+        <ul>
+          <li><strong>Element harmony.</strong> Fire works with Air, Earth works with Water — each supplies what the other lacks. Same-element pairs are easy and comfortable. Cross pairs such as Air–Earth or Fire–Water score lower because they process the world at different speeds.</li>
+          <li><strong>Modality tension.</strong> Cardinal, Fixed and Mutable signs approach everything differently. Two Cardinal signs both want to lead; two Fixed signs both refuse to move. Same-modality pairs take a small deduction, and the explanation calls it out.</li>
+          <li><strong>Polar attraction.</strong> Each sign sits opposite a partner sign on the zodiac wheel — Aries opposite Libra, Taurus opposite Scorpio, and so on. These pairings are magnetic and complementary, so they earn a bonus.</li>
+          <li><strong>Same-sign pairs.</strong> Two of the same sign understand each other instantly but provide no friction to force growth. They score well on ease, lower on challenge.</li>
+        </ul>
+        <p class="small muted">Scores are clamped between 35 and 96 on purpose. No Sun-sign pairing is a guaranteed failure or a guaranteed success, and presenting one as 100% would be dishonest.</p>
+
+        <h2>Frequently asked questions</h2>
+        <div class="faq">
+          <details><summary>How is zodiac compatibility scored here?</summary><p>The score combines three traditional factors: element harmony (Fire with Air and Earth with Water score highest), modality tension (two signs of the same modality compete, so a small deduction applies) and polar attraction (opposite signs such as Aries and Libra receive a bonus for complementary magnetism).</p></details>
+          <details><summary>Which zodiac signs are most compatible?</summary><p>In this scoring model the strongest matches are Fire–Air pairs (Aries–Gemini, Leo–Libra, Sagittarius–Aquarius) and Earth–Water pairs (Taurus–Cancer, Virgo–Scorpio, Capricorn–Pisces). Same-element pairs also score high for ease, though they share the same blind spots.</p></details>
+          <details><summary>Does a low score mean a relationship will fail?</summary><p>No. A Sun-sign comparison is the shallowest layer of compatibility. Real relationships also depend on Moon signs, rising signs, Venus and Mars placements, and above all on the two people involved. Treat the score as a conversation starter, not a verdict.</p></details>
+          <details><summary>Can I check compatibility using birth dates instead of signs?</summary><p>Yes — use the <a href="../zodiac-sign-calculator/">Zodiac Sign Finder</a> to convert each birth date into a Sun sign first, then enter both signs here. Note that cusp birthdays can shift by a day depending on the year.</p></details>
+        </div>
+
+        <h2>Related tools</h2>
+        <div class="pill-row">
+          <a class="pill" href="../numerology-calculator/">Numerology Calculator</a>
+          <a class="pill" href="../zodiac-sign-calculator/">Zodiac Sign Finder</a>
+          <a class="pill" href="../tarot-reader/">Tarot Reader</a>
+          <a class="pill" href="../../zodiac/">All 12 Zodiac Signs</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <h4>AstroLens</h4>
+        <p class="blurb">Free zodiac sign profiles, numerology, compatibility and tarot tools. Every page written and checked by hand — with the method shown.</p>
+      </div>
+      <div>
+        <h4>Free tools</h4>
+        <ul>
+          <li><a href="../numerology-calculator/">Numerology Calculator</a></li>
+          <li><a href="./">Zodiac Compatibility</a></li>
+          <li><a href="../tarot-reader/">Tarot Reader</a></li>
+          <li><a href="../zodiac-sign-calculator/">Zodiac Sign Finder</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="../../zodiac/">Zodiac Signs</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+          <li><a href="../../privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">© 2026 AstroLens · Content is for entertainment and self-reflection only.
+      <span class="disc">Not medical, psychological, legal or financial advice.</span>
+    </div>
+  </footer>
+
+  <script src="../../js/site-config.js"></script>
+  <script src="../../js/zodiac-data.js"></script>
+  <script src="../../js/astro.js"></script>
+  <script src="../../js/ads.js"></script>
+  <script>
+  (function () {
+    var A = document.getElementById('c-a'), B = document.getElementById('c-b'), out = document.getElementById('c-out');
+    var signs = window.Astro.signs;
+    signs.forEach(function (s, i) {
+      var o1 = document.createElement('option'); o1.value = s.slug; o1.textContent = s.name; if (i === 0) o1.selected = true; A.appendChild(o1);
+      var o2 = document.createElement('option'); o2.value = s.slug; o2.textContent = s.name; if (i === 4) o2.selected = true; B.appendChild(o2);
+    });
+    function render() {
+      var r = window.Astro.compatibility(A.value, B.value);
+      if (!r) { out.innerHTML = '<div class="panel"><p class="placeholder">Please choose two signs.</p></div>'; return; }
+      var sa = window.Astro.getSign(A.value), sb = window.Astro.getSign(B.value);
+      var deg = Math.round(r.score * 3.6);
+      out.innerHTML = '<div class="panel">' +
+        '<div class="result-box center">' +
+        '<div class="score-ring" style="background:conic-gradient(var(--brand-2) ' + deg + 'deg, #e6ddfa ' + deg + 'deg)"><span>' + r.score + '</span></div>' +
+        '<div class="big">' + sa.name + ' &amp; ' + sb.name + '</div>' +
+        '<div class="sub">' + r.band + ' compatibility</div>' +
+        '</div>' +
+        '<table class="result-table"><tbody>' +
+        '<tr><td>' + sa.name + '</td><td>' + sa.element + ' · ' + sa.quality + ' · ' + sa.ruler + '</td></tr>' +
+        '<tr><td>' + sb.name + '</td><td>' + sb.element + ' · ' + sb.quality + ' · ' + sb.ruler + '</td></tr>' +
+        '</tbody></table>' +
+        '<h3 style="margin:18px 0 6px;font-size:17px;">Why this score</h3>' +
+        '<p style="margin:0;">' + r.note + '</p>' +
+        '<p style="margin:16px 0 0;"><a class="card-link" href="../../zodiac/' + sa.slug + '/">Read the full ' + sa.name + ' profile →</a> &nbsp; <a class="card-link" href="../../zodiac/' + sb.slug + '/">Read the full ' + sb.name + ' profile →</a></p>' +
+        '<p class="small muted mt-2">Sun-sign comparison only — it is a starting point, not a verdict. For entertainment and self-reflection.</p>' +
+        '</div>';
+    }
+    document.getElementById('c-go').addEventListener('click', render);
+    A.addEventListener('change', render);
+    B.addEventListener('change', render);
+  })();
+  </script>
+</body>
+</html>

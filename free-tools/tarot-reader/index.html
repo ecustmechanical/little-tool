@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YWD0Z35ZZ9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-YWD0Z35ZZ9");
+</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarot Reader: Free One-Card &amp; Three-Card Draw | AstroLens</title>
+  <meta name="description" content="Draw a free tarot card from the 22 Major Arcana. Choose a single-card answer or a past / present / future spread, with upright and reversed meanings.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://ecustmechanical.github.io/little-tool/free-tools/tarot-reader/"><!-- UPDATE-AT-DOMAIN -->
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+  <link rel="stylesheet" href="../../css/style.css">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="AstroLens">
+  <meta property="og:title" content="Tarot Reader: Free One-Card &amp; Three-Card Draw | AstroLens">
+  <meta property="og:description" content="A free tarot draw from the 22 Major Arcana — one card or a past / present / future spread, upright and reversed.">
+  <meta property="og:url" content="https://ecustmechanical.github.io/little-tool/free-tools/tarot-reader/">
+  <meta name="twitter:card" content="summary">
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org", "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ecustmechanical.github.io/little-tool/" },
+        { "@type": "ListItem", "position": 2, "name": "Free Tools", "item": "https://ecustmechanical.github.io/little-tool/free-tools/" },
+        { "@type": "ListItem", "position": 3, "name": "Tarot Reader", "item": "https://ecustmechanical.github.io/little-tool/free-tools/tarot-reader/" }
+      ]
+    },
+    {
+      "@context": "https://schema.org", "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What is the difference between an upright and a reversed tarot card?", "acceptedAnswer": { "@type": "Answer", "text": "An upright card is read at face value. A reversed card (drawn upside down) usually points to the same energy being blocked, internalised, delayed or excessive. Reversal does not simply mean the opposite of the upright meaning." } },
+        { "@type": "Question", "name": "How does a three-card past / present / future spread work?", "acceptedAnswer": { "@type": "Answer", "text": "The first card describes the influences that led to the current situation, the second describes what is active right now, and the third suggests the direction things are moving if nothing changes. It is a narrative, not a fixed prophecy." } },
+        { "@type": "Question", "name": "Does this tarot reader predict the future?", "acceptedAnswer": { "@type": "Answer", "text": "No. The draw is random and the readings are reflective prompts — a way to look at a situation from an angle you had not considered. Nothing here is a prediction, and nothing is medical, legal or financial advice." } },
+        { "@type": "Question", "name": "Why only the 22 Major Arcana?", "acceptedAnswer": { "@type": "Answer", "text": "The Major Arcana are the 22 trump cards of a standard tarot deck. They carry the broadest, most archetypal themes — major life lessons rather than day-to-day detail — which makes them the most useful set for a short, general reading." } },
+        { "@type": "Question", "name": "Is anything I type stored or sent anywhere?", "acceptedAnswer": { "@type": "Answer", "text": "Nothing is stored, and no question text is transmitted. The shuffle runs in your browser with JavaScript, and if you use the optional question field it never leaves the page." } }
+      ]
+    }
+  ]
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../../index.html">
+        <span class="brand-mark">✦</span>
+        <span class="brand-name">AstroLens<small>zodiac · numerology · tarot</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="../">Free Tools</a></li>
+          <li><a href="../../zodiac/">Zodiac Signs</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a class="cta-link" href="../../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section alt">
+      <div class="wrap">
+        <p><a href="../../index.html">Home</a> › <a href="../">Free Tools</a> › Tarot Reader</p>
+        <p class="eyebrow">Free tarot tool</p>
+        <h1>Tarot Card Reader</h1>
+        <p class="lead" style="max-width:52em;">Draw from the 22 Major Arcana — one card for a direct answer, or three cards for a past / present / future reading. Each card is shown with its upright or reversed meaning written out in full, so you can read the draw yourself.</p>
+      </div>
+    </section>
+
+    <section class="section tight">
+      <div class="wrap">
+        <div class="calc-grid">
+          <aside class="panel" style="position:sticky;top:76px;">
+            <div class="field">
+              <label for="t-spread">1. Choose your spread</label>
+              <select id="t-spread" aria-label="Spread type">
+                <option value="1">Single card — one clear answer</option>
+                <option value="3" selected>Three cards — past / present / future</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="t-q">2. Optionally, hold a question</label>
+              <input type="text" id="t-q" placeholder="e.g. What should I focus on this month?" autocomplete="off" aria-label="Your question">
+              <div class="hint">Nothing is submitted — this is a prompt for you, not the tool.</div>
+            </div>
+            <div class="field">
+              <label for="t-rev">3. Allow reversed cards</label>
+              <select id="t-rev" aria-label="Reversed cards">
+                <option value="1" selected>Yes — upright and reversed</option>
+                <option value="0">No — upright cards only</option>
+              </select>
+            </div>
+            <button class="btn" id="t-go" type="button">Shuffle &amp; draw</button>
+            <p class="small muted mt-2">The draw is random, using a fresh shuffle each time. Nothing you enter is sent anywhere.</p>
+          </aside>
+
+          <div id="t-out">
+            <div class="panel">
+              <p class="placeholder">Your cards will appear here. Choose a spread, then press <strong>Shuffle &amp; draw</strong>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ad-slot" data-slot="tool-mid"></div>
+
+    <section class="section alt">
+      <div class="wrap prose">
+        <h2>How to read the draw</h2>
+        <ul>
+          <li><strong>Upright</strong> — the card's energy is available and moving. Read it at face value.</li>
+          <li><strong>Reversed</strong> — the same energy, but blocked, delayed, internalised or running to excess. It is rarely a simple opposite.</li>
+          <li><strong>Single card</strong> — treat it as the theme to sit with, not a yes/no verdict.</li>
+          <li><strong>Past / Present / Future</strong> — the first card is what led here, the second is what is active now, the third is the direction of travel if nothing changes. It is a story, not a sentence.</li>
+        </ul>
+        <p>If a card does not seem to fit, that is useful information rather than a failure. The reading is a prompt to look at your situation from an angle you had not tried — you decide what is true.</p>
+
+        <h2>About the Major Arcana</h2>
+        <p>This reader uses the 22 trump cards of a standard tarot deck, from The Fool (0) through The World (21). They are the deck's big archetypes — beginnings, choices, endings, upheaval, hope — rather than the finer detail of everyday events. That is what makes them a good fit for a short general reading: a single Major Arcana card already carries a full theme.</p>
+
+        <h2>Frequently asked questions</h2>
+        <div class="faq">
+          <details><summary>What is the difference between an upright and a reversed tarot card?</summary><p>An upright card is read at face value. A reversed card (drawn upside down) usually points to the same energy being blocked, internalised, delayed or excessive. Reversal does not simply mean the opposite of the upright meaning.</p></details>
+          <details><summary>How does a three-card past / present / future spread work?</summary><p>The first card describes the influences that led to the current situation, the second describes what is active right now, and the third suggests the direction things are moving if nothing changes. It is a narrative, not a fixed prophecy.</p></details>
+          <details><summary>Does this tarot reader predict the future?</summary><p>No. The draw is random and the readings are reflective prompts — a way to look at a situation from an angle you had not considered. Nothing here is a prediction, and nothing is medical, legal or financial advice.</p></details>
+          <details><summary>Why only the 22 Major Arcana?</summary><p>The Major Arcana are the 22 trump cards of a standard tarot deck. They carry the broadest, most archetypal themes — major life lessons rather than day-to-day detail — which makes them the most useful set for a short, general reading.</p></details>
+          <details><summary>Is anything I type stored or sent anywhere?</summary><p>Nothing is stored, and no question text is transmitted. The shuffle runs in your browser with JavaScript, and if you use the optional question field it never leaves the page.</p></details>
+        </div>
+
+        <h2>Related tools</h2>
+        <div class="pill-row">
+          <a class="pill" href="../numerology-calculator/">Numerology Calculator</a>
+          <a class="pill" href="../zodiac-compatibility/">Zodiac Compatibility</a>
+          <a class="pill" href="../zodiac-sign-calculator/">Zodiac Sign Finder</a>
+          <a class="pill" href="../../zodiac/">All 12 Zodiac Signs</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <h4>AstroLens</h4>
+        <p class="blurb">Free zodiac sign profiles, numerology, compatibility and tarot tools. Every page written and checked by hand — with the method shown.</p>
+      </div>
+      <div>
+        <h4>Free tools</h4>
+        <ul>
+          <li><a href="../numerology-calculator/">Numerology Calculator</a></li>
+          <li><a href="../zodiac-compatibility/">Zodiac Compatibility</a></li>
+          <li><a href="./">Tarot Reader</a></li>
+          <li><a href="../zodiac-sign-calculator/">Zodiac Sign Finder</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="../../zodiac/">Zodiac Signs</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+          <li><a href="../../privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">© 2026 AstroLens · Content is for entertainment and self-reflection only.
+      <span class="disc">Not medical, psychological, legal or financial advice.</span>
+    </div>
+  </footer>
+
+  <script src="../../js/site-config.js"></script>
+  <script src="../../js/tarot-data.js"></script>
+  <script src="../../js/ads.js"></script>
+  <script>
+  (function () {
+    var DECK = (window.TAROT || []).slice();
+    var out = document.getElementById('t-out');
+    var POSITIONS = {
+      1: ['Your card'],
+      3: ['Past', 'Present', 'Future']
+    };
+    var POS_NOTE = {
+      'Past': 'What led to the current situation.',
+      'Present': 'What is active right now.',
+      'Future': 'Where this is heading if nothing changes.'
+    };
+
+    function shuffle(arr) {
+      for (var i = arr.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var t = arr[i]; arr[i] = arr[j]; arr[j] = t;
+      }
+      return arr;
+    }
+
+    function escapeHTML(s) {
+      return String(s).replace(/[&<>"]/g, function (c) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+      });
+    }
+
+    function cardHTML(card, pos, reversed) {
+      return '<div class="tarot-card' + (reversed ? ' reversed' : '') + '">' +
+        '<div class="tr-pos">' + pos + '</div>' +
+        '<div class="tr-symbol"' + (reversed ? ' style="transform:rotate(180deg);"' : '') + '>' + card.symbol + '</div>' +
+        '<div class="tr-name">' + escapeHTML(card.name) + '</div>' +
+        '<div class="tr-key">' + escapeHTML(card.keywords) + '</div>' +
+        '</div>';
+    }
+
+    function readHTML(card, pos, reversed) {
+      return '<div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--border);">' +
+        '<h3 style="margin:0 0 2px;font-size:17px;">' + pos + ' — ' + escapeHTML(card.name) +
+        (reversed ? ' <span style="font-weight:500;color:var(--accent);font-size:14px;">(reversed)</span>' : '') + '</h3>' +
+        '<p class="small muted" style="margin:2px 0 8px;">' + escapeHTML(card.keywords) + '</p>' +
+        (POS_NOTE[pos] ? '<p class="small muted" style="margin:0 0 6px;font-style:italic;">' + POS_NOTE[pos] + '</p>' : '') +
+        '<p style="margin:0;">' + escapeHTML(reversed ? card.reversed : card.upright) + '</p>' +
+        '</div>';
+    }
+
+    document.getElementById('t-go').addEventListener('click', function () {
+      var count = Number(document.getElementById('t-spread').value) || 3;
+      var allowRev = document.getElementById('t-rev').value === '1';
+      var q = document.getElementById('t-q').value.trim();
+
+      var deck = shuffle(DECK.slice());
+      var drawn = [], drawnRev = [];
+      for (var i = 0; i < count; i++) {
+        drawn.push(deck[i]);
+        drawnRev.push(allowRev ? Math.random() < 0.5 : false);
+      }
+
+      var html = '<div class="panel">';
+      if (q) html += '<p class="small muted" style="margin:0 0 10px;">Holding the question: <em>' + escapeHTML(q) + '</em></p>';
+      html += '<div class="tarot-row">';
+      for (var k = 0; k < drawn.length; k++) {
+        html += cardHTML(drawn[k], POSITIONS[count][k], drawnRev[k]);
+      }
+      html += '</div>';
+      for (var m = 0; m < drawn.length; m++) {
+        html += readHTML(drawn[m], POSITIONS[count][m], drawnRev[m]);
+      }
+      html += '<p class="small muted" style="margin-top:18px;">Drawn from the 22 Major Arcana. For entertainment and self-reflection — not a prediction, and not medical, legal or financial advice.</p>';
+      html += '<p style="margin-top:14px;"><button class="btn secondary small" id="t-again" type="button">Draw again</button></p>';
+      html += '</div>';
+      out.innerHTML = html;
+
+      var again = document.getElementById('t-again');
+      if (again) again.addEventListener('click', function () {
+        document.getElementById('t-go').click();
+        out.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YWD0Z35ZZ9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-YWD0Z35ZZ9");
+</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zodiac Sign Calculator: What's My Sign? | AstroLens</title>
+  <meta name="description" content="Enter your birth date to find your zodiac Sun sign instantly. Includes the exact date range for all 12 signs and a note for birthdays that fall on a cusp.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://ecustmechanical.github.io/little-tool/free-tools/zodiac-sign-calculator/"><!-- UPDATE-AT-DOMAIN -->
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+  <link rel="stylesheet" href="../../css/style.css">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="AstroLens">
+  <meta property="og:title" content="Zodiac Sign Calculator: What's My Sign? | AstroLens">
+  <meta property="og:description" content="Enter your birth date to find your zodiac Sun sign instantly, with all 12 date ranges and a cusp-birthday note.">
+  <meta property="og:url" content="https://ecustmechanical.github.io/little-tool/free-tools/zodiac-sign-calculator/">
+  <meta name="twitter:card" content="summary">
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org", "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ecustmechanical.github.io/little-tool/" },
+        { "@type": "ListItem", "position": 2, "name": "Free Tools", "item": "https://ecustmechanical.github.io/little-tool/free-tools/" },
+        { "@type": "ListItem", "position": 3, "name": "Zodiac Sign Finder", "item": "https://ecustmechanical.github.io/little-tool/free-tools/zodiac-sign-calculator/" }
+      ]
+    },
+    {
+      "@context": "https://schema.org", "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What is my zodiac sign if I was born on a cusp?", "acceptedAnswer": { "@type": "Answer", "text": "If your birthday falls on or within a day of a sign boundary, you are on a cusp. The Sun changes sign on a slightly different date each year — usually by a day — so the safest answer is to check the exact time of your birth against an ephemeris. As a rule of thumb, the later part of the cusp day belongs to the following sign." } },
+        { "@type": "Question", "name": "Is my Sun sign the same as my zodiac sign?", "acceptedAnswer": { "@type": "Answer", "text": "In everyday usage, yes. When someone asks for your zodiac sign they almost always mean your Sun sign — the sign the Sun was in on the day you were born. A full birth chart also includes your Moon sign, rising sign and the other planets, which is why two people with the same Sun sign can be quite different." } },
+        { "@type": "Question", "name": "Why do the zodiac dates change from year to year?", "acceptedAnswer": { "@type": "Answer", "text": "The Sun does not cross each sign boundary at midnight on the same calendar date every year. Because the Earth's orbit is just under 365.25 days, boundaries drift by roughly a day across a four-year cycle. This is why cusp dates are approximate and a birthday near a boundary can go either way depending on the year." } },
+        { "@type": "Question", "name": "What are the zodiac sign date ranges?", "acceptedAnswer": { "@type": "Answer", "text": "Aries runs approximately 21 March to 19 April, Taurus 20 April to 20 May, Gemini 21 May to 20 June, Cancer 21 June to 22 July, Leo 23 July to 22 August, Virgo 23 August to 22 September, Libra 23 September to 22 October, Scorpio 23 October to 21 November, Sagittarius 22 November to 21 December, Capricorn 22 December to 19 January, Aquarius 20 January to 18 February and Pisces 19 February to 20 March." } },
+        { "@type": "Question", "name": "Do you store the birth date I enter?", "acceptedAnswer": { "@type": "Answer", "text": "No. The calculation runs entirely in your browser using JavaScript. Your date of birth is never uploaded, logged or saved." } }
+      ]
+    }
+  ]
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../../index.html">
+        <span class="brand-mark">✦</span>
+        <span class="brand-name">AstroLens<small>zodiac · numerology · tarot</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="../">Free Tools</a></li>
+          <li><a href="../../zodiac/">Zodiac Signs</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a class="cta-link" href="../../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section alt">
+      <div class="wrap">
+        <p><a href="../../index.html">Home</a> › <a href="../">Free Tools</a> › Zodiac Sign Finder</p>
+        <p class="eyebrow">Free zodiac tool</p>
+        <h1>Zodiac Sign Calculator</h1>
+        <p class="lead" style="max-width:52em;">Enter your date of birth to get your Sun sign instantly — with the date range that produced it, a note if your birthday sits on a cusp, and a link to the full sign profile.</p>
+      </div>
+    </section>
+
+    <section class="section tight">
+      <div class="wrap">
+        <div class="calc-grid">
+          <aside class="panel" style="position:sticky;top:76px;">
+            <div class="field">
+              <label for="z-date">Your date of birth</label>
+              <input type="date" id="z-date" aria-label="Date of birth">
+              <div class="hint">Only the month and day matter for a Sun sign. Nothing is sent anywhere.</div>
+            </div>
+            <button class="btn" id="z-go" type="button">Find my zodiac sign</button>
+            <p class="small muted mt-2">Uses the standard tropical zodiac date ranges. Cusp birthdays are flagged automatically.</p>
+          </aside>
+
+          <div id="z-out">
+            <div class="panel">
+              <p class="placeholder">Your Sun sign will appear here. Pick your birth date, then press <strong>Find my zodiac sign</strong>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ad-slot" data-slot="tool-mid"></div>
+
+    <section class="section alt">
+      <div class="wrap">
+        <h2>All 12 zodiac signs and their date ranges</h2>
+        <p class="small muted">Approximate dates for the tropical zodiac. Boundaries can shift by about a day depending on the year.</p>
+        <table class="result-table" id="z-table">
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap prose">
+        <h2>How the Sun sign is worked out</h2>
+        <p>Your Sun sign is simply the section of the zodiac the Sun was passing through on the day you were born. The Sun spends roughly one month in each of the twelve signs, completing the circle in a year — which is why sign dates line up so closely with the calendar months.</p>
+        <p>This calculator uses the standard tropical date ranges for that. It does not need your birth time or place, because the Sun changes sign only once a month; the day is almost always enough.</p>
+        <p>The exception is the cusp. If you were born on or within a day of a boundary, the exact date the Sun moved can differ by a day from year to year, and the answer depends on the hour you were born. The tool flags those birthdays rather than pretending to certainty.</p>
+        <p>If you want a reading rather than a label, start with your sign's full profile — it covers personality, love, career, money and the signs you pair best with.</p>
+
+        <h2>Frequently asked questions</h2>
+        <div class="faq">
+          <details><summary>What is my zodiac sign if I was born on a cusp?</summary><p>If your birthday falls on or within a day of a sign boundary, you are on a cusp. The Sun changes sign on a slightly different date each year — usually by a day — so the safest answer is to check the exact time of your birth against an ephemeris. As a rule of thumb, the later part of the cusp day belongs to the following sign.</p></details>
+          <details><summary>Is my Sun sign the same as my zodiac sign?</summary><p>In everyday usage, yes. When someone asks for your zodiac sign they almost always mean your Sun sign — the sign the Sun was in on the day you were born. A full birth chart also includes your Moon sign, rising sign and the other planets, which is why two people with the same Sun sign can be quite different.</p></details>
+          <details><summary>Why do the zodiac dates change from year to year?</summary><p>The Sun does not cross each sign boundary at midnight on the same calendar date every year. Because the Earth's orbit is just under 365.25 days, boundaries drift by roughly a day across a four-year cycle. This is why cusp dates are approximate and a birthday near a boundary can go either way depending on the year.</p></details>
+          <details><summary>What are the zodiac sign date ranges?</summary><p>Aries runs approximately 21 March to 19 April, Taurus 20 April to 20 May, Gemini 21 May to 20 June, Cancer 21 June to 22 July, Leo 23 July to 22 August, Virgo 23 August to 22 September, Libra 23 September to 22 October, Scorpio 23 October to 21 November, Sagittarius 22 November to 21 December, Capricorn 22 December to 19 January, Aquarius 20 January to 18 February and Pisces 19 February to 20 March.</p></details>
+          <details><summary>Do you store the birth date I enter?</summary><p>No. The calculation runs entirely in your browser using JavaScript. Your date of birth is never uploaded, logged or saved.</p></details>
+        </div>
+
+        <h2>Related tools</h2>
+        <div class="pill-row">
+          <a class="pill" href="../zodiac-compatibility/">Zodiac Compatibility</a>
+          <a class="pill" href="../numerology-calculator/">Numerology Calculator</a>
+          <a class="pill" href="../tarot-reader/">Tarot Reader</a>
+          <a class="pill" href="../../zodiac/">All 12 Zodiac Signs</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <h4>AstroLens</h4>
+        <p class="blurb">Free zodiac sign profiles, numerology, compatibility and tarot tools. Every page written and checked by hand — with the method shown.</p>
+      </div>
+      <div>
+        <h4>Free tools</h4>
+        <ul>
+          <li><a href="../numerology-calculator/">Numerology Calculator</a></li>
+          <li><a href="../zodiac-compatibility/">Zodiac Compatibility</a></li>
+          <li><a href="../tarot-reader/">Tarot Reader</a></li>
+          <li><a href="./">Zodiac Sign Finder</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="../../zodiac/">Zodiac Signs</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+          <li><a href="../../privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">© 2026 AstroLens · Content is for entertainment and self-reflection only.
+      <span class="disc">Not medical, psychological, legal or financial advice.</span>
+    </div>
+  </footer>
+
+  <script src="../../js/site-config.js"></script>
+  <script src="../../js/zodiac-data.js"></script>
+  <script src="../../js/astro.js"></script>
+  <script src="../../js/ads.js"></script>
+  <script>
+  (function () {
+    var Astro = window.Astro;
+    var out = document.getElementById('z-out');
+
+    // Reference table of all 12 signs
+    var tbody = document.querySelector('#z-table tbody');
+    if (tbody) {
+      Astro.signs.forEach(function (s) {
+        tbody.innerHTML += '<tr><td><strong>' + s.symbol + ' ' + s.name + '</strong></td>' +
+          '<td>' + s.dates + ' · ' + s.element + ' · ruled by ' + s.ruler +
+          ' · <a href="../../zodiac/' + s.slug + '/">full profile</a></td></tr>';
+      });
+    }
+
+    function isCusp(month, day) {
+      var prev = new Date(2001, month - 1, day);
+      prev.setDate(prev.getDate() - 1);
+      var next = new Date(2001, month - 1, day);
+      next.setDate(next.getDate() + 1);
+      var a = Astro.signFromDate(prev.getMonth() + 1, prev.getDate());
+      var b = Astro.signFromDate(next.getMonth() + 1, next.getDate());
+      return a !== b;
+    }
+
+    function find() {
+      var v = document.getElementById('z-date').value;
+      if (!v) { out.innerHTML = '<div class="panel"><p class="placeholder">Please choose your date of birth first.</p></div>'; return; }
+      var parts = v.split('-');
+      var y = +parts[0], m = +parts[1], d = +parts[2];
+      if (!y || !m || !d) { out.innerHTML = '<div class="panel"><p class="placeholder">That date looks incomplete — please pick a full date.</p></div>'; return; }
+
+      var slug = Astro.signFromDate(m, d);
+      var s = Astro.getSign(slug);
+      if (!s) { out.innerHTML = '<div class="panel"><p class="placeholder">Sorry, that date could not be matched to a sign.</p></div>'; return; }
+
+      var html = '<div class="panel">' +
+        '<div class="result-box" style="text-align:center;">' +
+        '<div style="font-size:44px;line-height:1;">' + s.symbol + '</div>' +
+        '<div class="big" style="margin-top:6px;">' + s.name + '</div>' +
+        '<div class="sub">' + s.dates + ' · ' + s.element + ' sign · ruled by ' + s.ruler + '</div>' +
+        '</div>';
+
+      html += '<table class="result-table"><tbody>' +
+        '<tr><td>Element</td><td>' + s.element + '</td></tr>' +
+        '<tr><td>Modality</td><td>' + s.quality + '</td></tr>' +
+        '<tr><td>Ruling planet</td><td>' + s.ruler + '</td></tr>' +
+        '<tr><td>Polarity</td><td>' + s.polarity + '</td></tr>' +
+        '<tr><td>Birth date used</td><td>' + parts[2] + '/' + parts[1] + '/' + parts[0] + '</td></tr>' +
+        '</tbody></table>';
+
+      if (isCusp(m, d)) {
+        html += '<div class="callout mt-3" style="margin-top:16px;"><strong>Cusp birthday.</strong> This date sits right on the boundary between two signs, and the exact day the Sun moves varies slightly from year to year. If you were born near midnight, check the hour — the later part of the day usually belongs to the following sign.</div>';
+      }
+
+      html += '<p style="margin-top:16px;"><strong>' + s.tagline + '</strong></p>';
+      html += '<p>' + s.summary + '</p>';
+      html += '<p><a class="btn secondary small" href="../../zodiac/' + s.slug + '/">Read the full ' + s.name + ' profile →</a></p>';
+      html += '<p class="small muted">For entertainment and self-reflection. A Sun sign is the shallowest layer of a birth chart — Moon sign, rising sign and planetary placements matter too.</p>';
+      html += '</div>';
+      out.innerHTML = html;
+    }
+
+    document.getElementById('z-go').addEventListener('click', find);
+    document.getElementById('z-date').addEventListener('change', find);
+  })();
+  </script>
+</body>
+</html>

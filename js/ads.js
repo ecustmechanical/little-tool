@@ -1,7 +1,7 @@
-// TackleCalc 广告加载器: 仅在配置开启(审核通过)后加载 AdSense。
-// 配置为空时 .ad-slot 保持空占位(CSS display:none), 页面零外链零展示。
+// AstroLens 广告加载器：仅在配置开启(AdSense 过审)后加载。
+// 配置为空时 .ad-slot 保持空占位(CSS display:none)，页面零外部广告请求。
 (function () {
-  var cfg = window.TACKLEADS || {};
+  var cfg = window.ASTROADS || {};
   function slotEls() {
     return Array.prototype.slice.call(document.querySelectorAll('.ad-slot[data-slot]'));
   }

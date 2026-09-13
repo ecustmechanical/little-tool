@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YWD0Z35ZZ9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-YWD0Z35ZZ9");
+</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Numerology Calculator: Life Path &amp; Name Numbers | AstroLens</title>
+  <meta name="description" content="Free numerology calculator. Enter your birth date and name for your Life Path, Expression, Soul Urge and Birthday numbers — with the digit sums shown.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://ecustmechanical.github.io/little-tool/free-tools/numerology-calculator/"><!-- UPDATE-AT-DOMAIN -->
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+  <link rel="stylesheet" href="../../css/style.css">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="AstroLens">
+  <meta property="og:title" content="Numerology Calculator: Life Path &amp; Name Numbers | AstroLens">
+  <meta property="og:description" content="Free numerology calculator with the digit sums shown. Life Path, Expression, Soul Urge and Birthday numbers.">
+  <meta property="og:url" content="https://ecustmechanical.github.io/little-tool/free-tools/numerology-calculator/">
+  <meta name="twitter:card" content="summary">
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org", "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ecustmechanical.github.io/little-tool/" },
+        { "@type": "ListItem", "position": 2, "name": "Free Tools", "item": "https://ecustmechanical.github.io/little-tool/free-tools/" },
+        { "@type": "ListItem", "position": 3, "name": "Numerology Calculator", "item": "https://ecustmechanical.github.io/little-tool/free-tools/numerology-calculator/" }
+      ]
+    },
+    {
+      "@context": "https://schema.org", "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "How is the Life Path number calculated?", "acceptedAnswer": { "@type": "Answer", "text": "Add every digit of your full birth date together, then reduce the total by adding its digits until you reach a single digit — unless you land on 11, 22 or 33, which are kept as master numbers. Example: 1990-07-14 becomes 1+9+9+0+0+7+1+4 = 31, then 3+1 = 4, so the Life Path is 4." } },
+        { "@type": "Question", "name": "What is the difference between Life Path and Expression numbers?", "acceptedAnswer": { "@type": "Answer", "text": "The Life Path comes from your birth date and describes the lesson or direction of your life. The Expression (or Destiny) number comes from your full birth name and describes your natural talents and how you operate in the world. Most numerologists read the two together." } },
+        { "@type": "Question", "name": "Should I use my birth name or my married name?", "acceptedAnswer": { "@type": "Answer", "text": "Traditional numerology uses the full name given at birth, because the Expression number is tied to your original name. Many practitioners also calculate the current name for comparison. This calculator lets you try either — the choice is noted in the method below the result." } },
+        { "@type": "Question", "name": "What are master numbers 11, 22 and 33?", "acceptedAnswer": { "@type": "Answer", "text": "11, 22 and 33 are not reduced to a single digit in most traditions. They are considered intensified versions of 2, 4 and 6 respectively — more demanding, more capable and less comfortable to live with." } },
+        { "@type": "Question", "name": "Does this calculator store my name or birth date?", "acceptedAnswer": { "@type": "Answer", "text": "No. All calculation happens in your browser with JavaScript. Nothing you type is transmitted, logged or saved anywhere." } }
+      ]
+    }
+  ]
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../../index.html">
+        <span class="brand-mark">✦</span>
+        <span class="brand-name">AstroLens<small>zodiac · numerology · tarot</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="../">Free Tools</a></li>
+          <li><a href="../../zodiac/">Zodiac Signs</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a class="cta-link" href="../../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section alt">
+      <div class="wrap">
+        <p><a href="../../index.html">Home</a> › <a href="../">Free Tools</a> › Numerology Calculator</p>
+        <p class="eyebrow">Free numerology tool</p>
+        <h1>Numerology Calculator</h1>
+        <p class="lead" style="max-width:52em;">Numerology assigns a number to your birth date and your name, then reads meaning into the result. Enter both below to get your five core numbers — and the exact digit sums used, so you can check the arithmetic yourself.</p>
+      </div>
+    </section>
+
+    <section class="section tight">
+      <div class="wrap">
+        <div class="calc-grid">
+          <aside class="panel" style="position:sticky;top:76px;">
+            <div class="field">
+              <label for="n-date">1. Your date of birth</label>
+              <input type="date" id="n-date" aria-label="Date of birth">
+              <div class="hint">Used for the Life Path and Birthday numbers.</div>
+            </div>
+            <div class="field">
+              <label for="n-name">2. Your full name</label>
+              <input type="text" id="n-name" placeholder="e.g. Elena Marie Voss" autocomplete="off" aria-label="Full name">
+              <div class="hint">Used for Expression, Soul Urge and Personality. Traditional practice uses the name given at birth.</div>
+            </div>
+            <button class="btn" id="n-go" type="button">Calculate my numbers</button>
+            <p class="small muted mt-2">Nothing is sent anywhere — this runs entirely in your browser.</p>
+          </aside>
+
+          <div id="n-out">
+            <div class="panel">
+              <p class="placeholder">Your numbers will appear here. Enter a birth date (and optionally a name), then press <strong>Calculate</strong>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ad-slot" data-slot="tool-mid"></div>
+
+    <section class="section alt">
+      <div class="wrap prose">
+        <h2>How the five core numbers are calculated</h2>
+        <p>This calculator follows the standard Pythagorean method, the most widely used system in Western numerology.</p>
+        <ul>
+          <li><strong>Life Path</strong> — the digits of your full birth date added together and reduced. Master numbers 11, 22 and 33 are kept unreduced.</li>
+          <li><strong>Expression (Destiny)</strong> — every letter of your full name converted using A=1 … I=9, J=1 … R=9, S=1 … Z=8, then reduced.</li>
+          <li><strong>Soul Urge</strong> — only the vowels of your name, converted and reduced. This is read as your inner motivation.</li>
+          <li><strong>Personality</strong> — only the consonants, converted and reduced. This is read as the outer impression you give.</li>
+          <li><strong>Birthday</strong> — the day of the month you were born, reduced to a single digit.</li>
+        </ul>
+        <p class="small muted">Where a name contains letters outside A–Z (accents, hyphens, spaces), they are ignored, which is standard practice.</p>
+
+        <h2>Frequently asked questions</h2>
+        <div class="faq">
+          <details><summary>How is the Life Path number calculated?</summary><p>Add every digit of your full birth date together, then reduce the total by adding its digits until you reach a single digit — unless you land on 11, 22 or 33, which are kept as master numbers. Example: 1990-07-14 becomes 1+9+9+0+0+7+1+4 = 31, then 3+1 = 4, so the Life Path is 4.</p></details>
+          <details><summary>What is the difference between Life Path and Expression numbers?</summary><p>The Life Path comes from your birth date and describes the lesson or direction of your life. The Expression (or Destiny) number comes from your full birth name and describes your natural talents and how you operate in the world. Most numerologists read the two together.</p></details>
+          <details><summary>Should I use my birth name or my married name?</summary><p>Traditional numerology uses the full name given at birth, because the Expression number is tied to your original name. Many practitioners also calculate the current name for comparison. This calculator lets you try either — the choice is noted in the method below the result.</p></details>
+          <details><summary>What are master numbers 11, 22 and 33?</summary><p>11, 22 and 33 are not reduced to a single digit in most traditions. They are considered intensified versions of 2, 4 and 6 respectively — more demanding, more capable and less comfortable to live with.</p></details>
+          <details><summary>Does this calculator store my name or birth date?</summary><p>No. All calculation happens in your browser with JavaScript. Nothing you type is transmitted, logged or saved anywhere.</p></details>
+        </div>
+
+        <h2>Related tools</h2>
+        <div class="pill-row">
+          <a class="pill" href="../zodiac-compatibility/">Zodiac Compatibility</a>
+          <a class="pill" href="../zodiac-sign-calculator/">Zodiac Sign Finder</a>
+          <a class="pill" href="../tarot-reader/">Tarot Reader</a>
+          <a class="pill" href="../../zodiac/">All 12 Zodiac Signs</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <h4>AstroLens</h4>
+        <p class="blurb">Free zodiac sign profiles, numerology, compatibility and tarot tools. Every page written and checked by hand — with the method shown.</p>
+      </div>
+      <div>
+        <h4>Free tools</h4>
+        <ul>
+          <li><a href="./">Numerology Calculator</a></li>
+          <li><a href="../zodiac-compatibility/">Zodiac Compatibility</a></li>
+          <li><a href="../tarot-reader/">Tarot Reader</a></li>
+          <li><a href="../zodiac-sign-calculator/">Zodiac Sign Finder</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="../../zodiac/">Zodiac Signs</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+          <li><a href="../../privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">© 2026 AstroLens · Content is for entertainment and self-reflection only.
+      <span class="disc">Not medical, psychological, legal or financial advice.</span>
+    </div>
+  </footer>
+
+  <script src="../../js/site-config.js"></script>
+  <script src="../../js/astro.js"></script>
+  <script src="../../js/ads.js"></script>
+  <script>
+  (function () {
+    var out = document.getElementById('n-out');
+    function row(label, value, extra) {
+      var meaning = window.Astro.numMeaning(value);
+      return '<h3 style="margin:18px 0 2px;font-size:17px;">' + label + ': ' + value +
+        (meaning ? ' — ' + meaning.title : '') + '</h3>' +
+        (meaning ? '<p style="margin:4px 0;">' + meaning.text + '</p>' : '') +
+        (extra ? '<p class="small muted" style="margin:2px 0;">' + extra + '</p>' : '');
+    }
+    document.getElementById('n-go').addEventListener('click', function () {
+      var dv = document.getElementById('n-date').value;
+      var nm = document.getElementById('n-name').value.trim();
+      if (!dv) { out.innerHTML = '<div class="panel"><p class="placeholder">Please enter your date of birth first.</p></div>'; return; }
+      var parts = dv.split('-');
+      var y = +parts[0], m = +parts[1], d = +parts[2];
+      if (!y || !m || !d) { out.innerHTML = '<div class="panel"><p class="placeholder">That date looks incomplete — please pick a full date.</p></div>'; return; }
+
+      var lp = window.Astro.lifePath(y, m, d);
+      var bd = window.Astro.birthdayNumber(d);
+      var html = '<div class="panel"><div class="result-box">' +
+        '<div class="sub">Your core numbers</div>' +
+        '<div class="big">Life Path ' + lp + '</div>' +
+        '<div class="sub">Birth date ' + parts[2] + '/' + parts[1] + '/' + parts[0] + '</div>' +
+        '</div>';
+
+      var method = 'Method: total of all digits in ' + parts[2] + '' + parts[1] + '' + parts[0] + ' reduced to one digit' + (lp >= 11 && lp <= 33 ? ' (master number kept unreduced)' : '') + '.';
+      html += row('Life Path', lp, method);
+      html += row('Birthday', bd, 'Method: day of month (' + d + ') reduced to a single digit.');
+
+      if (nm) {
+        var expr = window.Astro.nameNumber(nm, 'all');
+        var soul = window.Astro.nameNumber(nm, 'vowels');
+        var pers = window.Astro.nameNumber(nm, 'consonants');
+        html += '<hr style="border:0;border-top:1px solid var(--border);margin:22px 0 6px;">';
+        html += '<p class="small muted" style="margin:0;">From the name "' + nm.replace(/[<>&"]/g, '') + '":</p>';
+        if (expr) html += row('Expression / Destiny', expr, 'Method: all letters of the name, Pythagorean values, reduced.');
+        if (soul) html += row('Soul Urge', soul, 'Method: vowels only, reduced.');
+        if (pers) html += row('Personality', pers, 'Method: consonants only, reduced.');
+      } else {
+        html += '<p class="small muted mt-2">Add your full name above to also get Expression, Soul Urge and Personality numbers.</p>';
+      }
+      html += '<p class="small muted mt-3">For entertainment and self-reflection. Numerology is a symbolic system, not a predictive science.</p></div>';
+      out.innerHTML = html;
+    });
+  })();
+  </script>
+</body>
+</html>
