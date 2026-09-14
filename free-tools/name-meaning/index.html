@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YWD0Z35ZZ9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-YWD0Z35ZZ9");
+</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Name Numerology Calculator: Your Name's Numbers | AstroLens</title>
+  <meta name="description" content="Free name numerology calculator. Turn any name into its Expression, Soul Urge and Personality numbers, with the letter breakdown and five-element reading.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://ecustmechanical.github.io/little-tool/free-tools/name-meaning/"><!-- UPDATE-AT-DOMAIN -->
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+  <link rel="stylesheet" href="../../css/style.css">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AstroLens">
+  <meta property="og:title" content="Name Numerology Calculator: Your Name's Numbers | AstroLens">
+  <meta property="og:description" content="Turn any name into its Expression, Soul Urge and Personality numbers, with the letter-by-letter breakdown and the matching five-element reading.">
+  <meta property="og:url" content="https://ecustmechanical.github.io/little-tool/free-tools/name-meaning/">
+  <meta name="twitter:card" content="summary">
+  <link rel="alternate" hreflang="en" href="https://ecustmechanical.github.io/little-tool/free-tools/name-meaning/">
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org", "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ecustmechanical.github.io/little-tool/" },
+        { "@type": "ListItem", "position": 2, "name": "Free Tools", "item": "https://ecustmechanical.github.io/little-tool/free-tools/" },
+        { "@type": "ListItem", "position": 3, "name": "Name Numerology", "item": "https://ecustmechanical.github.io/little-tool/free-tools/name-meaning/" }
+      ]
+    },
+    {
+      "@context": "https://schema.org", "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What is name numerology?", "acceptedAnswer": { "@type": "Answer", "text": "Name numerology converts the letters of a name into numbers using the Pythagorean table (A=1 through I=9, then repeating). The totals produce three core numbers: the Expression number from all letters, the Soul Urge from the vowels, and the Personality from the consonants." } },
+        { "@type": "Question", "name": "Which name should I use in the calculator?", "acceptedAnswer": { "@type": "Answer", "text": "Use the name you actually go by most often. Tradition says the birth certificate name shows your potential and the everyday name shows how that potential is expressed now. Try both and compare." } },
+        { "@type": "Question", "name": "What are master numbers 11, 22 and 33?", "acceptedAnswer": { "@type": "Answer", "text": "In numerology, 11, 22 and 33 are not reduced further because they carry extra weight. They are read as intensified versions of 2, 4 and 6 — more pressure, more potential. The calculator keeps them unreduced when they appear." } },
+        { "@type": "Question", "name": "How does this relate to the Chinese five elements?", "acceptedAnswer": { "@type": "Answer", "text": "It is a cross-system reading rather than a classical one. The calculator maps each numerology number onto one of the five elements — Wood, Fire, Earth, Metal, Water — so you can compare your name's numbers with your Chinese zodiac element and see where the two traditions agree." } }
+      ]
+    }
+  ]
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../../index.html">
+        <span class="brand-mark">☯</span>
+        <span class="brand-name">AstroLens<small>zodiac · eastern · tarot</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="../../zodiac/">Zodiac</a></li>
+          <li><a href="../../chinese-zodiac/">Chinese Zodiac</a></li>
+          <li><a href="../">Free Tools</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a class="cta-link" href="../../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="wrap">
+        <p><a href="../../index.html">Home</a> › <a href="../">Free Tools</a> › Name Numerology</p>
+        <h1>Name Numerology Calculator</h1>
+        <p class="lead" style="max-width:46em;">Every name converts into numbers. Enter a name to get its Expression, Soul Urge and Personality numbers, the letter-by-letter working, and the five-element reading that connects it to your Chinese zodiac. Nothing leaves your browser.</p>
+
+        <div class="calc-grid">
+          <div class="panel">
+            <h2 style="margin-top:0;">Your name</h2>
+            <div class="field">
+              <label for="nm-name">Full name</label>
+              <input id="nm-name" type="text" placeholder="e.g. Elena Voss" autocomplete="off">
+              <span class="hint">Letters only — spaces, hyphens and accents are ignored.</span>
+            </div>
+            <button class="btn" id="nm-go" type="button">Read my name's numbers</button>
+            <p class="small muted" style="margin-top:10px;">Try your everyday name and your full birth name separately. Numerology reads them as two different layers of the same person.</p>
+          </div>
+
+          <div class="panel">
+            <h2 style="margin-top:0;">Result</h2>
+            <div id="nm-result" aria-live="polite"><p class="placeholder">Enter a name and press the button to see the three core numbers and how they were calculated.</p></div>
+          </div>
+        </div>
+
+        <div class="ad-slot" data-slot="tools-mid"></div>
+
+        <div class="prose mt-3">
+          <h2>What the three core numbers mean</h2>
+          <table class="result-table">
+            <tbody>
+              <tr><td>Expression number</td><td>All letters of the name. Your natural talents and the way you get things done — the widest of the three.</td></tr>
+              <tr><td>Soul Urge number</td><td>Vowels only. What you privately want, the motive under the motive. Rarely visible to other people.</td></tr>
+              <tr><td>Personality number</td><td>Consonants only. The first impression you give, the outer shell before anyone knows you.</td></tr>
+            </tbody>
+          </table>
+          <p>When the Expression and Soul Urge numbers agree, a person usually feels internally consistent and is easy to read. When they conflict, the gap between what someone wants and what they do becomes the central tension of their life — that is the point of reading all three together rather than one alone.</p>
+
+          <h2>How the calculator works</h2>
+          <p>Letters are converted with the Pythagorean table: A=1, B=2, C=3, D=4, E=5, F=6, G=7, H=8, I=9, then J=1 and the cycle repeats through to Z=8. Each group of letters is summed and reduced by adding the digits together until a single digit remains — except for 11, 22 and 33, which are treated as master numbers and left unreduced.</p>
+          <p>The five-element layer is a deliberate cross-system reading, not classical numerology. It maps the number onto one of the Chinese five elements so that it can be compared with your <a href="../../chinese-zodiac/">Chinese zodiac element</a> and your <a href="../kua-number-calculator/">Kua number</a>.</p>
+
+          <h2>Name numerology FAQ</h2>
+          <div class="faq">
+            <details><summary>What is name numerology?</summary><p>Name numerology converts the letters of a name into numbers using the Pythagorean table (A=1 through I=9, then repeating). The totals produce three core numbers: the Expression number from all letters, the Soul Urge from the vowels, and the Personality from the consonants.</p></details>
+            <details><summary>Which name should I use in the calculator?</summary><p>Use the name you actually go by most often. Tradition says the birth certificate name shows your potential and the everyday name shows how that potential is expressed now. Try both and compare.</p></details>
+            <details><summary>What are master numbers 11, 22 and 33?</summary><p>In numerology, 11, 22 and 33 are not reduced further because they carry extra weight. They are read as intensified versions of 2, 4 and 6 — more pressure, more potential. The calculator keeps them unreduced when they appear.</p></details>
+            <details><summary>How does this relate to the Chinese five elements?</summary><p>It is a cross-system reading rather than a classical one. The calculator maps each numerology number onto one of the five elements — Wood, Fire, Earth, Metal, Water — so you can compare your name's numbers with your Chinese zodiac element and see where the two traditions agree.</p></details>
+          </div>
+
+          <div class="callout info mt-3">
+            <strong>Pair this with:</strong> the <a href="../numerology-calculator/">Life Path calculator</a> (from your birth date, not your name), the <a href="../../chinese-zodiac/">Chinese zodiac signs</a>, or your personal <a href="../kua-number-calculator/">Kua number directions</a>.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <h4>AstroLens</h4>
+        <p class="blurb">Western astrology and Eastern metaphysics side by side — zodiac signs, Chinese zodiac, numerology, feng shui, I Ching and tarot. Every page written and checked by hand, with the method shown.</p>
+      </div>
+      <div>
+        <h4>Eastern tools</h4>
+        <ul>
+          <li><a href="../../chinese-zodiac/">Chinese Zodiac Signs</a></li>
+          <li><a href="../chinese-zodiac-calculator/">Chinese Zodiac Calculator</a></li>
+          <li><a href="../kua-number-calculator/">Kua Number Calculator</a></li>
+          <li><a href="../iching/">I Ching Hexagrams</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Western tools</h4>
+        <ul>
+          <li><a href="../../zodiac/">Zodiac Signs</a></li>
+          <li><a href="../numerology-calculator/">Numerology Calculator</a></li>
+          <li><a href="../zodiac-compatibility/">Zodiac Compatibility</a></li>
+          <li><a href="../tarot-reader/">Tarot Reader</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+          <li><a href="../../privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">© 2026 AstroLens · Content is for entertainment and self-reflection only.
+      <span class="disc">Not medical, psychological, legal or financial advice.</span>
+    </div>
+  </footer>
+
+  <script src="../../js/site-config.js"></script>
+  <script src="../../js/ads.js"></script>
+  <script>
+  (function () {
+    var V = { a:1,b:2,c:3,d:4,e:5,f:6,g:7,h:8,i:9,j:1,k:2,l:3,m:4,n:5,o:6,p:7,q:8,r:9,s:1,t:2,u:3,v:4,w:5,x:6,y:7,z:8 };
+    var VOWELS = 'aeiou';
+
+    var MEANING = {
+      1:  { t: 'The Leader',   d: 'Independent, original and driven to start things. Learns best by doing, dislikes being managed.' },
+      2:  { t: 'The Diplomat', d: 'Cooperative, intuitive and tuned to other people. Strongest in partnership, weakest when forced to compete.' },
+      3:  { t: 'The Communicator', d: 'Expressive, sociable and creative. Scatters energy when there is no structure around it.' },
+      4:  { t: 'The Builder',  d: 'Methodical, reliable and system-minded. Slow to start, near-impossible to derail once committed.' },
+      5:  { t: 'The Explorer', d: 'Restless, adaptable and freedom-hungry. Thrives on change, struggles with routine.' },
+      6:  { t: 'The Caretaker', d: 'Responsible, protective and drawn to family and community. Over-gives if no boundary is set.' },
+      7:  { t: 'The Analyst',  d: 'Introspective, precise and truth-seeking. Needs solitude to think and hates being rushed.' },
+      8:  { t: 'The Executive', d: 'Ambitious, strategic and comfortable with authority and money. Risks measuring worth by achievement.' },
+      9:  { t: 'The Idealist', d: 'Compassionate, broad-minded and oriented to something larger than the self. Poor at letting go.' },
+      11: { t: 'Master Intuition', d: 'An intensified 2 — highly intuitive and inspiring, with the nerves to match.' },
+      22: { t: 'Master Builder', d: 'An intensified 4 — the capacity to build something that outlasts you, at real personal cost.' },
+      33: { t: 'Master Teacher', d: 'An intensified 6 — a rare pull toward healing others, usually learned through your own difficulty.' }
+    };
+
+    // 数字 → 五行（跨体系读法：1,2 Wood · 3,4 Fire · 5,6 Earth · 7,8 Metal · 9,11,22,33 Water）
+    function elementOf(n) {
+      if (n === 1 || n === 2) return { el: 'Wood',  note: 'Wood grows — patient, upward, long-horizon.' };
+      if (n === 3 || n === 4) return { el: 'Fire',  note: 'Fire rises — visible, expressive, fast to act.' };
+      if (n === 5 || n === 6) return { el: 'Earth', note: 'Earth holds — steady, loyal, the one others rely on.' };
+      if (n === 7 || n === 8) return { el: 'Metal', note: 'Metal cuts — precise, principled, decisive.' };
+      return { el: 'Water', note: 'Water adapts — fluid, deep, finds the way around.' };
+    }
+
+    function reduce(sum) {
+      while (sum > 9 && sum !== 11 && sum !== 22 && sum !== 33) {
+        sum = String(sum).split('').reduce(function (a, b) { return a + Number(b); }, 0);
+      }
+      return sum;
+    }
+
+    function tally(letters) {
+      var sum = 0, rows = '';
+      for (var i = 0; i < letters.length; i++) {
+        var ch = letters[i], v = V[ch];
+        if (!v) continue;
+        sum += v;
+        rows += '<tr><td>' + ch.toUpperCase() + '</td><td>' + v + '</td></tr>';
+      }
+      return { sum: sum, rows: rows };
+    }
+
+    function numCard(n, label, sub) {
+      var m = MEANING[n] || MEANING[reduce(n)];
+      var e = elementOf(n);
+      return '<div class="result-box mt-2">' +
+        '<div class="rb-date">' + label + '</div>' +
+        '<div class="big">' + n + ' — ' + m.t + '</div>' +
+        '<p class="sub">' + sub + '</p>' +
+        '<p>' + m.d + '</p>' +
+        '<div class="sign-meta"><span class="tag">Element: <b>' + e.el + '</b></span></div>' +
+        '<p class="small muted">' + e.note + '</p>' +
+        '</div>';
+    }
+
+    document.getElementById('nm-go').addEventListener('click', function () {
+      var raw = document.getElementById('nm-name').value || '';
+      var letters = raw.toLowerCase().replace(/[^a-z]/g, '');
+      var out = document.getElementById('nm-result');
+      if (!letters) { out.innerHTML = '<p class="placeholder">Please enter a name using Latin letters (A–Z).</p>'; return; }
+
+      var all = tally(letters);
+      var vows = tally(letters.replace(/[^aeiou]/g, ''));
+      var cons = tally(letters.replace(/[aeiou]/g, ''));
+
+      var expression = reduce(all.sum);
+      var soul = reduce(vows.sum);
+      var persona = reduce(cons.sum);
+
+      var breakdown = '';
+      for (var i = 0; i < letters.length; i++) {
+        if (!V[letters[i]]) continue;
+        breakdown += '<tr><td>' + letters[i].toUpperCase() + '</td><td>' + V[letters[i]] + '</td></tr>';
+      }
+
+      var tension = expression === soul
+        ? 'Your Expression and Soul Urge agree, so what you want and what you do point the same way. This reads as internal consistency — and as being easy for other people to predict.'
+        : 'Your Expression (' + expression + ') and Soul Urge (' + soul + ') differ. The gap between what you want and how you act is usually the most interesting thing about this name — and the place where the most energy is spent.';
+
+      out.innerHTML =
+        numCard(expression, 'Expression number — from all letters', 'Every letter of "' + raw.trim() + '" summed.') +
+        numCard(soul, 'Soul Urge number — from the vowels', 'The vowels only, which hide the private motive.') +
+        numCard(persona, 'Personality number — from the consonants', 'The consonants only — your first impression.') +
+        '<div class="result-box mt-2">' +
+        '<div class="rb-date">How it was calculated</div>' +
+        '<table class="result-table"><tbody>' + breakdown +
+        '<tr><td><strong>Total</strong></td><td><strong>' + all.sum + '</strong> → ' + expression + '</td></tr>' +
+        '<tr><td>Vowels</td><td>' + vows.sum + ' → ' + soul + '</td></tr>' +
+        '<tr><td>Consonants</td><td>' + cons.sum + ' → ' + persona + '</td></tr>' +
+        '</tbody></table>' +
+        '<p class="small muted">Pythagorean table: A=1 … I=9, then the cycle repeats (J=1 … R=9, S=1 … Z=8). 11, 22 and 33 are master numbers and are not reduced.</p>' +
+        '</div>' +
+        '<div class="callout info mt-2">' + tension + '</div>' +
+        '<p class="small muted"><strong>Next:</strong> compare this against your <a href="../../chinese-zodiac/">Chinese zodiac element</a> and your <a href="../kua-number-calculator/">Kua number</a>.</p>';
+    });
+
+    document.getElementById('nm-name').addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') document.getElementById('nm-go').click();
+    });
+  })();
+  </script>
+</body>
+</html>

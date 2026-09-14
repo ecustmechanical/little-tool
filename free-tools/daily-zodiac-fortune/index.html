@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YWD0Z35ZZ9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-YWD0Z35ZZ9");
+</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Zodiac Fortune — Your Horoscope for Today | AstroLens</title>
+  <meta name="description" content="Get your free daily zodiac fortune. Personalized horoscope for all 12 Western and Chinese zodiac signs with lucky colors, numbers and ratings.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://ecustmechanical.github.io/little-tool/free-tools/daily-zodiac-fortune/"><!-- UPDATE-AT-DOMAIN -->
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+  <link rel="stylesheet" href="../../css/style.css">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="AstroLens">
+  <meta property="og:title" content="Daily Zodiac Fortune — Your Horoscope for Today | AstroLens">
+  <meta property="og:description" content="Free daily zodiac fortune for all 12 Western and Chinese zodiac signs with lucky colors, numbers and ratings.">
+  <meta property="og:url" content="https://ecustmechanical.github.io/little-tool/free-tools/daily-zodiac-fortune/">
+  <meta name="twitter:card" content="summary">
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org", "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ecustmechanical.github.io/little-tool/" },
+        { "@type": "ListItem", "position": 2, "name": "Free Tools", "item": "https://ecustmechanical.github.io/little-tool/free-tools/" },
+        { "@type": "ListItem", "position": 3, "name": "Daily Zodiac Fortune", "item": "https://ecustmechanical.github.io/little-tool/free-tools/daily-zodiac-fortune/" }
+      ]
+    },
+    {
+      "@context": "https://schema.org", "@type": "WebApplication",
+      "name": "Daily Zodiac Fortune Generator",
+      "url": "https://ecustmechanical.github.io/little-tool/free-tools/daily-zodiac-fortune/",
+      "applicationCategory": "Astrology",
+      "operatingSystem": "All",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    }
+  ]
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../../index.html">
+        <span class="brand-mark">✦</span>
+        <span class="brand-name">AstroLens<small>zodiac · numerology · tarot</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="../../zodiac/">Zodiac</a></li>
+          <li><a href="../../chinese-zodiac/">Chinese Zodiac</a></li>
+          <li><a href="../../free-tools/">Free Tools</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a class="cta-link" href="../../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section alt">
+      <div class="wrap">
+        <p><a href="../../index.html">Home</a> › <a href="../">Free Tools</a> › Daily Zodiac Fortune</p>
+        <p class="eyebrow">Free daily fortune tool</p>
+        <h1>Daily Zodiac Fortune</h1>
+        <p class="lead" style="max-width:52em;">Pick your Western or Chinese zodiac sign and receive today's fortune — love, career and health guidance, along with your lucky color and number. The result is deterministic: the same date and sign always produce the same reading.</p>
+      </div>
+    </section>
+
+    <section class="section tight">
+      <div class="wrap">
+        <div class="calc-grid">
+          <div class="panel">
+            <h2 style="font-size:20px; margin:0 0 16px;">Choose Your Sign</h2>
+
+            <div style="display:flex; gap:8px; margin-bottom:18px;">
+              <button id="tab-western" class="btn small" onclick="switchTab('western')">Western Zodiac</button>
+              <button id="tab-chinese" class="btn secondary small" onclick="switchTab('chinese')">Chinese Zodiac</button>
+            </div>
+
+            <div id="panel-western" class="field">
+              <label for="w-sign">Your Western Zodiac Sign</label>
+              <select id="w-sign">
+                <option value="0">♈ Aries (Mar 21 – Apr 19)</option>
+                <option value="1">♉ Taurus (Apr 20 – May 20)</option>
+                <option value="2">♊ Gemini (May 21 – Jun 20)</option>
+                <option value="3">♋ Cancer (Jun 21 – Jul 22)</option>
+                <option value="4">♌ Leo (Jul 23 – Aug 22)</option>
+                <option value="5">♍ Virgo (Aug 23 – Sep 22)</option>
+                <option value="6">♎ Libra (Sep 23 – Oct 22)</option>
+                <option value="7">♏ Scorpio (Oct 23 – Nov 21)</option>
+                <option value="8">♐ Sagittarius (Nov 22 – Dec 21)</option>
+                <option value="9">♑ Capricorn (Dec 22 – Jan 19)</option>
+                <option value="10">♒ Aquarius (Jan 20 – Feb 18)</option>
+                <option value="11">♓ Pisces (Feb 19 – Mar 20)</option>
+              </select>
+            </div>
+
+            <div id="panel-chinese" class="field" style="display:none;">
+              <label for="c-sign">Your Chinese Zodiac Animal</label>
+              <select id="c-sign">
+                <option value="0">🐀 Rat (鼠)</option>
+                <option value="1">🐂 Ox (牛)</option>
+                <option value="2">🐅 Tiger (虎)</option>
+                <option value="3">🐇 Rabbit (兔)</option>
+                <option value="4">🐉 Dragon (龙)</option>
+                <option value="5">🐍 Snake (蛇)</option>
+                <option value="6">🐎 Horse (马)</option>
+                <option value="7">🐐 Goat (羊)</option>
+                <option value="8">🐒 Monkey (猴)</option>
+                <option value="9">🐓 Rooster (鸡)</option>
+                <option value="10">🐕 Dog (狗)</option>
+                <option value="11">🐖 Pig (猪)</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="f-date">Date</label>
+              <input type="date" id="f-date">
+            </div>
+
+            <button id="f-go" class="btn" style="width:100%;">Get Today's Fortune</button>
+          </div>
+
+          <div id="f-out">
+            <div class="panel center" style="padding:40px 20px;">
+              <p class="placeholder">Select your sign and click the button to reveal today's fortune.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="wrap prose">
+        <h2>How the daily fortune works</h2>
+        <p>This tool uses a seeded pseudo-random number generator (mulberry32). Your zodiac sign index and today's date are combined into a single seed, so the same sign on the same day always produces the identical fortune — but a different sign or a different day will give a new result.</p>
+        <p>Fortune ratings range from 1 to 5 stars. Each reading includes guidance for love, career and health, plus a lucky color and number for the day. Refresh as many times as you like — the output will not change until tomorrow.</p>
+        <p><a class="btn secondary" href="../zodiac-compatibility/">Check compatibility →</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <h4>AstroLens</h4>
+        <p class="blurb">Free zodiac sign profiles, numerology, compatibility and tarot tools. Every page written and checked by hand — with the method shown.</p>
+      </div>
+      <div>
+        <h4>Free tools</h4>
+        <ul>
+          <li><a href="../numerology-calculator/">Numerology Calculator</a></li>
+          <li><a href="../zodiac-compatibility/">Zodiac Compatibility</a></li>
+          <li><a href="../tarot-reader/">Tarot Reader</a></li>
+          <li><a href="../zodiac-sign-calculator/">Zodiac Sign Finder</a></li>
+          <li><a href="../kua-number-calculator/">Kua Number Calculator</a></li>
+          <li><a href="../iching/">I Ching Oracle</a></li>
+          <li><a href="./">Daily Zodiac Fortune</a></li>
+          <li><a href="../name-meaning/">Name Meaning</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="../../zodiac/">Zodiac Signs</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+          <li><a href="../../privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">© 2026 AstroLens · Content is for entertainment and self-reflection only.
+      <span class="disc">Not medical, psychological, legal or financial advice.</span>
+    </div>
+  </footer>
+
+  <script src="../../js/site-config.js"></script>
+  <script src="../../js/ads.js"></script>
+  <script>
+  (function () {
+    /* ---------- mulberry32 seeded PRNG ---------- */
+    function mulberry32(a) {
+      return function () {
+        a |= 0; a = a + 0x6D2B79F5 | 0;
+        var t = Math.imul(a ^ a >>> 15, 1 | a);
+        t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+        return ((t ^ t >>> 14) >>> 0) / 4294967296;
+      };
+    }
+
+    /* ---------- Tab switching ---------- */
+    window.switchTab = function (tab) {
+      var wPanel = document.getElementById('panel-western');
+      var cPanel = document.getElementById('panel-chinese');
+      var wBtn = document.getElementById('tab-western');
+      var cBtn = document.getElementById('tab-chinese');
+      if (tab === 'western') {
+        wPanel.style.display = ''; cPanel.style.display = 'none';
+        wBtn.className = 'btn small'; cBtn.className = 'btn secondary small';
+      } else {
+        cPanel.style.display = ''; wPanel.style.display = 'none';
+        cBtn.className = 'btn small'; wBtn.className = 'btn secondary small';
+      }
+    };
+
+    /* ---------- Lucky colors & numbers ---------- */
+    var luckyColors = [
+      'Crimson Red','Emerald Green','Golden Yellow','Royal Purple','Ocean Blue',
+      'Sunset Orange','Rose Pink','Sapphire Blue','Forest Green','Amber Gold',
+      'Teal','Lavender','Coral','Silver','Turquoise','Magenta','Indigo','Ivory'
+    ];
+
+    /* ---------- Western Zodiac Fortune Data ---------- */
+    /* 12 signs × 3 categories × 7+ variations each = 252+ unique fortune texts */
+    var wNames = ['Aries','Taurus','Gemini','Cancer','Leo','Virgo','Libra','Scorpio','Sagittarius','Capricorn','Aquarius','Pisces'];
+    var wEmojis = ['♈','♉','♊','♋','♌','♍','♎','♏','♐','♑','♒','♓'];
+
+    var wFortunes = [
+      /* Aries */
+      { love:[
+        'Your boldness attracts someone special today. Don\'t hesitate to make the first move — confidence is your charm.',
+        'A heartfelt conversation clears the air in a relationship. Trust your instincts about who to open up to.',
+        'Romance sizzles when you embrace spontaneity. Plan a surprise or accept an unexpected invitation.',
+        'Past emotions may resurface, but today\'s energy helps you release them gracefully.',
+        'Your passion ignites a deeper connection. Let your authentic self shine through.',
+        'A friend may reveal hidden feelings. Stay open-minded and respond with kindness.',
+        'Today favors honest dialogue. Speak your truth without fear — love respects courage.',
+        'Single Aries may find chemistry in an unlikely place. Keep your eyes and heart open.',
+        'A playful argument leads to a breakthrough. Laughter is the bridge to intimacy.',
+        'Your independent spirit is magnetic today. Someone admires your strength.',
+        'Nurture a bond that matters. Small gestures speak louder than grand declarations.',
+        'Vulnerability becomes your superpower. Let someone see the real you.',
+        'The stars favor reconciliation. If there\'s a rift, today is the day to mend it.',
+        'Romance finds you through shared interests. Join a group activity or class.',
+        'Your energy is contagious — a partner or crush feeds off your enthusiasm.',
+        'Take time to appreciate the love you already have. Gratitude deepens bonds.',
+        'An unexpected compliment boosts your confidence in love. Pass the warmth along.',
+        'Trust the timing of your romantic life. Everything unfolds as it should.',
+        'Flirtation is in the air. Enjoy the spark without pressure to define it.',
+        'Your courage to be vulnerable opens a new chapter in your love story.'
+      ], career:[
+        'A bold decision at work pays off today. Trust your gut and take the lead on that project.',
+        'New professional opportunities emerge. Update your resume and say yes to that meeting.',
+        'Your competitive edge sharpens. Channel it into productivity rather than conflict.',
+        'A colleague needs your direct approach. Offer honest feedback — it will be appreciated.',
+        'Financial rewards follow hard work. Stay focused on your long-term goals.',
+        'Leadership calls your name. Step up to organize a team effort.',
+        'A creative risk yields surprising results. Don\'t be afraid to think outside the box.',
+        'Negotiations go in your favor if you stay firm but fair. Know your worth.',
+        'An old skill proves unexpectedly valuable. Dust off that training and apply it.',
+        'Morning productivity peaks early. Tackle your hardest task before noon.',
+        'A mentor figure offers career-changing advice. Listen carefully and act on it.',
+        'Your initiative gets noticed by someone with influence. Keep pushing forward.',
+        'Financial planning today prevents headaches tomorrow. Review your budget.',
+        'Team dynamics shift in your favor. Use this momentum to propose your idea.',
+        'An obstacle at work is actually a hidden opportunity. Look for the silver lining.',
+        'Your energy inspires colleagues. Lead by example rather than words.',
+        'A deadline looms, but your determination sees you through. Stay disciplined.',
+        'Networking pays off — an acquaintance becomes a valuable professional contact.',
+        'Your passion for the work is evident. Let it drive you to excellence today.',
+        'A bold pitch or presentation lands well. Preparation meets opportunity.'
+      ], health:[
+        'Your energy runs high today — perfect for a vigorous workout or outdoor adventure.',
+        'Channel restless energy into physical activity. A run or gym session clears your mind.',
+        'Watch for stress tension in your shoulders and neck. Take breaks to stretch.',
+        'Your body craves movement. Even a 20-minute walk boosts your mood significantly.',
+        'Hydration is key today. Drink water before you feel thirsty.',
+        'Morning exercise sets a positive tone for the entire day. Rise and move.',
+        'Your natural stamina is strong — use it for a challenging workout.',
+        'Stress may manifest as headaches. Practice deep breathing to缓解 tension.',
+        'A balanced diet supports your high energy. Avoid skipping meals.',
+        'Today favors competitive sports. Challenge a friend to a game.',
+        'Your recovery speed is impressive. Push your limits safely.',
+        'Mindfulness helps channel your fiery energy. Try a 5-minute meditation.',
+        'Outdoor activities recharge your spirit. Spend time in nature.',
+        'Your body responds well to variety. Try a new exercise routine.',
+        'Sleep quality improves with consistent bedtime. Wind down early tonight.',
+        'Post-workout soreness means you worked hard. Celebrate the effort.',
+        'Your enthusiasm for fitness is inspiring. Share it with someone.',
+        'A health goal feels within reach. Stay consistent and trust the process.',
+        'Fresh air and sunshine do wonders for your vitality. Get outside.',
+        'Listen to your body\'s signals. Rest when needed, push when able.'
+      ]},
+      /* Taurus */
+      { love:[
+        'Stability deepens your closest relationship today. Your reliability is your greatest romantic asset.',
+        'A cozy evening at home strengthens bonds more than any grand gesture.',
+        'Your patient nature wins someone\'s heart. True connection takes time.',
+        'Sensory pleasures enhance romance — cook a meal together or enjoy music.',
+        'Trust builds slowly but surely. Today you lay another brick in a lasting bond.',
+        'A partner appreciates your consistency. Don\'t underestimate the power of showing up.',
+        'Financial discussions with a partner go smoothly. Shared goals unite you.',
+        'Your loyalty is tested but holds firm. This strengthens the relationship.',
+        'A romantic surprise from the past resurfaces beautifully. Embrace nostalgia.',
+        'Self-care makes you more attractive. When you feel good, love follows.',
+        'A disagreement over values leads to deeper understanding. Talk it through.',
+        'Your sensual nature draws admiration. Enjoy the attention gracefully.',
+        'Quality time matters more than quantity today. Make your moments count.',
+        'A gift from the heart means more than an expensive one. Thoughtfulness wins.',
+        'Your stubborn streak melts when love speaks softly. Be open to compromise.',
+        'Nature inspires romance. A walk in the park rekindles warmth.',
+        'A shared financial goal brings you closer to your partner.',
+        'Your calm presence soothes a loved one\'s anxiety. Be their anchor.',
+        'Old flames may reappear. Decide with your head and heart together.',
+        'Love is patient, love is kind — and today you embody both beautifully.'
+      ], career:[
+        'Your methodical approach impresses a supervisor. Details matter, and you nail them.',
+        'Financial planning yields results. Review investments or savings today.',
+        'Patience with a slow project pays off. Quality over speed is your motto.',
+        'A negotiation goes well when you hold your ground with grace.',
+        'Your practical skills are in demand. Offer your expertise to a colleague.',
+        'A stable routine enhances productivity. Stick to what works.',
+        'An opportunity to increase income presents itself. Evaluate carefully before committing.',
+        'Your reliability makes you the team\'s backbone. Don\'t overextend.',
+        'Creative projects benefit from your attention to aesthetics. Trust your taste.',
+        'A long-term investment in your career shows returns today.',
+        'Your calm demeanor defuses a workplace tension. Leadership through composure.',
+        'A task you\'ve been avoiding becomes easier once you start. Begin now.',
+        'Financial discipline prevents a minor crisis. Keep your budget tight.',
+        'Your taste for quality impresses clients or partners. Leverage it.',
+        'A promotion or raise is within reach. Document your achievements.',
+        'Steady progress beats flashy starts. Keep building brick by brick.',
+        'Your networking skills open a new professional door. Say yes to the invitation.',
+        'Work-life balance improves when you set firm boundaries today.',
+        'Your persistence overcomes a bureaucratic obstacle. Don\'t give up.',
+        'A career pivot feels less scary when grounded in your core strengths.'
+      ], health:[
+        'Indulgence calls, but moderation is your friend today. Enjoy treats mindfully.',
+        'Your body thrives on routine. Stick to regular meal and sleep times.',
+        'A soothing bath or massage releases built-up tension beautifully.',
+        'Earth-bound exercises like yoga or hiking align with your natural energy.',
+        'Your throat and neck need attention. Gentle stretches ease stiffness.',
+        'Comfort food is tempting, but a balanced meal sustains your energy longer.',
+        'Nature heals — spend time outdoors with bare feet on grass if possible.',
+        'Your senses are heightened. Enjoy aromatherapy or gentle music.',
+        'Rest is productive, not lazy. Your body rebuilds during downtime.',
+        'A new wellness routine starts well today. Commit to consistency.',
+        'Hydration supports your natural earth element. Sip water throughout the day.',
+        'Your joints appreciate low-impact exercise. Swimming is ideal today.',
+        'Mindful eating improves digestion and satisfaction. Chew slowly.',
+        'A health goal feels achievable. Break it into small daily steps.',
+        'Grounding exercises center your energy. Try standing barefoot outdoors.',
+        'Your endurance is strong. Use it for a sustained moderate workout.',
+        'Stress melts with tactile activities — gardening, cooking, or crafting.',
+        'Sleep quality improves with a calming bedtime ritual.',
+        'Your body signals are clear today. Listen to what it needs.',
+        'Self-care is not selfish. Prioritize your well-being without guilt.'
+      ]},
+      /* Gemini */
+      { love:[
+        'Witty banter sparks an unexpected connection. Your humor is irresistible today.',
+        'A deep conversation reveals new layers in your relationship. Communication is key.',
+        'Your curiosity about a partner\'s world deepens intimacy. Ask more questions.',
+        'Flirtation thrives in intellectual spaces — libraries, podcasts, or coffee shops.',
+        'A misunderstanding clears up through honest dialogue. Don\'t assume — ask.',
+        'Your dual nature confuses a lover. Be consistent in your words and actions.',
+        'Social energy brings romantic opportunities. Say yes to that gathering.',
+        'Texting chemistry is strong — but don\'t forget to meet in person too.',
+        'A friend-to-lover transition feels natural today. Trust the flow.',
+        'Your storytelling ability captivates someone special. Share your adventures.',
+        'Emotional depth scares you, but today rewards vulnerability. Take the leap.',
+        'A light-hearted approach heals a strained relationship. Laughter is medicine.',
+        'Your adaptability makes you an ideal partner. Celebrate your flexibility.',
+        'A debate with a crush turns into an engaging exchange of ideas.',
+        'Mental stimulation is your love language today. Connect through conversation.',
+        'Your charm is magnetic. Use it to rebuild a fading connection.',
+        'A surprise message from someone old brings a smile. Respond warmly.',
+        'Today favors keeping things light. Not every moment needs heavy emotional weight.',
+        'Your wit saves the day in an awkward social situation. Trust your quick thinking.',
+        'Love finds you through shared words — a book club, a blog, a letter.'
+      ], career:[
+        'Your multitasking ability shines. Juggle multiple projects with ease today.',
+        'A brainstorming session goes brilliantly. Your ideas flow freely.',
+        'Writing or communication tasks are your strength today. Tackle them first.',
+        'Networking opens an unexpected door. Every conversation is a potential opportunity.',
+        'Your versatility impresses a manager. Volunteer for the cross-functional project.',
+        'A new skill or tool boosts your efficiency. Invest time in learning.',
+        'Information gathering leads to a smart business decision. Research thoroughly.',
+        'Your social media savvy can enhance your professional brand. Post thoughtfully.',
+        'A meeting requires your diplomatic skills. Mediate with grace.',
+        'Your curiosity about industry trends keeps you ahead. Read that article.',
+        'A collaboration with a creative colleague yields innovative results.',
+        'Your ability to explain complex ideas simply is a rare gift. Use it.',
+        'Flexibility in your schedule allows you to seize a time-sensitive opportunity.',
+        'A lateral move in your career might be more fulfilling than climbing up.',
+        'Your voice carries weight in group discussions. Speak up confidently.',
+        'Mental fatigue hits by afternoon — schedule creative work for the morning.',
+        'A presentation goes well when you balance facts with storytelling.',
+        'Your adaptability helps you navigate a sudden change at work.',
+        'Professional development courses expand your marketability. Enroll today.',
+        'Your connectedness to industry trends makes you a go-to resource.'
+      ], health:[
+        'Your active mind needs physical release. A swim or dance class balances you.',
+        'Stress shows up as scattered thinking. Ground yourself with breathwork.',
+        'Your nervous system is sensitive today. Avoid caffeine overload.',
+        'Social activities boost your mood. Don\'t isolate — connect with friends.',
+        'Hand and shoulder exercises counteract desk-work tension.',
+        'Variety in your workout prevents boredom. Try something new today.',
+        'Reading or podcasts calm your racing mind before bed.',
+        'Your dual energy means you need both activity and rest. Balance both.',
+        'Fresh air clears mental fog. Take your lunch break outside.',
+        'Hydration and light meals keep your quick metabolism balanced.',
+        'Meditation may feel challenging but try a guided 5-minute session.',
+        'Your body processes information physically — dance or pace while thinking.',
+        'A talk therapy session or journaling helps process emotions.',
+        'Eye strain from screens is a risk today. Follow the 20-20-20 rule.',
+        'Laughter is genuine medicine for you. Watch something funny.',
+        'Your respiratory system benefits from deep breathing exercises.',
+        'A change of scenery improves your physical and mental well-being.',
+        'Light, frequent meals sustain your energy better than heavy ones.',
+        'Your brain needs stimulation — puzzles or games keep it sharp.',
+        'Social wellness counts. Call a friend you haven\'t spoken to in a while.'
+      ]},
+      /* Cancer */
+      { love:[
+        'Your nurturing nature creates a safe haven for a partner today. Home is where love grows.',
+        'Emotional intuition guides you to exactly what a loved one needs. Trust your feelings.',
+        'A family gathering strengthens romantic bonds. Shared roots deepen love.',
+        'Cooking a meal for someone expresses love more than words today.',
+        'Your protective instinct is endearing. Let someone care for you too.',
+        'Old memories resurface warmly. Share a nostalgic story with your partner.',
+        'Emotional honesty deepens intimacy. Don\'t hide your tender heart.',
+        'A crab\'s shell softens when trust is earned. Let your guard down today.',
+        'Home improvements or decorating together strengthens your partnership.',
+        'Your empathy makes you an exceptional listener. Give someone your full attention.',
+        'A moonlit walk or evening by candlelight rekindles romance.',
+        'Family approval means a lot. Bridge any gaps with patience and kindness.',
+        'Your loyalty inspires devotion. A partner feels deeply secure with you.',
+        'Emotional waves ebb and flow. Ride them together instead of retreating.',
+        'A surprise gift from the heart touches someone deeply. It\'s the thought that counts.',
+        'Your home is a love sanctuary. Invite someone special in today.',
+        'Mood swings are real — communicate them rather than withdrawing.',
+        'A deeper understanding of your own needs improves all your relationships.',
+        'Children or pets bring joy to your love life. Embrace the warmth.',
+        'Your capacity for love is oceanic. Don\'t be afraid to dive deep.'
+      ], career:[
+        'Your empathetic leadership style earns team loyalty. Lead with heart.',
+        'A home-based work opportunity or remote arrangement boosts productivity.',
+        'Financial security motivates you today. Review savings and long-term plans.',
+        'Your attention to team dynamics prevents a workplace conflict.',
+        'Nurturing a colleague\'s potential leads to mutual growth.',
+        'A property or real estate matter resolves in your favor.',
+        'Your memory for details gives you an edge in negotiations.',
+        'Creating a comfortable workspace enhances your output significantly.',
+        'Your instinct about a business opportunity proves correct. Trust it.',
+        'Supporting a struggling teammate reflects well on your character.',
+        'A family business or home-based career feels increasingly right.',
+        'Your ability to sense office moods helps you navigate politics.',
+        'Patience with a slow-moving project yields a quality result.',
+        'A career involving care, food, or home resonates deeply with you.',
+        'Your loyalty to your employer or clients builds lasting professional trust.',
+        'A financial decision based on emotional security brings peace of mind.',
+        'Your organizational skills keep projects on track and on budget.',
+        'Working behind the scenes suits your temperament today. Support others.',
+        'A mentorship role reveals your natural teaching ability.',
+        'Your work-life integration approach inspires colleagues to find balance.'
+      ], health:[
+        'Emotional eating tempts you today. Pause and ask: am I hungry or hurting?',
+        'Your stomach and chest area are sensitive. Gentle exercise helps.',
+        'A warm bath or hot tea soothes your nervous system beautifully.',
+        'Lunar cycles affect your energy. Rest more during the waning moon.',
+        'Water-based activities — swimming, baths, sea air — heal your spirit.',
+        'Emotional health requires expression. Journal or talk to someone trusted.',
+        'Your body stores emotions. A massage or bodywork session releases tension.',
+        'Comfort routines support your well-being. Stick to familiar self-care rituals.',
+        'Avoid suppressing feelings. They manifest physically when ignored.',
+        'A cozy night in recharges your social battery. Honor your need for solitude.',
+        'Hydration with herbal teas calms your sensitive digestive system.',
+        'Your immune system benefits from emotional warmth and connection.',
+        'Gentle movement like tai chi or walking suits your energy today.',
+        'Moon-phase awareness helps you plan high and low energy days.',
+        'Home-cooked meals nourish you more than restaurant food today.',
+        'Crying is healthy. Let the tears flow if they come.',
+        'Your body speaks clearly — headaches may signal emotional overload.',
+        'Nighttime routines matter most for you. Create a soothing ritual.',
+        'Grounding practices — holding stones, walking on earth — center you.',
+        'Protect your energy. It\'s okay to say no to draining situations.'
+      ]},
+      /* Leo */
+      { love:[
+        'Your magnetic presence lights up every room. Romance follows wherever you go.',
+        'A grand romantic gesture delights your partner. Go big or go home.',
+        'Your generosity in love inspires devotion. Give freely from the heart.',
+        'A spotlight moment in your relationship reminds both of you why you chose each other.',
+        'Your warmth melts any ice in a cold relationship. Lead with affection.',
+        'Flirtation comes naturally today. Your confidence is deeply attractive.',
+        'A creative date idea strengthens your bond. Think outside the ordinary.',
+        'Your loyalty to loved ones is legendary. Let them know they\'re cherished.',
+        'Pride sometimes blocks apology. Swallow it today and make peace.',
+        'Your theatrical side adds spark to romance. Surprise with a performance.',
+        'Admiration flows both ways. Notice what your partner does for you too.',
+        'A social event becomes a romantic stage. Shine together.',
+        'Your protective nature makes others feel safe. Balance strength with softness.',
+        'Laughter and play keep love alive. Don\'t take everything so seriously.',
+        'A heartfelt letter or declaration moves someone deeply.',
+        'Your charm offensive wins over even the skeptics. Use your powers wisely.',
+        'Today favors public displays of affection — let the world see your love.',
+        'Your need for admiration is valid. Ask for what you need directly.',
+        'A love that challenges you to grow is worth keeping. Embrace the lesson.',
+        'Your heart is bigger than your ego. Let it lead today.'
+      ], career:[
+        'Your leadership is in the spotlight. Rise to the occasion with grace.',
+        'A creative project showcases your talents. Pour your best into it.',
+        'Recognition for past work arrives. Accept compliments graciously.',
+        'Your natural authority commands respect in meetings. Use your voice.',
+        'A bold career move pays off. The spotlight favors the prepared.',
+        'Delegation is key — trust your team to handle details while you set direction.',
+        'Your enthusiasm for a project is infectious. Rally the troops.',
+        'A presentation or pitch demands your theatrical flair. Rehearse well.',
+        'Financial rewards follow visibility. Make sure your work is seen.',
+        'Mentoring others reflects your leadership legacy. Invest in people.',
+        'Your creative vision drives innovation. Don\'t let practicality dim it.',
+        'A competition or ranking motivates you. Channel the drive positively.',
+        'Your brand — personal or professional — strengthens today. Curate it.',
+        'Taking calculated risks in your career yields outsized rewards.',
+        'Your generosity with credit and praise builds lasting team loyalty.',
+        'A project you champion from the start becomes a major success.',
+        'Your ability to inspire others is your greatest professional asset.',
+        'Public speaking opportunities arise. Prepare and deliver with confidence.',
+        'Your work deserves to be celebrated. Don\'t downplay your achievements.',
+        'A career in entertainment, leadership, or creative fields feels especially aligned today.'
+      ], health:[
+        'Your cardiovascular system thrives on dance and cardio. Get moving!',
+        'The sun energizes you — get outdoor exposure early in the day.',
+        'Your heart and back need attention. Posture and cardio are key.',
+        'Your big personality needs physical outlets. Intense workouts satisfy.',
+        'Hydration supports your radiant skin. Drink water and glow.',
+        'Pride may prevent you from admitting a health concern. Don\'t delay.',
+        'Your energy peaks in late morning. Schedule demanding tasks then.',
+        'A fun group exercise class suits your social nature perfectly.',
+        'Vitamin D from sunlight boosts your mood and immune system.',
+        'Your spine benefits from stretching and core strengthening exercises.',
+        'Rest days are hard for you, but they prevent burnout. Schedule them.',
+        'Laughter and joy are literal medicine for your constitution.',
+        'A health goal becomes achievable when you make it a performance.',
+        'Your circulation benefits from movement. Avoid sitting for too long.',
+        'Creative expression through dance or music heals body and soul.',
+        'A bold commitment to fitness — sign up for that race or class.',
+        'Your body responds well to阳光 and warmth. Seek both today.',
+        'Overexertion risks injury. Push hard but know your limits.',
+        'Your radiant health inspires others. Share your wellness routine.',
+        'Sunscreen and self-care are acts of self-respect, not vanity.'
+      ]},
+      /* Virgo */
+      { love:[
+        'Small, thoughtful gestures speak louder than grand declarations today.',
+        'Your analytical eye notices what others miss — and a partner appreciates the attention to detail.',
+        'Improving a relationship through practical changes brings satisfying results.',
+        'A clean, organized space sets the mood for romance. Tidy up and invite someone over.',
+        'Your desire to help is endearing. Don\'t overdo it — let love be imperfect.',
+        'A health or wellness activity shared with a partner deepens your bond.',
+        'Your critical eye softens when you focus on gratitude. Name three things you love.',
+        'Practical love — fixing things, planning meals — is your love language. Own it.',
+        'A Virgo in love shows it through service. Let your actions speak.',
+        'Perfectionism can hinder romance. Today, embrace the beautifully imperfect.',
+        'A detailed compliment means more than a generic one. Be specific.',
+        'Shared routines create intimate rituals. Morning coffee together, evening walks.',
+        'Your modesty hides a deep well of passion. Let it surface today.',
+        'A disagreement over habits leads to productive compromise. Talk specifics.',
+        'Your love is steady and reliable. In a world of chaos, that\'s priceless.',
+        'A handwritten note or organized plan shows love in your language.',
+        'Trust your analytical nature to assess a relationship honestly.',
+        'Your nurturing through practical help is a profound form of love.',
+        'Today favors quiet intimacy over loud declarations. Savor the subtle.',
+        'Perfection is the enemy of good love. Accept your partner\'s quirks joyfully.'
+      ], career:[
+        'Your eye for detail catches an error before it becomes a problem. Heroic work.',
+        'An organized system you create saves the team hours. Your methods are gold.',
+        'Quality control is your superpower. Apply it to a project today.',
+        'A meticulous approach to a report or analysis impresses leadership.',
+        'Your health or service-oriented work makes a tangible difference today.',
+        'Proofreading, editing, or reviewing — your skills shine in quality assurance.',
+        'A methodical plan outperforms a rushed effort. Patience pays.',
+        'Your constructive criticism improves a team product. Frame it kindly.',
+        'A career in data, health, or logistics feels especially aligned today.',
+        'Your reliability makes you indispensable. Document your processes.',
+        'An improvement suggestion you\'ve been holding back is well-received. Share it.',
+        'Your work ethic sets the standard. Others follow your example.',
+        'A small efficiency gain compounds into significant savings. Track the numbers.',
+        'Your analytical skills solve a problem no one else could crack.',
+        'Perfectionism serves you well — but know when good enough is enough.',
+        'A structured approach to learning a new skill accelerates your growth.',
+        'Your ability to improve systems is increasingly valuable. Highlight it.',
+        'A health or wellness initiative at work benefits from your expertise.',
+        'Meticulous documentation saves you (and others) from future confusion.',
+        'Your quiet contribution deserves recognition. Make your work visible.'
+      ], health:[
+        'Your digestive system is sensitive today. Eat light, fresh, and regular.',
+        'Perfectionism in fitness leads to overtraining. Moderate your intensity.',
+        'A health tracking app or journal helps you optimize your routine.',
+        'Your analytical approach to health yields real results. Track the data.',
+        'Small dietary changes accumulate into significant improvements over time.',
+        'Nervous tension manifests as stomach issues. Practice belly breathing.',
+        'A clean diet supports your naturally sensitive system. Whole foods win.',
+        'Your routine-focused nature thrives with a structured fitness plan.',
+        'Stress management is key — yoga or meditation prevents physical symptoms.',
+        'Your body sends clear signals. The challenge is listening instead of analyzing.',
+        'A health goal benefits from measurable milestones. Set small targets.',
+        'Gut health is central to your well-being. Consider probiotics or fermented foods.',
+        'Overthinking disrupts sleep. A calming bedtime routine helps enormously.',
+        'Your precision in meal planning pays off nutritionally. Keep planning.',
+        'Light exercise — walking, stretching — suits your energy better than intense HIIT today.',
+        'A health concern deserves professional attention. Don\'t research — consult.',
+        'Your skin, intestines, and nervous system are linked. Care for all three.',
+        'A wellness retreat or spa day is not indulgent — it\'s necessary.',
+        'Allergies or sensitivities may flare. Avoid known triggers today.',
+        'Your methodical approach to health is your greatest asset. Trust it.'
+      ]},
+      /* Libra */
+      { love:[
+        'Harmony in love requires effort from both sides. Lead by example today.',
+        'An aesthetic setting — flowers, candles, music — elevates your romantic mood.',
+        'Your charm and diplomacy smooth over any relationship rough patches.',
+        'Partnership is your love language. Make decisions together, not alone.',
+        'A beautiful exchange of ideas with a lover satisfies your intellectual heart.',
+        'Balance in giving and receiving makes love sustainable. Check the scales.',
+        'Your sense of fairness prevents resentment from building. Address issues early.',
+        'Romance blooms in social settings. A party or gathering brings connection.',
+        'Your ability to see both sides makes you a compassionate partner.',
+        'A romantic gesture — not too much, not too little — hits the perfect note.',
+        'Conflict resolution is your forte. Use it to strengthen a bond today.',
+        'Beauty surrounds you. Notice it with a loved one and share the moment.',
+        'Your diplomatic nature avoids unnecessary arguments. Choose peace.',
+        'A partnership decision requires balance. Weigh both sides carefully.',
+        'Your elegance and grace are deeply attractive. Carry yourself with poise.',
+        'Love requires compromise. Find the middle ground without losing yourself.',
+        'An art or culture date satisfies both your romantic and intellectual sides.',
+        'Your need for harmony sometimes means avoiding necessary conflict. Face it today.',
+        'A balanced relationship allows both partners to shine equally.',
+        'Your romantic idealism inspires. Keep believing in beautiful love.'
+      ], career:[
+        'Your diplomatic skills resolve a workplace conflict gracefully.',
+        'An aesthetically pleasing presentation or workspace reflects your brand.',
+        'Partnerships and collaborations thrive under your balanced leadership.',
+        'Your ability to see all sides makes you an excellent mediator.',
+        'Fair treatment of colleagues builds trust and loyalty across the team.',
+        'A creative project benefits from your refined taste and eye for design.',
+        'Negotiations go smoothly when you seek win-win outcomes.',
+        'Your social skills open doors in professional networking.',
+        'A decision paralysis is resolved by listing pros and cons systematically.',
+        'Your sense of justice speaks up for an overlooked colleague.',
+        'Art, design, or diplomacy-related work aligns perfectly with your strengths.',
+        'A partnership or joint venture shows promise. Vet the details carefully.',
+        'Your ability to present information attractively adds value to any project.',
+        'Balance between work demands and personal life requires conscious effort today.',
+        'A legal or contractual matter benefits from your careful review.',
+        'Your charm wins over a skeptical client or stakeholder.',
+        'Creating beauty in your work environment boosts your productivity.',
+        'A team role that leverages your social and diplomatic skills emerges.',
+        'Your fairness earns respect even from competitors.',
+        'An opportunity to bring opposing sides together showcases your talent.'
+      ], health:[
+        'Balance is your health motto. Avoid extremes in diet or exercise.',
+        'Kidney and lower back health benefits from adequate hydration.',
+        'An elegant workout — Pilates, ballet, or swimming — suits your refined nature.',
+        'Mental equilibrium requires physical balance. Try balancing poses in yoga.',
+        'Social wellness matters to you. Group fitness or walking with friends helps.',
+        'A beautiful environment supports your well-being. Declutter your space.',
+        'Decision fatigue manifests physically. Simplify choices where possible.',
+        'Your body craves harmony. Avoid stimulants that create internal imbalance.',
+        'A spa day or beauty treatment is therapeutic, not vanity.',
+        'Sleep quality improves when your bedroom aesthetic is pleasing.',
+        'Kidney health is your weak point. Drink water and reduce sodium.',
+        'An even keel in exercise prevents injury. Moderate, consistent effort wins.',
+        'Your sensitivity to environments means noise and chaos drain you. Find calm.',
+        'Posture awareness prevents back pain — sit and stand with alignment.',
+        'A balanced meal plan — neither too much nor too little — sustains you.',
+        'Fresh flowers or plants in your space boost your mood and air quality.',
+        'Your constitution benefits from a balanced approach to supplements.',
+        'Mental health improves with beauty — art, music, nature. Engage with them.',
+        'An allergy or sensitivity may flare. Check environmental triggers.',
+        'Inner balance reflects outer health. Meditate for 10 minutes today.'
+      ]},
+      /* Scorpio */
+      { love:[
+        'Your intensity creates profound intimacy. Not everyone can handle your depth — and that\'s okay.',
+        'Trust is earned slowly. Today you assess whether a connection deserves your vulnerability.',
+        'Passion runs deep in your relationships. Channel it with intention.',
+        'A secret shared builds unbreakable trust. Be the safe harbor someone needs.',
+        'Your magnetic allure draws admirers. Choose wisely who gets close.',
+        'Emotional honesty transforms a surface-level connection into something real.',
+        'Your jealousy signals a need for reassurance. Communicate it without accusation.',
+        'A transformative conversation changes the trajectory of a relationship.',
+        'Your loyalty is fierce — and so are your boundaries. Both are valid.',
+        'Physical chemistry is powerful today. Let it deepen into emotional connection.',
+        'Letting go of control in love frees you to experience genuine intimacy.',
+        'Your detective nature uncovers hidden truths. Use this wisely, not destructively.',
+        'A phoenix-like renewal in love is possible. Release what no longer serves.',
+        'Your vulnerability is strength. Let someone see behind the mask.',
+        'Intensity without depth is just drama. Seek the substance beneath the surface.',
+        'Forgiveness liberates you. Release a grudge and feel the weight lift.',
+        'Your passion inspires devotion. A partner feels truly seen by you.',
+        'Mystery attracts, but consistency builds lasting love. Balance both.',
+        'A deep emotional healing occurs through honest heart-to-heart dialogue.',
+        'Your capacity for transformation makes every relationship a journey of growth.'
+      ], career:[
+        'Your investigative nature uncovers hidden information. Trust your research instincts.',
+        'A financial matter requires deep analysis. Dig into the numbers.',
+        'Your intensity and focus produce exceptional results on complex projects.',
+        'A career involving research, investigation, or transformation suits you.',
+        'Your ability to see beneath surfaces reveals opportunities others miss.',
+        'Power dynamics at work require careful navigation. Stay strategic.',
+        'A secret or inside information gives you an edge. Use it ethically.',
+        'Your capacity for total focus is rare. Block out distractions and dive deep.',
+        'A transformation in your career direction feels overdue. Embrace the change.',
+        'Your resourcefulness solves a problem that stumped everyone else.',
+        'Financial strategy — investments, debt reduction, or budgeting — benefits your focus today.',
+        'Your intensity can overwhelm colleagues. Moderate your delivery.',
+        'A career in psychology, finance, or crisis management leverages your strengths.',
+        'Trust your instincts about a business deal. Your radar is sharp.',
+        'Letting go of a grudge frees mental energy for productive work.',
+        'Your loyalty to a project or cause inspires others to commit fully.',
+        'A difficult conversation at work leads to breakthrough understanding.',
+        'Your ability to work in crisis situations is a rare professional gift.',
+        'An audit or review of your work reveals strengths you hadn\'t recognized.',
+        'Your professional transformation is underway. Trust the process.'
+      ], health:[
+        'Your intense emotions affect physical health. Process feelings before they become symptoms.',
+        'Reproductive and eliminative system health deserves attention today.',
+        'A detox or cleanse supports your body\'s natural renewal process.',
+        'Your body stores trauma. Therapeutic bodywork can release deep tension.',
+        'Avoid extremes in diet. Your all-or-nothing nature needs moderation.',
+        'Your regenerative power is strong. Your body recovers remarkably from illness.',
+        'Emotional suppression manifests as physical tension. Express, don\'t repress.',
+        'A crisis in health is unlikely but possible if you ignore warning signs. Get checkups.',
+        'Your intense focus on fitness can become obsessive. Keep it balanced.',
+        'Sleep is essential for your emotional regulation. Prioritize 7-9 hours.',
+        'Your constitution benefits from root vegetables and protein-rich foods.',
+        'Water-based exercise — swimming, water therapy — heals you deeply.',
+        'A psychological health practice (therapy, journaling) supports physical well-being.',
+        'Your body is resilient but not invincible. Respect its limits.',
+        'Deep breathing exercises are especially powerful for your type. Practice daily.',
+        'Avoid holding grudges — they literally poison your system. Forgive and release.',
+        'A health scare may prompt positive lifestyle changes. Respond, don\'t panic.',
+        'Your sensitivity to toxins means clean food and clean air matter more to you.',
+        'Transformation is your theme — use it to shed unhealthy habits permanently.',
+        'Your healing journey is ongoing. Celebrate every step forward.'
+      ]},
+      /* Sagittarius */
+      { love:[
+        'Adventure together strengthens your bond. Plan an exciting outing with a loved one.',
+        'Your free spirit needs a partner who celebrates your independence.',
+        'Honesty — even when blunt — is your relationship foundation. Don\'t compromise on truth.',
+        'A philosophical conversation with a lover deepens your connection.',
+        'Travel or cultural experiences bring you closer to a partner.',
+        'Your optimism about love inspires hope in a cynical world.',
+        'Freedom and love can coexist. Communicate your needs for space.',
+        'A shared belief system or spiritual practice unites you with a partner.',
+        'Your humor deflects tension. Use it to lighten heavy moments, not avoid them.',
+        'An international connection or cross-cultural romance excites you today.',
+        'Flirtation with a stranger sparks intellectual chemistry. Follow the conversation.',
+        'Your adventurous spirit is your most attractive quality. Let it shine.',
+        'A debate with a lover becomes a passionate exchange. Enjoy the fire.',
+        'Your honesty about what you want prevents misunderstandings later.',
+        'Long-distance love feels less daunting today. Technology bridges the gap.',
+        'A new relationship lesson comes through a challenging but meaningful experience.',
+        'Your love of learning extends to learning about your partner. Stay curious.',
+        'Independence in a relationship doesn\'t mean distance. Find the balance.',
+        'A spontaneous romantic gesture delights someone who appreciates your energy.',
+        'Your expansive heart has room for many forms of love. Celebrate them all.'
+      ], career:[
+        'Your big-picture thinking inspires a team stuck in the weeds.',
+        'An international or cross-cultural opportunity expands your horizons.',
+        'Your enthusiasm for a project motivates everyone around you.',
+        'A teaching or mentoring role leverages your love of sharing knowledge.',
+        'Travel-related or academic work aligns perfectly with your strengths today.',
+        'Your optimism prevents a team morale crisis. Keep spirits high.',
+        'A bold career move — a new field, a startup, a pivot — calls to you.',
+        'Your ability to connect disparate ideas leads to innovative solutions.',
+        'Philosophy, publishing, or education sectors offer fulfilling opportunities.',
+        'Your honesty in professional feedback, though sometimes blunt, earns respect.',
+        'A legal, ethical, or philosophical matter at work requires your perspective.',
+        'Your independent work style needs the right environment to thrive.',
+        'An adventure — physical or intellectual — recharges your professional creativity.',
+        'A career with travel or variety prevents the stagnation you fear most.',
+        'Your ability to inspire through storytelling is a powerful professional tool.',
+        'A risk you took earlier starts to pay dividends. Keep the faith.',
+        'Your love of truth exposes a problem that others overlooked. Report it.',
+        'Professional development through courses or travel enhances your marketability.',
+        'Your restless energy finds focus when aligned with a meaningful mission.',
+        'A career that lets you explore — literally or figuratively — keeps you alive.'
+      ], health:[
+        'Outdoor exercise in wide-open spaces heals your restless spirit.',
+        'Your hips and thighs are your astrological weak points. Stretch them daily.',
+        'Travel or adventure activities keep you physically and mentally fit.',
+        'Your optimistic approach to health means you bounce back quickly from setbacks.',
+        'Overindulgence tempts you today. Enjoy but maintain moderation.',
+        'A long hike or outdoor workout satisfies your need for freedom and movement.',
+        'Your liver and gallbladder need attention. Limit alcohol and rich foods.',
+        'Variety in exercise prevents boredom. Try a new sport or activity today.',
+        'Your enthusiasm for fitness can lead to overexertion. Pace yourself.',
+        'Vitamin D and fresh air are essential for your well-being.',
+        'A health routine with flexibility suits you better than a rigid schedule.',
+        'Your body handles exertion well but neglects subtle signals. Pay attention.',
+        'An adventurous meal — international cuisine — delights your senses.',
+        'Your natural vitality is high, but don\'t take it for granted.',
+        'Outdoor sports — running, cycling, skiing — are your natural habitat.',
+        'A health philosophy or wellness belief system guides your choices today.',
+        'Your body heals fast when given proper rest and nutrition.',
+        'Impulse health decisions (extreme diets) backfire. Think long-term.',
+        'A fitness challenge or goal gives your competitive nature a healthy outlet.',
+        'Your spirit needs as much nourishment as your body. Seek both.'
+      ]},
+      /* Capricorn */
+      { love:[
+        'Steady commitment speaks louder than passionate promises. Show up consistently.',
+        'A partner values your reliability above flashy romance. Don\'t change that.',
+        'Your ambition sometimes overshadows love. Make time for what matters.',
+        'A quiet evening together deepens a bond more than any adventure.',
+        'Your reserved nature hides deep feelings. Let a trusted person in.',
+        'Long-term love goals align with your life plan. Discuss the future together.',
+        'A practical expression of love — fixing, building, providing — is your strength.',
+        'Patience in love yields lasting results. Don\'t rush what matters.',
+        'An older or more mature partner appeals to your serious nature.',
+        'Your loyalty is unquestionable. A partner feels deeply secure with you.',
+        'Emotional walls protect but also isolate. Let them soften today.',
+        'Shared career ambitions unite you with a partner. Dream together.',
+        'Your traditional values in love are refreshing in a casual dating world.',
+        'A disagreement over money or status is resolved through mature dialogue.',
+        'Your love language is acts of service. Express it generously today.',
+        'A relationship milestone approaches. Celebrate with quiet sophistication.',
+        'Your discipline extends to love — and it\'s more romantic than you think.',
+        'Vulnerability doesn\'t weaken you. It deepens every connection.',
+        'A love that challenges your ambition makes you more complete.',
+        'Your enduring love stands the test of time. That\'s your gift.'
+      ], career:[
+        'Your long-term career strategy pays off today. The climb is worth it.',
+        'A promotion or leadership opportunity confirms your hard work.',
+        'Your discipline and structure are the backbone of team success.',
+        'A financial milestone approaches. Stay focused on the goal.',
+        'Mentoring a junior colleague reflects your leadership legacy.',
+        'Your reputation for reliability opens doors that talent alone cannot.',
+        'A career in management, finance, or infrastructure suits your strengths.',
+        'Your ability to delay gratification produces superior professional outcomes.',
+        'A challenging project tests your resilience. You emerge stronger.',
+        'Your organizational skills keep complex operations running smoothly.',
+        'An investment in professional development yields long-term career returns.',
+        'Your ambition is admirable — but balance it with present-moment appreciation.',
+        'A traditional approach to business proves more effective than trendy methods.',
+        'Your financial acumen prevents a costly mistake. Trust your analysis.',
+        'Career setbacks are temporary. Your persistence overcomes every obstacle.',
+        'A position of authority feels natural. Lead with both strength and compassion.',
+        'Your structured approach to goal-setting produces measurable results.',
+        'A career pivot at mid-life is not failure — it\'s strategic reinvention.',
+        'Your work ethic inspires a generation. Keep setting the standard.',
+        'Retirement planning benefits from your natural long-term thinking. Start early.'
+      ], health:[
+        'Your bones, joints, and knees need attention. Weight-bearing exercise strengthens them.',
+        'Your disciplined approach to health creates lasting results.',
+        'Stress from ambition manifests as tension in joints and skin. Address it.',
+        'A structured fitness plan suits your methodical nature perfectly.',
+        'Your constitution ages well when you maintain consistent healthy habits.',
+        'Skincare and bone health are worth investing in early. Start today.',
+        'Overwork leads to physical breakdown. Schedule rest like you schedule meetings.',
+        'Your body handles stress well — until it doesn\'t. Prevent the crash.',
+        'A health check-up is overdue. Book it and follow through.',
+        'Cold weather or cold conditions affect your joints. Stay warm and mobile.',
+        'Your natural endurance supports long, sustained workouts. Marathon, not sprint.',
+        'A disciplined diet without deprivation is your sustainable path to health.',
+        'Your skin reflects your stress levels. Gentle care and relaxation help.',
+        'Knee and joint pain signals overuse. Modify your exercise routine.',
+        'Your health improves with consistency rather than intensity. Slow and steady.',
+        'A career-related health concern deserves proactive attention. Don\'t ignore it.',
+        'Your body benefits from calcium-rich foods and regular bone-strengthening exercise.',
+        'Retirement health planning starts now. Build habits that last.',
+        'Your serious approach to wellness is an asset. Trust the process.',
+        'A health mentor or coach accelerates your progress. Seek guidance.'
+      ]},
+      /* Aquarius */
+      { love:[
+        'Your unique approach to love attracts someone who values authenticity.',
+        'Friendship-based love is your foundation. Build romance on genuine connection.',
+        'Your independence in love is refreshing — but don\'t use it as a shield.',
+        'An intellectual spark lights the flame. Stimulate a partner\'s mind.',
+        'Your unconventional ideas about relationships break free from outdated norms.',
+        'A cause or mission shared with a partner unites you deeply.',
+        'Emotional detachment sometimes confuses lovers. Communicate your feelings.',
+        'Technology connects you with someone special. Online chemistry is real.',
+        'Your humanitarian heart loves humanity — but don\'t forget the individual.',
+        'A friendship evolves into something deeper. Let it unfold naturally.',
+        'Your need for space is valid. Choose a partner who respects it.',
+        'A group activity or community event brings a romantic connection.',
+        'Your eccentricity is your charm. The right person celebrates it.',
+        'A philosophical debate with a lover is your version of pillow talk.',
+        'Future-oriented love appeals to your visionary nature. Dream together.',
+        'Your loyalty to ideals sometimes overshadows loyalty to people. Balance both.',
+        'An unexpected emotional surge reminds you that you\'re human after all.',
+        'A love that respects your individuality is the only love worth keeping.',
+        'Your progressive values inspire a partner to grow and evolve.',
+        'Love and freedom are not opposites. Find a relationship that proves it.'
+      ], career:[
+        'Your innovative ideas disrupt the status quo. Present them boldly.',
+        'A technology or humanitarian project aligns perfectly with your values.',
+        'Your independent work style flourishes with the right structure.',
+        'A group or team benefits from your visionary perspective.',
+        'Your ability to see future trends gives you a competitive edge.',
+        'A career change or pivot reflects your evolving identity. Embrace it.',
+        'Your unconventional approach to problems produces breakthrough solutions.',
+        'Networking with diverse groups expands your professional opportunities.',
+        'A cause-driven career gives your work deeper meaning today.',
+        'Your objectivity prevents emotional decisions from clouding judgment.',
+        'Technology skills or digital fluency enhance your professional value.',
+        'A collaborative project showcases your ability to unite diverse talents.',
+        'Your progressive ideas sometimes need practical grounding. Find a detail-oriented partner.',
+        'A career in science, technology, or social reform leverages your strengths.',
+        'Your independence can isolate you professionally. Build bridges deliberately.',
+        'An unexpected career opportunity aligns with your long-term vision.',
+        'Your ability to remain calm under pressure stabilizes team dynamics.',
+        'A personal project or side hustle gains traction. Invest time wisely.',
+        'Your humanitarian values drive professional decisions. Lead with purpose.',
+        'Future-focused planning today prevents tomorrow\'s professional crises.'
+      ], health:[
+        'Your circulatory system and ankles need attention. Stay active but careful.',
+        'Unconventional health approaches appeal to you. Research before trying.',
+        'Your body thrives on variety. Change your workout routine regularly.',
+        'Anxiety or nervous energy requires physical release. Move your body.',
+        'Your health benefits from community — join a group fitness class.',
+        'Tech-related eye strain is a risk today. Follow screen-time guidelines.',
+        'Your independent health approach works — but professional guidance adds value.',
+        'An unusual health remedy catches your attention. Evaluate with skepticism.',
+        'Your nervous system is highly sensitive. Reduce stimulants and noise.',
+        'Ankle injuries are a risk. Warm up properly and wear supportive shoes.',
+        'Your health improves with forward-thinking choices. Invest in prevention.',
+        'A digital detox benefits your mental and physical well-being today.',
+        'Your body processes information rapidly. Give it time to rest and digest.',
+        'An innovative health gadget or app interests you. Test it thoughtfully.',
+        'Your energy fluctuates. Use peak times for demanding tasks.',
+        'Social wellness matters — isolation negatively impacts your health.',
+        'A health decision based on data and logic serves you better than emotion.',
+        'Your constitution handles cold better than heat. Dress warmly in winter.',
+        'An air quality or environmental factor affects your breathing. Adjust accordingly.',
+        'Your long-term health vision is clear. Execute the daily steps today.'
+      ]},
+      /* Pisces */
+      { love:[
+        'Your empathic heart absorbs a partner\'s emotions. Protect your energy.',
+        'Romance flows naturally when you surrender to the moment. Let it happen.',
+        'Your intuitive understanding of a lover\'s needs is almost psychic.',
+        'A shared creative or spiritual practice deepens your bond beautifully.',
+        'Your compassionate nature attracts a partner who needs tenderness.',
+        'Boundaries in love are not walls — they\'re bridges to healthier connection.',
+        'Your dreamy nature inspires romantic poetry. Write it, share it, live it.',
+        'A water-based date — beach, boat, pool — nourishes your soul.',
+        'Your sacrifice for love sometimes goes too far. Preserve yourself.',
+        'Emotional intimacy matters more than physical to you today. Honor that.',
+        'A mystical or spiritual connection transcends ordinary romance.',
+        'Your imagination in love creates magical experiences. Use it generously.',
+        'A past love teaches a valuable lesson. Thank it and move forward.',
+        'Your gentle nature heals a wounded heart — including your own.',
+        'Fantasy and reality in love need balance. Ground your dreams in action.',
+        'Your love of music or art shared with a partner creates beautiful memories.',
+        'A Pisces in love gives everything. Make sure you receive too.',
+        'Your psychic sensitivity picks up on unspoken feelings. Trust your gut.',
+        'An emotional release — tears, laughter, both — cleanses your love life.',
+        'Your capacity for unconditional love is your greatest romantic gift.'
+      ], career:[
+        'Your creative imagination produces work that moves people emotionally.',
+        'A career in art, music, healing, or spirituality aligns with your soul.',
+        'Your intuitive approach to business decisions yields surprising success.',
+        'A compassionate workplace role — counseling, caregiving — fulfills you deeply.',
+        'Your ability to sense team moods makes you an emotional intelligence leader.',
+        'A creative project flourishes when you trust your instincts over logic.',
+        'Your sensitivity to environments means you need the right workspace to thrive.',
+        'A humanitarian or charitable cause gives your work profound meaning.',
+        'Your artistic vision inspires colleagues. Share it without apology.',
+        'An escape into fantasy daydreams at work. Ground yourself with concrete tasks.',
+        'Your empathy makes you an exceptional negotiator — when protected by boundaries.',
+        'A healing profession suits your natural gifts. Consider expanding your skills.',
+        'Your connection to the unseen gives you insight others lack. Trust it.',
+        'A career change that aligns with your values brings genuine fulfillment.',
+        'Your sacrifice for the team is admirable but unsustainable. Set limits.',
+        'Creative collaboration amplifies your talent. Seek artistic partnerships.',
+        'Your ability to inspire through storytelling or art is professionally valuable.',
+        'A Pisces excels in roles requiring emotional intelligence and empathy.',
+        'Your idealism drives meaningful work. Don\'t let cynicism dampen it.',
+        'A spiritual or wellness business venture reflects your deepest purpose.'
+      ], health:[
+        'Your immune system is sensitive. Prioritize sleep and stress management.',
+        'Your feet are your astrological weak point. Foot massages and proper shoes help.',
+        'Escapism through substances is a risk. Choose healthier coping mechanisms.',
+        'Water therapy — swimming, baths, foot soaks — heals you deeply.',
+        'Your body absorbs others\' physical symptoms. Practice energetic boundaries.',
+        'Allergies and sensitivities require careful attention. Track triggers.',
+        'Your dream life is vivid. Journaling dreams improves self-understanding.',
+        'A holistic health approach — mind, body, spirit — serves you best.',
+        'Your sensitive nervous system needs calming activities: yoga, meditation, nature.',
+        'Alcohol and drugs affect you more strongly. Consume mindfully.',
+        'Your healing journey benefits from professional support. Seek a therapist or healer.',
+        'A compassionate self-care routine nurtures your body and soul.',
+        'Your immune system strengthens through emotional processing, not suppression.',
+        'A gentle, flowing exercise — tai chi, swimming, dance — suits your nature.',
+        'Your body sends emotional signals. Pain may be psychosomatic. Address the root.',
+        'Sea air or ocean proximity genuinely improves your well-being.',
+        'Your constitution benefits from plant-based, light, and nourishing foods.',
+        'Escapism in screens or sleep indicates unmet emotional needs. Face them.',
+        'Your psychic sensitivity affects your physical health. Ground yourself daily.',
+        'Compassion fatigue is real. Care for yourself with the same tenderness you offer others.'
+      ]}
+    ];
+
+    /* ---------- Chinese Zodiac Fortune Data ---------- */
+    var cNames = ['Rat','Ox','Tiger','Rabbit','Dragon','Snake','Horse','Goat','Monkey','Rooster','Dog','Pig'];
+    var cEmojis = ['🐀','🐂','🐅','🐇','🐉','🐍','🐎','🐐','🐒','🐓','🐕','🐖'];
+    var cElements = ['Water','Earth','Wood','Wood','Earth','Fire','Fire','Earth','Metal','Metal','Earth','Water'];
+
+    var cFortunes = [
+      /* Rat */
+      { love:[
+        'Your clever charm wins hearts. A witty conversation sparks romance today.',
+        'Your resourcefulness in love solves a relationship puzzle. Think creatively.',
+        'Social gatherings bring romantic opportunities. Be your sociable self.',
+        'A Rat\'s loyalty is fierce once earned. Show someone they can trust you.',
+        'Your quick wit saves an awkward romantic moment. Use your humor.',
+        'An old friend reveals unexpected feelings. Consider the possibility.',
+        'Your adaptability in love is a strength. Bend without breaking.',
+        'A small, thoughtful gesture means more than a grand one today.',
+        'Your observant nature notices a partner\'s unspoken need. Address it.',
+        'Financial security matters in your romantic choices. That\'s practical, not cold.',
+        'A romantic puzzle has a simple solution. Don\'t overthink it.',
+        'Your energy attracts a lively companion. Enjoy the spark.',
+        'Trust builds through consistency. Show up the same way every day.',
+        'A secret admirer may be closer than you think. Stay observant.',
+        'Your cleverness sometimes comes across as manipulative. Be genuine.',
+        'Love thrives when you share your authentic self, not your clever persona.',
+        'A deep conversation reveals unexpected compatibility. Pursue it.',
+        'Your curiosity about a partner keeps love fresh. Stay interested.',
+        'A family matter affects your love life. Handle it with diplomacy.',
+        'Tonight\'s stars favor romantic surprises. Plan something spontaneous.'
+      ], career:[
+        'Your networking skills open a professional door today.',
+        'A financial opportunity requires quick action. Trust your instincts.',
+        'Your clever problem-solving impresses a supervisor.',
+        'A Rat thrives in fast-paced environments. Seek dynamic projects.',
+        'Your attention to detail catches a costly error. Save the day.',
+        'A business partnership offers mutual benefit. Evaluate carefully.',
+        'Your adaptability helps you navigate a sudden workplace change.',
+        'Financial planning today prevents headaches tomorrow.',
+        'Your social intelligence navigates office politics gracefully.',
+        'A creative solution to an old problem earns recognition.',
+        'Your ambition is matched only by your resourcefulness. Aim high.',
+        'A negotiation goes in your favor when you stay sharp and alert.',
+        'Your ability to multitask impresses, but focus on priorities.',
+        'A mentor offers valuable career advice. Listen carefully.',
+        'Your quick learning ability picks up a new skill rapidly.',
+        'A career pivot toward finance or communication leverages your strengths.',
+        'Your competitiveness drives results — but avoid stepping on toes.',
+        'A collaborative project showcases your ability to unite diverse talents.',
+        'Your reputation for reliability grows with each successful delivery.',
+        'A bold career move — asking for a raise, taking a risk — pays off today.'
+      ], health:[
+        'Your active mind needs physical release. Exercise clears mental fog.',
+        'Nervous system sensitivity requires stress management today.',
+        'Your high metabolism needs regular, nourishing meals. Don\'t skip.',
+        'Sleep quality matters — create a calming bedtime routine.',
+        'A Rat\'s health benefits from moderate, consistent exercise.',
+        'Anxiety manifests as stomach issues. Practice belly breathing.',
+        'Your energetic nature benefits from both activity and rest.',
+        'Stress shows up as tension in your shoulders. Stretch regularly.',
+        'Mental stimulation through puzzles or games keeps your brain sharp.',
+        'Your sensitive constitution responds quickly to dietary changes.',
+        'Hydration supports your quick-thinking brain. Drink water consistently.',
+        'A calming activity — reading, bathing, meditating — soothes your nerves.',
+        'Your health improves with routine. Regular sleep, meals, and exercise.',
+        'Nervous energy benefits from physical outlets like walking or yoga.',
+        'A health concern deserves professional attention. Don\'t self-diagnose.',
+        'Your body processes food quickly. Eat smaller, more frequent meals.',
+        'Anxiety management is key to your long-term health. Develop coping tools.',
+        'Your skin and nervous system are linked. Care for both today.',
+        'A change of environment improves your mental and physical well-being.',
+        'Your natural vitality returns quickly when you prioritize self-care.'
+      ]},
+      /* Ox */
+      { love:[
+        'Your steadfast love provides a rock-solid foundation. Partners treasure this.',
+        'Patience in love pays off. The right connection is worth waiting for.',
+        'Your dependable nature is your greatest romantic strength.',
+        'A quiet evening together deepens a bond more than any adventure.',
+        'Your loyalty is unquestionable. A partner feels deeply secure with you.',
+        'Emotional expression doesn\'t come easily, but today rewards vulnerability.',
+        'A shared goal strengthens your romantic partnership. Plan something together.',
+        'Your strong work ethic extends to love. You show up, every single day.',
+        'Stubbornness creates unnecessary friction. Practice bending today.',
+        'A traditional romantic gesture — flowers, a handwritten note — delights.',
+        'Your calm presence soothes a partner\'s anxiety. Be their anchor.',
+        'Physical affection means more than words to you. Express it freely.',
+        'A disagreement over routine is resolved through compromise.',
+        'Your endurance in love weathers any storm. This relationship will last.',
+        'A family-oriented approach to love aligns with your deepest values.',
+        'Your reliability inspires trust. Don\'t underestimate its power.',
+        'A romantic milestone approaches. Celebrate with quiet confidence.',
+        'Your protective nature makes loved ones feel safe. Balance with gentleness.',
+        'Trust is earned slowly. Today, someone earns a little more of yours.',
+        'Your love language is consistency. Keep showing up.'
+      ], career:[
+        'Your methodical approach produces superior results. Quality over speed.',
+        'Financial discipline yields long-term rewards. Stay the course.',
+        'A steady climb up the career ladder suits your patient nature.',
+        'Your reliability makes you the team\'s backbone. Don\'t overextend.',
+        'A difficult task becomes manageable through systematic effort.',
+        'Your practical skills are in demand. Offer your expertise generously.',
+        'A promotion comes to those who wait — and work. Your time approaches.',
+        'Your calm demeanor defuses workplace tension. Leadership through composure.',
+        'A long-term investment in your career shows returns today.',
+        'Your organizational skills keep projects on track and on budget.',
+        'A negotiation goes well when you hold firm with quiet strength.',
+        'Your reputation for hard work

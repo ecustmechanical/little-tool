@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YWD0Z35ZZ9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-YWD0Z35ZZ9");
+</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kua Number Calculator — Feng Shui Lucky Directions | AstroLens</title>
+  <meta name="description" content="Free Kua Number calculator for Feng Shui. Find your lucky and unlucky directions based on birth year and gender.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://ecustmechanical.github.io/little-tool/free-tools/kua-number-calculator/"><!-- UPDATE-AT-DOMAIN -->
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+  <link rel="stylesheet" href="../../css/style.css">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="AstroLens">
+  <meta property="og:title" content="Kua Number Calculator — Feng Shui Lucky Directions | AstroLens">
+  <meta property="og:description" content="Find your Kua number and lucky Feng Shui directions. Free calculator using birth year and gender.">
+  <meta property="og:url" content="https://ecustmechanical.github.io/little-tool/free-tools/kua-number-calculator/">
+  <meta name="twitter:card" content="summary">
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org", "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ecustmechanical.github.io/little-tool/" },
+        { "@type": "ListItem", "position": 2, "name": "Free Tools", "item": "https://ecustmechanical.github.io/little-tool/free-tools/" },
+        { "@type": "ListItem", "position": 3, "name": "Kua Number Calculator", "item": "https://ecustmechanical.github.io/little-tool/free-tools/kua-number-calculator/" }
+      ]
+    },
+    {
+      "@context": "https://schema.org", "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What is a Kua number in Feng Shui?", "acceptedAnswer": { "@type": "Answer", "text": "The Kua number is a personal Feng Shui number calculated from your birth year and gender. It determines your lucky and unlucky compass directions, helping you orient your home, office and bed for best energy flow." } },
+        { "@type": "Question", "name": "How is the Kua number calculated?", "acceptedAnswer": { "@type": "Answer", "text": "Take the last two digits of your birth year, sum them to a single digit, then apply a gender- and century-specific formula. For males born before 2000 it is 10 minus that digit (mod 9). The exact formulas differ for males and females born before or after 2000." } },
+        { "@type": "Question", "name": "What is the difference between East Group and West Group?", "acceptedAnswer": { "@type": "Answer", "text": "East Group people (Kua 1, 3, 4, and males with Kua 5) benefit from directions in the east sector — Southeast, East, South and North. West Group people (Kua 2, 6, 7, 8, and females with Kua 5) benefit from the west sector — Northeast, West, Northwest and Southwest." } },
+        { "@type": "Question", "name": "What happens if my Kua number is 5?", "acceptedAnswer": { "@type": "Answer", "text": "Kua 5 is a special case with no assigned directions of its own. Males with Kua 5 use the Kua 2 (West Group) directions, while females with Kua 5 use the Kua 8 (West Group) directions." } }
+      ]
+    }
+  ]
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../../index.html">
+        <span class="brand-mark">✦</span>
+        <span class="brand-name">AstroLens<small>zodiac · numerology · tarot</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="../../zodiac/">Zodiac</a></li>
+          <li><a href="../../chinese-zodiac/">Chinese Zodiac</a></li>
+          <li><a href="../../free-tools/">Free Tools</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a class="cta-link" href="../../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section alt">
+      <div class="wrap">
+        <p><a href="../../">Home</a> › <a href="../">Free Tools</a> › Kua Number Calculator</p>
+        <p class="eyebrow">Feng Shui tool</p>
+        <h1>Kua Number Calculator</h1>
+        <p class="lead" style="max-width:52em;">Your Kua number (卦数) reveals the compass directions that bring you the most harmony and success in Feng Shui. Enter your birth year and gender below to discover your personal lucky directions.</p>
+      </div>
+    </section>
+
+    <section class="section tight">
+      <div class="wrap">
+        <div class="calc-grid">
+          <aside class="panel" style="position:sticky;top:76px;">
+            <div class="field">
+              <label for="k-year">1. Your birth year</label>
+              <input type="number" id="k-year" min="1000" max="2100" placeholder="e.g. 1990" aria-label="Birth year">
+              <div class="hint">Used to calculate your Kua number.</div>
+            </div>
+            <div class="field">
+              <label>2. Your gender</label>
+              <div style="display:flex;gap:12px;margin-top:6px;">
+                <label style="display:flex;align-items:center;gap:6px;cursor:pointer;font-weight:600;">
+                  <input type="radio" name="k-gender" value="male" id="k-male"> Male
+                </label>
+                <label style="display:flex;align-items:center;gap:6px;cursor:pointer;font-weight:600;">
+                  <input type="radio" name="k-gender" value="female" id="k-female"> Female
+                </label>
+              </div>
+              <div class="hint">Traditional Feng Shui uses gender in the Kua formula.</div>
+            </div>
+            <button class="btn" id="k-go" type="button">Calculate my Kua number</button>
+            <p class="small muted mt-2">Nothing is sent anywhere — this runs entirely in your browser.</p>
+          </aside>
+
+          <div id="k-out">
+            <div class="panel">
+              <p class="placeholder">Your Kua number and lucky directions will appear here. Enter your birth year and select your gender, then press <strong>Calculate</strong>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ad-slot" data-slot="tool-mid"></div>
+
+    <section class="section alt">
+      <div class="wrap prose">
+        <h2>How the Kua number is calculated</h2>
+        <p>The Kua number formula depends on your gender and whether you were born before or after the year 2000. Here are the four cases:</p>
+        <ul>
+          <li><strong>Male, born before 2000:</strong> (10 − digit sum) mod 9. If the result is 0, use 9.</li>
+          <li><strong>Male, born 2000 or later:</strong> (9 − digit sum) mod 9. If the result is 0, use 9.</li>
+          <li><strong>Female, born before 2000:</strong> (digit sum + 5) mod 9. If the result is 0, use 9.</li>
+          <li><strong>Female, born 2000 or later:</strong> (digit sum + 6) mod 9. If the result is 0, use 9.</li>
+        </ul>
+        <p>The <em>digit sum</em> is calculated by taking the last two digits of your birth year and summing them repeatedly until you get a single digit. For example, 1987 → 8 + 7 = 15 → 1 + 5 = 6.</p>
+        <p class="small muted">Kua 5 is a special case: males use the Kua 2 directions and females use the Kua 8 directions.</p>
+
+        <h2>Understanding East Group and West Group</h2>
+        <p>In Feng Shui, people are divided into two groups based on their Kua number:</p>
+        <ul>
+          <li><strong>East Group</strong> — Kua 1, 3, 4 (and Kua 5 males). Lucky directions: Southeast, East, South, North.</li>
+          <li><strong>West Group</strong> — Kua 2, 6, 7, 8 (and Kua 5 females). Lucky directions: Northeast, West, Northwest, Southwest.</li>
+        </ul>
+        <p>Knowing your group helps you arrange your living space — your bed, desk, or front door should ideally face one of your four lucky directions.</p>
+
+        <h2>Frequently asked questions</h2>
+        <div class="faq">
+          <details><summary>What is a Kua number in Feng Shui?</summary><p>The Kua number is a personal Feng Shui number calculated from your birth year and gender. It determines your lucky and unlucky compass directions, helping you orient your home, office and bed for best energy flow.</p></details>
+          <details><summary>How is the Kua number calculated?</summary><p>Take the last two digits of your birth year, sum them to a single digit, then apply a gender- and century-specific formula. For males born before 2000 it is 10 minus that digit (mod 9). The exact formulas differ for males and females born before or after 2000.</p></details>
+          <details><summary>What is the difference between East Group and West Group?</summary><p>East Group people (Kua 1, 3, 4, and males with Kua 5) benefit from directions in the east sector — Southeast, East, South and North. West Group people (Kua 2, 6, 7, 8, and females with Kua 5) benefit from the west sector — Northeast, West, Northwest and Southwest.</p></details>
+          <details><summary>What happens if my Kua number is 5?</summary><p>Kua 5 is a special case with no assigned directions of its own. Males with Kua 5 use the Kua 2 (West Group) directions, while females with Kua 5 use the Kua 8 (West Group) directions.</p></details>
+        </div>
+
+        <h2>Related tools</h2>
+        <div class="pill-row">
+          <a class="pill" href="../numerology-calculator/">Numerology Calculator</a>
+          <a class="pill" href="../tarot-reader/">Tarot Reader</a>
+          <a class="pill" href="../zodiac-compatibility/">Zodiac Compatibility</a>
+          <a class="pill" href="../iching/">I Ching Hexagram Generator</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <h4>AstroLens</h4>
+        <p class="blurb">Free zodiac sign profiles, numerology, compatibility and tarot tools. Every page written and checked by hand — with the method shown.</p>
+      </div>
+      <div>
+        <h4>Free tools</h4>
+        <ul>
+          <li><a href="../numerology-calculator/">Numerology Calculator</a></li>
+          <li><a href="../zodiac-compatibility/">Zodiac Compatibility</a></li>
+          <li><a href="../tarot-reader/">Tarot Reader</a></li>
+          <li><a href="../zodiac-sign-calculator/">Zodiac Sign Finder</a></li>
+          <li><a href="./">Kua Number Calculator</a></li>
+          <li><a href="../iching/">I Ching Hexagram Generator</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="../../zodiac/">Zodiac Signs</a></li>
+          <li><a href="../../chinese-zodiac/">Chinese Zodiac</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+          <li><a href="../../privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">© 2026 AstroLens · Content is for entertainment and self-reflection only.
+      <span class="disc">Not medical, psychological, legal or financial advice.</span>
+    </div>
+  </footer>
+
+  <script src="../../js/site-config.js"></script>
+  <script>
+  (function () {
+    /* === Kua Number Data === */
+    var KUA_DATA = {
+      1: { element: 'Water', group: 'East',  cn: '一白水星',
+        lucky: ['Southeast','East','South','North'],
+        unlucky: ['West','Northwest','Southwest','Northeast'],
+        career: 'North' },
+      2: { element: 'Earth', group: 'West', cn: '二黑土星',
+        lucky: ['Northeast','West','Northwest','Southwest'],
+        unlucky: ['South','North','East','Southeast'],
+        career: 'Southwest' },
+      3: { element: 'Wood', group: 'East',  cn: '三碧木星',
+        lucky: ['South','North','East','Southeast'],
+        unlucky: ['Northwest','Southwest','Northeast','West'],
+        career: 'East' },
+      4: { element: 'Wood', group: 'East',  cn: '四绿木星',
+        lucky: ['North','South','Southeast','East'],
+        unlucky: ['Southwest','Northeast','West','Northwest'],
+        career: 'South' },
+      5: { element: 'Earth', group: 'West', cn: '五黄土星',
+        lucky: null,  /* special case */
+        unlucky: null,
+        career: null,
+        note: 'Kua 5 is a special case. Males use Kua 2 directions; females use Kua 8 directions.' },
+      6: { element: 'Metal', group: 'West', cn: '六白金星',
+        lucky: ['West','Northeast','Southwest','Northwest'],
+        unlucky: ['East','Southeast','South','North'],
+        career: 'West' },
+      7: { element: 'Metal', group: 'West', cn: '七赤金星',
+        lucky: ['Northwest','Southwest','Northeast','West'],
+        unlucky: ['Southeast','East','North','South'],
+        career: 'Northwest' },
+      8: { element: 'Earth', group: 'West', cn: '八白土星',
+        lucky: ['Southwest','Northwest','West','Northeast'],
+        unlucky: ['North','South','Southeast','East'],
+        career: 'Northeast' },
+      9: { element: 'Fire',  group: 'West', cn: '九紫火星',
+        lucky: ['Northeast','Southwest','Northwest','West'],
+        unlucky: ['South','North','Southeast','East'],
+        career: 'Southwest' }
+    };
+
+    var DIR_CN = {
+      'North':'北','South':'南','East':'东','West':'西',
+      'Northeast':'东北','Northwest':'西北','Southeast':'东南','Southwest':'西南'
+    };
+
+    function digitSum(n) {
+      var s = String(n);
+      var last2 = +s.slice(-2);
+      while (last2 >= 10) {
+        var sum = 0;
+        var ds = String(last2);
+        for (var i = 0; i < ds.length; i++) sum += +ds[i];
+        last2 = sum;
+      }
+      return last2;
+    }
+
+    function calcKua(year, isMale) {
+      var d = digitSum(year);
+      var k;
+      if (year < 2000) {
+        k = isMale ? (10 - d) : (d + 5);
+      } else {
+        k = isMale ? (9 - d) : (d + 6);
+      }
+      k = k % 9;
+      if (k === 0) k = 9;
+      return k;
+    }
+
+    var out = document.getElementById('k-out');
+
+    document.getElementById('k-go').addEventListener('click', function () {
+      var yearVal = document.getElementById('k-year').value;
+      var year = parseInt(yearVal, 10);
+      var isMale = document.getElementById('k-male').checked;
+      var isFemale = document.getElementById('k-female').checked;
+
+      if (!year || year < 1000 || year > 2100) {
+        out.innerHTML = '<div class="panel"><p class="placeholder">Please enter a valid birth year (1000–2100).</p></div>';
+        return;
+      }
+      if (!isMale && !isFemale) {
+        out.innerHTML = '<div class="panel"><p class="placeholder">Please select your gender.</p></div>';
+        return;
+      }
+
+      var kua = calcKua(year, isMale);
+      var data = KUA_DATA[kua];
+      var effectiveKua = kua;
+      var effectiveData = data;
+
+      /* Kua 5 special case */
+      var kua5Group = null;
+      if (kua === 5) {
+        effectiveKua = isMale ? 2 : 8;
+        effectiveData = KUA_DATA[effectiveKua];
+        kua5Group = isMale ? 'East' : 'West';
+      }
+
+      var genderLabel = isMale ? 'Male' : 'Female';
+
+      /* Build result */
+      var html = '<div class="panel"><div class="result-box">' +
+        '<div class="sub">Your Kua Number</div>' +
+        '<div class="big">' + kua + (kua === 5 ? ' (→ ' + effectiveKua + ')' : '') + '</div>' +
+        '<div class="sub">' + data.cn + ' · ' + data.element + '</div>' +
+        '</div>';
+
+      /* Special note for Kua 5 */
+      if (kua === 5) {
+        html += '<div style="background:var(--accent-soft);border:1px solid #f0d88a;border-radius:10px;padding:14px 16px;margin:14px 0;">' +
+          '<p style="margin:0;font-weight:700;">⚠️ Kua 5 Special Case</p>' +
+          '<p style="margin:6px 0 0;font-size:15px;">Kua 5 has no directions of its own. As a ' + genderLabel.toLowerCase() + ', you are classified as <strong>' + kua5Group + ' Group</strong> but use the <strong>Kua ' + effectiveKua + '</strong> directions below.</p>' +
+          '</div>';
+      }
+
+      /* Element & Group */
+      var displayGroup = kua5Group || effectiveData.group;
+      html += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0;">' +
+        '<div class="lucky-item"><div class="lk-label">Element</div><div class="lk-val">' + effectiveData.element + '</div></div>' +
+        '<div class="lucky-item"><div class="lk-label">Group</div><div class="lk-val">' + displayGroup + ' Group</div></div>' +
+        '</div>';
+
+      /* Lucky directions */
+      html += '<h3 style="font-size:17px;margin:18px 0 8px;">✅ Lucky Directions (Four Auspicious)</h3>';
+      var luckyLabels = ['Sheng Qi (生气) — Prosperity','Tian Yi (天医) — Health','Yan Nian (延年) — Romance','Fu Wei (伏位) — Stability'];
+      for (var i = 0; i < 4; i++) {
+        var dir = effectiveData.lucky[i];
+        html += '<div style="display:flex;align-items:center;gap:10px;padding:8px 12px;margin:4px 0;background:#f0faf4;border:1px solid #c3e8d2;border-radius:8px;">' +
+          '<span style="font-size:18px;">🧭</span>' +
+          '<span><strong>' + dir + '</strong> (' + DIR_CN[dir] + ')</span>' +
+          '<span class="small muted" style="margin-left:auto;">' + luckyLabels[i] + '</span>' +
+          '</div>';
+      }
+
+      /* Career direction */
+      html += '<h3 style="font-size:17px;margin:18px 0 8px;">💼 Best Career Direction</h3>';
+      html += '<div style="display:flex;align-items:center;gap:10px;padding:8px 12px;margin:4px 0;background:var(--accent-soft);border:1px solid #f0d88a;border-radius:8px;">' +
+        '<span style="font-size:18px;">📊</span>' +
+        '<span><strong>' + effectiveData.career + '</strong> (' + DIR_CN[effectiveData.career] + ')</span>' +
+        '<span class="small muted" style="margin-left:auto;">Best for career &amp; wealth</span>' +
+        '</div>';
+
+      /* Unlucky directions */
+      html += '<h3 style="font-size:17px;margin:18px 0 8px;">❌ Unlucky Directions (Four Malignant)</h3>';
+      var unluckyLabels = ['Huo Hai (祸害) — Obstacles','Liu Sha (六煞) — Bad Luck','Wu Gui (五鬼) — Ghost','Jue Ming (绝命) — Destruction'];
+      for (var j = 0; j < 4; j++) {
+        var udir = effectiveData.unlucky[j];
+        html += '<div style="display:flex;align-items:center;gap:10px;padding:8px 12px;margin:4px 0;background:#fef4f4;border:1px solid #e8c8c8;border-radius:8px;">' +
+          '<span style="font-size:18px;">⚠️</span>' +
+          '<span><strong>' + udir + '</strong> (' + DIR_CN[udir] + ')</span>' +
+          '<span class="small muted" style="margin-left:auto;">' + unluckyLabels[j] + '</span>' +
+          '</div>';
+      }
+
+      html += '<p class="small muted mt-3">For entertainment and self-reflection. Feng Shui is a traditional practice — not a predictive science.</p></div>';
+      out.innerHTML = html;
+    });
+  })();
+  </script>
+</body>
+</html>

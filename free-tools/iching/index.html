@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YWD0Z35ZZ9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-YWD0Z35ZZ9");
+</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I Ching Hexagram Generator — Cast the Yi Jing | AstroLens</title>
+  <meta name="description" content="Free I Ching hexagram generator. Cast a virtual coin-toss hexagram from all 64 Yi Jing hexagrams with meanings and interpretations.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://ecustmechanical.github.io/little-tool/free-tools/iching/"><!-- UPDATE-AT-DOMAIN -->
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+  <link rel="stylesheet" href="../../css/style.css">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="AstroLens">
+  <meta property="og:title" content="I Ching Hexagram Generator — Cast the Yi Jing | AstroLens">
+  <meta property="og:description" content="Cast a virtual I Ching hexagram. All 64 hexagrams with Unicode symbols, names and interpretations.">
+  <meta property="og:url" content="https://ecustmechanical.github.io/little-tool/free-tools/iching/">
+  <meta name="twitter:card" content="summary">
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org", "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ecustmechanical.github.io/little-tool/" },
+        { "@type": "ListItem", "position": 2, "name": "Free Tools", "item": "https://ecustmechanical.github.io/little-tool/free-tools/" },
+        { "@type": "ListItem", "position": 3, "name": "I Ching Hexagram Generator", "item": "https://ecustmechanical.github.io/little-tool/free-tools/iching/" }
+      ]
+    },
+    {
+      "@context": "https://schema.org", "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What is the I Ching?", "acceptedAnswer": { "@type": "Answer", "text": "The I Ching (易经), also known as the Book of Changes, is one of the oldest Chinese classic texts. It consists of 64 hexagrams, each made of six lines that are either yin (broken) or yang (solid), used for divination and philosophical guidance." } },
+        { "@type": "Question", "name": "How does the coin toss method work?", "acceptedAnswer": { "@type": "Answer", "text": "In the traditional coin toss method, three coins are thrown six times. Each throw produces a line: 3 heads = old yang (changing), 2 heads + 1 tail = young yang (stable), 1 head + 2 tails = young yin (stable), 3 tails = old yin (changing). Lines are built from bottom to top." } },
+        { "@type": "Question", "name": "What are changing lines?", "acceptedAnswer": { "@type": "Answer", "text": "Changing lines (老阳/老阴) are lines that transform into their opposite — yang becomes yin or yin becomes yang. They indicate areas of special significance and transformation in the reading. This generator marks them with an asterisk." } }
+      ]
+    }
+  ]
+  </script>
+  <style>
+    .hex-display { text-align:center; padding:30px 0; }
+    .hex-symbol { font-size:96px; line-height:1.1; color:var(--brand); }
+    .hex-name { font-size:28px; font-weight:800; margin:10px 0 4px; }
+    .hex-cn { font-size:20px; color:var(--brand-2); margin-bottom:4px; }
+    .hex-number { font-size:14px; color:var(--muted); }
+    .hex-lines { display:flex; flex-direction:column-reverse; align-items:center; gap:6px; margin:20px 0; }
+    .hex-line { display:flex; align-items:center; gap:8px; font-size:15px; color:var(--muted); }
+    .hex-line .line-seg { display:flex; gap:8px; }
+    .hex-line .yang-bar { width:56px; height:6px; background:var(--brand); border-radius:3px; }
+    .hex-line .yin-bar-l, .hex-line .yin-bar-r { width:24px; height:6px; background:var(--brand); border-radius:3px; }
+    .hex-line.changing .yang-bar { background:var(--accent); }
+    .hex-line.changing .yin-bar-l, .hex-line.changing .yin-bar-r { background:var(--accent); }
+    .hex-section { background:#fff; border:1px solid var(--border); border-radius:12px; padding:18px 20px; margin:12px 0; }
+    .hex-section h3 { margin:0 0 8px; font-size:17px; color:var(--brand-2); }
+    .hex-section p { margin:4px 0; font-size:15.5px; line-height:1.6; }
+    .trigram-label { font-size:13px; color:var(--muted); margin-top:16px; }
+    @media(max-width:600px){ .hex-symbol { font-size:72px; } }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../../index.html">
+        <span class="brand-mark">✦</span>
+        <span class="brand-name">AstroLens<small>zodiac · numerology · tarot</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="../../zodiac/">Zodiac</a></li>
+          <li><a href="../../chinese-zodiac/">Chinese Zodiac</a></li>
+          <li><a href="../../free-tools/">Free Tools</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a class="cta-link" href="../../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section alt">
+      <div class="wrap">
+        <p><a href="../../">Home</a> › <a href="../">Free Tools</a> › I Ching Hexagram Generator</p>
+        <p class="eyebrow">Eastern mysticism tool</p>
+        <h1>I Ching Hexagram Generator</h1>
+        <p class="lead" style="max-width:52em;">The I Ching (易经) is one of the oldest texts in Chinese philosophy, composed of 64 hexagrams. Cast a virtual hexagram below to receive guidance from the Book of Changes.</p>
+      </div>
+    </section>
+
+    <section class="section tight">
+      <div class="wrap" style="text-align:center;">
+        <button class="btn" id="ic-cast" type="button" style="font-size:18px;padding:14px 32px;">掷币起卦 — Cast Hexagram</button>
+        <p class="small muted" style="margin-top:8px;">Click to cast a hexagram using the traditional coin-toss method</p>
+        <div id="ic-out" class="hex-display">
+          <div class="panel" style="display:inline-block;text-align:left;max-width:560px;width:100%;margin-top:20px;">
+            <p class="placeholder" style="text-align:center;">Your hexagram will appear here. Click the button above to cast.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ad-slot" data-slot="tool-mid"></div>
+
+    <section class="section alt">
+      <div class="wrap prose">
+        <h2>How the I Ching works</h2>
+        <p>The I Ching (Book of Changes) uses 64 hexagrams, each consisting of six lines. Each line is either <em>yang</em> (solid ━━━) or <em>yin</em> (broken ━ ━). A hexagram is formed from two trigrams — a lower trigram and an upper trigram — each composed of three lines.</p>
+        <p>In the traditional coin toss method, three coins are tossed six times to build the hexagram from the bottom up. Each toss produces one line:</p>
+        <ul>
+          <li><strong>3 heads (old yang)</strong> — a solid changing line (transforms to yin)</li>
+          <li><strong>2 heads, 1 tail (young yang)</strong> — a stable solid line</li>
+          <li><strong>1 head, 2 tails (young yin)</strong> — a stable broken line</li>
+          <li><strong>3 tails (old yin)</strong> — a broken changing line (transforms to yang)</li>
+        </ul>
+
+        <h2>The Eight Trigrams (八卦)</h2>
+        <p>Each hexagram is built from two of the eight trigrams, which represent fundamental natural forces:</p>
+        <ul>
+          <li><strong>☰ Qian (乾)</strong> — Heaven · Creative</li>
+          <li><strong>☷ Kun (坤)</strong> — Earth · Receptive</li>
+          <li><strong>☳ Zhen (震)</strong> — Thunder · Arousing</li>
+          <li><strong>☵ Kan (坎)</strong> — Water · Abysmal</li>
+          <li><strong>☶ Gen (艮)</strong> — Mountain · Stillness</li>
+          <li><strong>☴ Xun (巽)</strong> — Wind · Gentle</li>
+          <li><strong>☲ Li (离)</strong> — Fire · Clinging</li>
+          <li><strong>☱ Dui (兑)</strong> — Lake · Joyous</li>
+        </ul>
+
+        <h2>Frequently asked questions</h2>
+        <div class="faq">
+          <details><summary>What is the I Ching?</summary><p>The I Ching (易经), also known as the Book of Changes, is one of the oldest Chinese classic texts. It consists of 64 hexagrams, each made of six lines that are either yin (broken) or yang (solid), used for divination and philosophical guidance.</p></details>
+          <details><summary>How does the coin toss method work?</summary><p>In the traditional coin toss method, three coins are thrown six times. Each throw produces a line: 3 heads = old yang (changing), 2 heads + 1 tail = young yang (stable), 1 head + 2 tails = young yin (stable), 3 tails = old yin (changing). Lines are built from bottom to top.</p></details>
+          <details><summary>What are changing lines?</summary><p>Changing lines (老阳/老阴) are lines that transform into their opposite — yang becomes yin or yin becomes yang. They indicate areas of special significance and transformation in the reading. This generator marks them with an asterisk.</p></details>
+        </div>
+
+        <h2>Related tools</h2>
+        <div class="pill-row">
+          <a class="pill" href="../kua-number-calculator/">Kua Number Calculator</a>
+          <a class="pill" href="../tarot-reader/">Tarot Reader</a>
+          <a class="pill" href="../numerology-calculator/">Numerology Calculator</a>
+          <a class="pill" href="../zodiac-compatibility/">Zodiac Compatibility</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <h4>AstroLens</h4>
+        <p class="blurb">Free zodiac sign profiles, numerology, compatibility and tarot tools. Every page written and checked by hand — with the method shown.</p>
+      </div>
+      <div>
+        <h4>Free tools</h4>
+        <ul>
+          <li><a href="../numerology-calculator/">Numerology Calculator</a></li>
+          <li><a href="../zodiac-compatibility/">Zodiac Compatibility</a></li>
+          <li><a href="../tarot-reader/">Tarot Reader</a></li>
+          <li><a href="../zodiac-sign-calculator/">Zodiac Sign Finder</a></li>
+          <li><a href="../kua-number-calculator/">Kua Number Calculator</a></li>
+          <li><a href="./">I Ching Hexagram Generator</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="../../zodiac/">Zodiac Signs</a></li>
+          <li><a href="../../chinese-zodiac/">Chinese Zodiac</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+          <li><a href="../../privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">© 2026 AstroLens · Content is for entertainment and self-reflection only.
+      <span class="disc">Not medical, psychological, legal or financial advice.</span>
+    </div>
+  </footer>
+
+  <script src="../../js/site-config.js"></script>
+  <script>
+  (function () {
+    /* === Eight Trigrams === */
+    var TRIGRAMS = {
+      '000': { name: 'Kun', cn: '坤', element: 'Earth', symbol: '☷' },
+      '001': { name: 'Zhen', cn: '震', element: 'Thunder', symbol: '☳' },
+      '010': { name: 'Kan', cn: '坎', element: 'Water', symbol: '☵' },
+      '011': { name: 'Xun', cn: '巽', element: 'Wind', symbol: '☴' },
+      '100': { name: 'Gen', cn: '艮', element: 'Mountain', symbol: '☶' },
+      '101': { name: 'Li', cn: '离', element: 'Fire', symbol: '☲' },
+      '110': { name: 'Dui', cn: '兑', element: 'Lake', symbol: '☱' },
+      '111': { name: 'Qian', cn: '乾', element: 'Heaven', symbol: '☰' }
+    };
+
+    /* === All 64 Hexagrams — King Wen Sequence === */
+    /* key = binary string: lines 1-3 (lower trigram) then lines 4-6 (upper trigram) */
+    var HEXAGRAMS = {
+      '111111': { number:1,  name:'The Creative',   cn:'乾', symbol:'䷀', judgment:'The creative power of heaven is at work. Supreme success through strength and persistence.', image:'Heaven acts upon heaven — ceaseless creative power.' },
+      '000000': { number:2,  name:'The Receptive',  cn:'坤', symbol:'䷁', judgment:'The earth receives all things and nourishes them. Yield, follow, and great success follows.', image:'The earth supports all creation with receptive strength.' },
+      '001010': { number:3,  name:'Difficulty at the Beginning', cn:'屯', symbol:'䷂', judgment:'The beginning is full of difficulty. Like a sprout breaking through soil, persevere through confusion.', image:'Thunder and rain arise together — the chaos of creation begins.' },
+      '010100': { number:4,  name:'Youthful Folly', cn:'蒙', symbol:'䷃', judgment:'Youth is full of potential but needs guidance. Seek the right teacher and be receptive.', image:'A spring flows down the mountain — knowledge nourishes those who seek it.' },
+      '111010': { number:5,  name:'Waiting',        cn:'需', symbol:'䷄', judgment:'Nourishment awaits the right moment. Wait with sincerity — the time will come.', image:'Clouds rise to heaven — one must wait for the rain to fall.' },
+      '010111': { number:6,  name:'Conflict',       cn:'讼', symbol:'䷅', judgment:'Conflict arises from opposing interests. Seek mediation rather than pushing to the end.', image:'Heaven and water move in opposite directions — conflict arises.' },
+      '010000': { number:7,  name:'The Army',       cn:'师', symbol:'䷆', judgment:'The army must be led with discipline and righteous purpose. Only just cause warrants mobilization.', image:'Water hidden within the earth — the disciplined force within.' },
+      '000010': { number:8,  name:'Holding Together', cn:'比', symbol:'䷇', judgment:'Union brings good fortune. Seek helpers and those who share your purpose.', image:'Water flows upon the earth — unity through mutual support.' },
+      '111011': { number:9,  name:'Small Taming',   cn:'小畜', symbol:'䷈', judgment:'Small forces can restrain great ones. Gentle discipline and patience accomplish what force cannot.', image:'Wind over heaven — small restraints bring order to vast power.' },
+      '110111': { number:10, name:'Treading',       cn:'履', symbol:'䷉', judgment:'Tread carefully and with awareness. Gentle conduct overcomes the most difficult situations.', image:'Heaven beneath the lake — treading with care and courtesy.' },
+      '111000': { number:11, name:'Peace',          cn:'泰', symbol:'䷊', judgment:'Peace and prosperity. Heaven and earth unite, bringing harmony to all things.', image:'Heaven below, earth above — the flow of peace to all beings.' },
+      '000111': { number:12, name:'Standstill',     cn:'否', symbol:'䷋', judgment:'Stagnation and decline. The small gain while the great withdraw. Endure and wait.', image:'Heaven above, earth below — nothing moves between them.' },
+      '111101': { number:13, name:'Fellowship',     cn:'同人', symbol:'䷌', judgment:'Fellowship with like-minded people. United in purpose, great things are accomplished together.', image:'Fire rises toward heaven — fellowship transcends boundaries.' },
+      '101111': { number:14, name:'Great Possession', cn:'大有', symbol:'䷍', judgment:'Great possession — fire in heaven. Supreme success through generosity and correct leadership.', image:'Fire rises within heaven — abundance shines on all.' },
+      '100000': { number:15, name:'Modesty',        cn:'谦', symbol:'䷎', judgment:'Modesty brings success in all things. The mountain hidden within the earth represents humble greatness.', image:'The earth contains the mountain — modesty above all.' },
+      '000001': { number:16, name:'Enthusiasm',     cn:'豫', symbol:'䷏', judgment:'Enthusiasm arises when the way is open. Act now — the time is ripe for inspired action.', image:'Thunder bursts forth from the earth — inspiration and readiness unite.' },
+      '001110': { number:17, name:'Following',      cn:'随', symbol:'䷐', judgment:'Follow what is right with sincerity. Adapt to the times and success follows.', image:'Thunder within the lake — following the rhythm of change.' },
+      '011100': { number:18, name:'Work on What Has Been Corrupted', cn:'蛊', symbol:'䷑', judgment:'Time has caused decay. Remove what is rotten, restore what is sound, and success follows.', image:'Wind and mountain together — decay must be addressed at the root.' },
+      '110000': { number:19, name:'Approach',       cn:'临', symbol:'䷒', judgment:'The time for approach has come. Success through gentle authority and generous leadership.', image:'The earth rises beneath the lake — influence grows from below.' },
+      '000011': { number:20, name:'Contemplation',  cn:'观', symbol:'䷓', judgment:'Observe from a high vantage point. Deep contemplation reveals the nature of things.', image:'The wind blows across the earth — all is observed and understood.' },
+      '001101': { number:21, name:'Biting Through', cn:'噬嗑', symbol:'䷔', judgment:'Bite through what stands in the way. Firm decisions and decisive action remove obstacles.', image:'Thunder and fire unite — justice bites through resistance.' },
+      '101100': { number:22, name:'Grace',          cn:'贲', symbol:'䷕', judgment:'Grace adorns substance. Beauty in form enhances what lies beneath, but do not mistake style for depth.', image:'Fire illuminates the mountain — grace illuminates substance.' },
+      '000100': { number:23, name:'Splitting Apart', cn:'剥', symbol:'䷖', judgment:'The structure collapses from below. Do not act — accept the decline and preserve what remains.', image:'The mountain rests upon the earth — erosion strips away the outer layers.' },
+      '001000': { number:24, name:'Return',         cn:'复', symbol:'䷗', judgment:'Return marks a turning point. The light returns after the dark period. A fresh start is favorable.', image:'Thunder stirs within the earth — the cycle of return begins anew.' },
+      '001111': { number:25, name:'Innocence',      cn:'无妄', symbol:'䷘', judgment:'Innocence brings unexpected good fortune. Act from the heart without ulterior motives.', image:'Thunder stirs beneath heaven — pure impulse without deceit.' },
+      '111100': { number:26, name:'Great Taming',   cn:'大畜', symbol:'䷙', judgment:'Great forces are tamed and accumulated. Nourish virtue and wisdom for future use.', image:'Heaven within the mountain — great power held in reserve.' },
+      '001100': { number:27, name:'Nourishment',    cn:'颐', symbol:'䷚', judgment:'Nourishment of body and mind. Guard your words and your food — both shape who you become.', image:'Thunder beneath the mountain — the jaws of nourishment.' },
+      '011110': { number:28, name:'Great Preponderance', cn:'大过', symbol:'䷛', judgment:'The ridgepole sags under excess weight. Act boldly in extraordinary times.', image:'The lake rises above the trees — excess demands decisive action.' },
+      '010010': { number:29, name:'The Abysmal',    cn:'坎', symbol:'䷜', judgment:'Danger upon danger, yet truth sustains you. Maintain faith and flow through adversity.', image:'Water flows over water — danger deepens, but the heart remains centered.' },
+      '101101': { number:30, name:'The Clinging',   cn:'离', symbol:'䷝', judgment:'Fire illuminates but depends on a source. Clarity comes through adherence to what is upright.', image:'Fire upon fire — brilliance that clings to what sustains it.' },
+      '100110': { number:31, name:'Influence',      cn:'咸', symbol:'䷞', judgment:'Influence and attraction. Gentle penetration leads to union and mutual understanding.', image:'The lake rests upon the mountain — influence flows naturally.' },
+      '011001': { number:32, name:'Duration',       cn:'恒', symbol:'䷟', judgment:'Duration comes from constancy and inner resolve. Do not waver from the correct path.', image:'Thunder and wind together — the enduring movement of time.' },
+      '100111': { number:33, name:'Retreat',        cn:'遁', symbol:'䷠', judgment:'Retreat is the wise course. Withdraw with dignity to preserve your strength for later.', image:'Mountain beneath heaven — retreat to the heights in order.' },
+      '111001': { number:34, name:'Great Power',    cn:'大壮', symbol:'䷡', judgment:'Great power and vigor. The superior person does not use force recklessly.', image:'Thunder roars in heaven — great power demands great restraint.' },
+      '000101': { number:35, name:'Progress',       cn:'晋', symbol:'䷢', judgment:'The sun rises above the earth. Progress comes through loyalty and steady advancement.', image:'The sun shines bright over the earth — brilliant progress unfolds.' },
+      '101000': { number:36, name:'Darkening of the Light', cn:'明夷', symbol:'䷣', judgment:'Dark forces obscure the bright. Hide your light and endure; do not force clarity upon the world.', image:'The sun sinks beneath the earth — brilliance concealed for survival.' },
+      '101011': { number:37, name:'The Family',     cn:'家人', symbol:'䷤', judgment:'The family is the foundation of society. Proper roles and genuine care create harmony.', image:'Wind and fire together — warmth radiates from the household outward.' },
+      '110101': { number:38, name:'Opposition',     cn:'睽', symbol:'䷥', judgment:'Opposition and divergence exist, yet common ground can be found. Small matters may yet succeed.', image:'Fire above, lake below — divergent natures that must coexist.' },
+      '100010': { number:39, name:'Obstruction',    cn:'蹇', symbol:'䷦', judgment:'Progress is blocked. Retreat inward, reflect, and wait for the obstruction to clear.', image:'Water rises on the mountain — difficulty on every side.' },
+      '010001': { number:40, name:'Deliverance',    cn:'解', symbol:'䷧', judgment:'Deliverance from difficulty. The time for release has come — act without delay.', image:'Thunder and rain together — the storm breaks and relief arrives.' },
+      '110100': { number:41, name:'Decrease',       cn:'损', symbol:'䷨', judgment:'Decrease the lower to increase the upper. Simplify to make room for what matters most.', image:'The lake rises to the mountain — decrease below, increase above.' },
+      '001011': { number:42, name:'Increase',       cn:'益', symbol:'䷩', judgment:'Increase comes when you act for the benefit of others. Generosity multiplies fortune.', image:'Wind and thunder reinforce each other — increase through mutual support.' },
+      '111110': { number:43, name:'Breakthrough',   cn:'夬', symbol:'䷪', judgment:'Breakthrough — a firm decision cuts through what is no longer needed. Announce with clarity.', image:'Lake rises to heaven — resolution breaks through stagnation.' },
+      '011111': { number:44, name:'Coming to Meet', cn:'姤', symbol:'䷫', judgment:'An unexpected encounter arrives. Be wary of seduction by what seems attractive but is not aligned.', image:'Wind beneath heaven — subtle forces gather from below.' },
+      '000110': { number:45, name:'Gathering Together', cn:'萃', symbol:'䷬', judgment:'Gather together with sincerity. Offer sacrifices and unite for a noble purpose.', image:'The lake rises above the earth — gathering at the sacred mound.' },
+      '011000': { number:46, name:'Pushing Upward', cn:'升', symbol:'䷭', judgment:'Push upward like a growing tree. Steady, determined effort leads to advancement.', image:'Wood grows within the earth — gradual, persistent rising.' },
+      '010110': { number:47, name:'Oppression',     cn:'困', symbol:'䷮', judgment:'Oppression and exhaustion. The great person remains cheerful even in adversity.', image:'The lake has dried up — even the greatest face hardship.' },
+      '011010': { number:48, name:'The Well',       cn:'井', symbol:'䷯', judgment:'The well provides nourishment to all. Reform and renewal require returning to the source.', image:'Water drawn from a well — the unchanging source of life.' },
+      '101110': { number:49, name:'Revolution',     cn:'革', symbol:'䷰', judgment:'The time demands change. Revolution succeeds when aligned with heavenly timing and human need.', image:'Fire within the lake — transformation erupts from within.' },
+      '011101': { number:50, name:'The Caldron',    cn:'鼎', symbol:'䷱', judgment:'The ritual caldron transforms raw into refined. Nourishment of mind and spirit is at hand.', image:'Fire over wood — the great cooking vessel transforms all it holds.' },
+      '001001': { number:51, name:'The Arousing',   cn:'震', symbol:'䷲', judgment:'Thunder brings shock and awe. Through fright comes reflection, then renewal.', image:'Thunder upon thunder — the arousing spirit shakes and awakens.' },
+      '100100': { number:52, name:'Keeping Still',  cn:'艮', symbol:'䷳', judgment:'Keep still like a mountain. In stillness, clarity emerges. Do not act when action is not needed.', image:'Mountains upon mountains — supreme stillness and stability.' },
+      '100011': { number:53, name:'Development',    cn:'渐', symbol:'䷴', judgment:'Gradual development. Like a tree growing on a mountain, progress is steady and orderly.', image:'Wind on the mountain — gradual, graceful development.' },
+      '110001': { number:54, name:'The Marrying Maiden', cn:'归妹', symbol:'䷵', judgment:'The marrying maiden does not take the lead. Accept your role and act with patience.', image:'Thunder over the lake — the maiden follows the natural order.' },
+      '101001': { number:55, name:'Abundance',      cn:'丰', symbol:'䷶', judgment:'Fullness and abundance surround you. Act with generosity, for the peak will not last forever.', image:'Thunder and lightning together — the height of illumination.' },
+      '100101': { number:56, name:'The Wanderer',   cn:'旅', symbol:'䷷', judgment:'The traveler moves through unfamiliar territory. Caution and adaptability ensure safe passage.', image:'Fire on the mountain — the wanderer finds brief shelter.' },
+      '011011': { number:57, name:'The Gentle',     cn:'巽', symbol:'䷸', judgment:'The gentle wind penetrates everywhere. Steady influence achieves what force cannot.', image:'Wind upon wind — gentle, pervasive influence.' },
+      '110110': { number:58, name:'The Joyous',     cn:'兑', symbol:'䷹', judgment:'Joy and open communication. Shared happiness strengthens bonds and brings success.', image:'The lake reflects the sky — joy shared is joy multiplied.' },
+      '010011': { number:59, name:'Dispersion',     cn:'涣', symbol:'䷺', judgment:'Dissolve what is stuck. Let go of rigid boundaries to allow fresh energy to flow.', image:'Wind over water — dispersion breaks apart what has calcified.' },
+      '110010': { number:60, name:'Limitation',     cn:'节', symbol:'䷻', judgment:'Limitation is necessary. Set boundaries wisely, neither too tight nor too lax.', image:'Water flows over the lake — boundaries contain but do not crush.' },
+      '110011': { number:61, name:'Inner Truth',    cn:'中孚', symbol:'䷼', judgment:'Inner truth moves others. Sincerity and openness can transform even the most difficult situation.', image:'Wind stirs over the lake — inner truth ripples outward.' },
+      '100001': { number:62, name:'Small Preponderance', cn:'小过', symbol:'䷽', judgment:'Small excesses. The superior person does not take on great tasks in small matters.', image:'Thunder upon the mountain — the small bird flies too high.' },
+      '101010': { number:63, name:'After Completion', cn:'既济', symbol:'䷾', judgment:'The hexagram of completion. Success has been achieved, but vigilance prevents decline.', image:'Water above fire — all things in their proper place, yet change is imminent.' },
+      '010101': { number:64, name:'Before Completion', cn:'未济', symbol:'䷿', judgment:'The journey is not yet complete. Every ending carries within it a new beginning.', image:'Fire over water — things have not yet found their final place.' }
+    };
+
+    /* === Coin Toss Simulation === */
+    function coinToss() {
+      var sum = 0;
+      for (var i = 0; i < 3; i++) sum += (Math.random() < 0.5) ? 3 : 2;
+      // sum: 6 (3 tails), 7 (2t1h), 8 (1t2h), 9 (3 heads)
+      return sum;
+    }
+
+    function buildHexagram() {
+      var lines = [];
+      for (var i = 0; i < 6; i++) {
+        var toss = coinToss();
+        var changing = false;
+        if (toss === 9) { lines.push('yang'); changing = true; }
+        else if (toss === 8) { lines.push('yang'); }
+        else if (toss === 7) { lines.push('yin'); }
+        else { lines.push('yin'); changing = true; }
+      }
+      return lines;
+    }
+
+    function linesToBinary(lines) {
+      var bin = '';
+      for (var i = 0; i < lines.length; i++) bin += lines[i] === 'yang' ? '1' : '0';
+      return bin;
+    }
+
+    function renderHexagramLines(lines, changing) {
+      var html = '';
+      for (var i = 5; i >= 0; i--) {
+        var isYang = lines[i] === 'yang';
+        var isChanging = changing[i];
+        var cls = isChanging ? 'hex-line changing' : 'hex-line';
+        var label = (6 - i);
+        var changeMark = isChanging ? ' *' : '';
+        if (isYang) {
+          html += '<div class="' + cls + '"><span style="min-width:16px;">' + label + '</span><div class="line-seg"><div class="yang-bar"></div></div><span class="small muted">' + (isYang ? 'yang ━━━' : '') + changeMark + '</span></div>';
+        } else {
+          html += '<div class="' + cls + '"><span style="min-width:16px;">' + label + '</span><div class="line-seg"><div class="yin-bar-l"></div><div class="yin-bar-r"></div></div><span class="small muted">yin ━ ━' + changeMark + '</span></div>';
+        }
+      }
+      return html;
+    }
+
+    function getTrigram(bits) {
+      return TRIGRAMS[bits] || null;
+    }
+
+    var out = document.getElementById('ic-out');
+
+    document.getElementById('ic-cast').addEventListener('click', function () {
+      var lines = buildHexagram();
+      var changing = [];
+      /* re-detect changing lines by re-doing tosses */
+      var tosses = [];
+      for (var j = 0; j < 6; j++) tosses.push(coinToss());
+      for (var k = 0; k < 6; k++) {
+        changing.push(tosses[k] === 6 || tosses[k] === 9);
+      }
+
+      var bin = linesToBinary(lines);
+      var hex = HEXAGRAMS[bin];
+
+      if (!hex) {
+        out.innerHTML = '<div class="panel" style="display:inline-block;text-align:left;max-width:560px;width:100%;margin-top:20px;"><p class="placeholder">Hexagram not found for pattern ' + bin + '. This should not happen — please try again.</p></div>';
+        return;
+      }
+
+      /* Determine trigrams */
+      var lowerBin = bin.substring(0, 3);
+      var upperBin = bin.substring(3, 6);
+      var lowerTri = getTrigram(lowerBin);
+      var upperTri = getTrigram(upperBin);
+
+      var html = '<div class="panel" style="display:inline-block;text-align:left;max-width:560px;width:100%;margin-top:20px;">';
+
+      /* Unicode symbol & title */
+      html += '<div style="text-align:center;">' +
+        '<div style="font-size:72px;line-height:1;color:var(--brand);">' + hex.symbol + '</div>' +
+        '<div class="hex-cn">' + hex.cn + '</div>' +
+        '<div class="hex-name">' + hex.name + '</div>' +
+        '<div class="hex-number">Hexagram ' + hex.number + ' · ' + bin + '</div>' +
+        '</div>';
+
+      /* Visual lines */
+      html += '<div class="hex-lines">' + renderHexagramLines(lines, changing) + '</div>';
+
+      /* Trigram info */
+      if (lowerTri && upperTri) {
+        html += '<div class="trigram-label" style="text-align:center;">Lower: ' + lowerTri.symbol + ' ' + lowerTri.name + ' (' + lowerTri.element + ') · Upper: ' + upperTri.symbol + ' ' + upperTri.name + ' (' + upperTri.element + ')</div>';
+      }
+
+      /* Changing lines notice */
+      var hasChanging = changing.some(function (c) { return c; });
+      if (hasChanging) {
+        var changingNums = [];
+        for (var m = 0; m < changing.length; m++) {
+          if (changing[m]) changingNums.push(m + 1);
+        }
+        html += '<div style="background:var(--accent-soft);border:1px solid #f0d88a;border-radius:10px;padding:12px 16px;margin:16px 0;text-align:center;">' +
+          '<p style="margin:0;font-weight:700;">⚠️ Changing Line(s) at: ' + changingNums.join(', ') + '</p>' +
+          '<p style="margin:4px 0 0;font-size:14px;color:var(--muted);">Changing lines (老阳/老阴) indicate areas of transformation and special significance.</p>' +
+          '</div>';
+      }
+
+      /* Judgment & Image */
+      html += '<div class="hex-section"><h3>彖 — Judgment</h3><p>' + hex.judgment + '</p></div>';
+      html += '<div class="hex-section"><h3>象 — Image</h3><p>' + hex.image + '</p></div>';
+
+      /* Cast again */
+      html += '<div style="text-align:center;margin-top:18px;"><button class="btn secondary small" id="ic-cast-again" type="button">Cast Again</button></div>';
+
+      html += '<p class="small muted mt-3" style="text-align:center;">For entertainment and self-reflection. The I Ching is a philosophical tradition — not a predictive science.</p>';
+      html += '</div>';
+
+      out.innerHTML = html;
+
+      /* Re-bind cast button */
+      document.getElementById('ic-cast-again').addEventListener('click', function () {
+        document.getElementById('ic-cast').click();
+      });
+    });
+  })();
+  </script>
+</body>
+</html>

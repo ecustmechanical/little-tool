@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YWD0Z35ZZ9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-YWD0Z35ZZ9");
+</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chinese Zodiac Calculator: Animal, Element &amp; Match | AstroLens</title>
+  <meta name="description" content="Free Chinese zodiac calculator. Enter a birth date for your animal, element and polarity — then check compatibility with any other sign.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://ecustmechanical.github.io/little-tool/free-tools/chinese-zodiac-calculator/"><!-- UPDATE-AT-DOMAIN -->
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+  <link rel="stylesheet" href="../../css/style.css">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AstroLens">
+  <meta property="og:title" content="Chinese Zodiac Calculator: Animal, Element &amp; Match | AstroLens">
+  <meta property="og:description" content="Free Chinese zodiac calculator. Enter a birth date for your animal, element and polarity — then check compatibility with any other sign.">
+  <meta property="og:url" content="https://ecustmechanical.github.io/little-tool/free-tools/chinese-zodiac-calculator/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Chinese Zodiac Calculator: Animal, Element &amp; Match | AstroLens">
+  <meta name="twitter:description" content="Free Chinese zodiac calculator. Enter a birth date for your animal, element and polarity — then check compatibility with any other sign.">
+  <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://ecustmechanical.github.io/little-tool/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Free Tools",
+        "item": "https://ecustmechanical.github.io/little-tool/free-tools/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Chinese Zodiac Calculator",
+        "item": "https://ecustmechanical.github.io/little-tool/free-tools/chinese-zodiac-calculator/"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How does this Chinese zodiac calculator work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It converts your birth year into one of the twelve animals using the sexagenary cycle, then reports the fixed element, the yin or yang polarity and the compatibility score against any other animal you choose."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does the calculator use the lunar new year boundary?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Because the Chinese zodiac year starts at Lunar New Year rather than 1 January, the calculator warns you when a January or February birth date sits close to the boundary, where a year-only chart would assign the wrong animal."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is Chinese zodiac compatibility scored?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Scores follow the classical relationships: San He trine pairs score 95, Liu He secret friends 90, the same animal 75, same element 80, five-element feeding pairs 65, and Liu Chong clashes 20."
+        }
+      }
+    ]
+  }
+]
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../../index.html">
+        <span class="brand-mark">☯</span>
+        <span class="brand-name">AstroLens<small>zodiac · eastern · tarot</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="../../zodiac/">Zodiac</a></li>
+          <li><a href="../../chinese-zodiac/">Chinese Zodiac</a></li>
+          <li><a href="../../free-tools/">Free Tools</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a class="cta-link" href="../../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="wrap">
+        <p><a href="../../index.html">Home</a> › <a href="../">Free Tools</a> › Chinese Zodiac Calculator</p>
+        <h1>Chinese Zodiac Calculator</h1>
+        <p class="lead" style="max-width:46em;">Enter your birth date to get your animal, fixed element and polarity — then check compatibility against any other sign. Everything runs in your browser; nothing is uploaded.</p>
+
+        <div class="calc-grid">
+          <div class="panel">
+            <h2 style="margin-top:0;">Your Chinese zodiac sign</h2>
+            <div class="field">
+              <label for="cz-year">Birth year</label>
+              <select id="cz-year">
+            <option value="2026">2026</option>
+            <option value="2025">2025</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+            <option value="2012">2012</option>
+            <option value="2011">2011</option>
+            <option value="2010">2010</option>
+            <option value="2009">2009</option>
+            <option value="2008">2008</option>
+            <option value="2007">2007</option>
+            <option value="2006">2006</option>
+            <option value="2005">2005</option>
+            <option value="2004">2004</option>
+            <option value="2003">2003</option>
+            <option value="2002">2002</option>
+            <option value="2001">2001</option>
+            <option value="2000">2000</option>
+            <option value="1999">1999</option>
+            <option value="1998">1998</option>
+            <option value="1997">1997</option>
+            <option value="1996">1996</option>
+            <option value="1995">1995</option>
+            <option value="1994">1994</option>
+            <option value="1993">1993</option>
+            <option value="1992">1992</option>
+            <option value="1991">1991</option>
+            <option value="1990">1990</option>
+            <option value="1989">1989</option>
+            <option value="1988">1988</option>
+            <option value="1987">1987</option>
+            <option value="1986">1986</option>
+            <option value="1985">1985</option>
+            <option value="1984">1984</option>
+            <option value="1983">1983</option>
+            <option value="1982">1982</option>
+            <option value="1981">1981</option>
+            <option value="1980">1980</option>
+            <option value="1979">1979</option>
+            <option value="1978">1978</option>
+            <option value="1977">1977</option>
+            <option value="1976">1976</option>
+            <option value="1975">1975</option>
+            <option value="1974">1974</option>
+            <option value="1973">1973</option>
+            <option value="1972">1972</option>
+            <option value="1971">1971</option>
+            <option value="1970">1970</option>
+            <option value="1969">1969</option>
+            <option value="1968">1968</option>
+            <option value="1967">1967</option>
+            <option value="1966">1966</option>
+            <option value="1965">1965</option>
+            <option value="1964">1964</option>
+            <option value="1963">1963</option>
+            <option value="1962">1962</option>
+            <option value="1961">1961</option>
+            <option value="1960">1960</option>
+            <option value="1959">1959</option>
+            <option value="1958">1958</option>
+            <option value="1957">1957</option>
+            <option value="1956">1956</option>
+            <option value="1955">1955</option>
+            <option value="1954">1954</option>
+            <option value="1953">1953</option>
+            <option value="1952">1952</option>
+            <option value="1951">1951</option>
+            <option value="1950">1950</option>
+            <option value="1949">1949</option>
+            <option value="1948">1948</option>
+            <option value="1947">1947</option>
+            <option value="1946">1946</option>
+            <option value="1945">1945</option>
+            <option value="1944">1944</option>
+            <option value="1943">1943</option>
+            <option value="1942">1942</option>
+            <option value="1941">1941</option>
+            <option value="1940">1940</option>
+            <option value="1939">1939</option>
+            <option value="1938">1938</option>
+            <option value="1937">1937</option>
+            <option value="1936">1936</option>
+            <option value="1935">1935</option>
+            <option value="1934">1934</option>
+            <option value="1933">1933</option>
+            <option value="1932">1932</option>
+            <option value="1931">1931</option>
+            <option value="1930">1930</option>
+            <option value="1929">1929</option>
+            <option value="1928">1928</option>
+            <option value="1927">1927</option>
+            <option value="1926">1926</option>
+            <option value="1925">1925</option>
+            <option value="1924">1924</option>
+              </select>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="cz-month">Month</label>
+                <select id="cz-month">
+                  <option value="1">January</option><option value="2">February</option>
+                  <option value="3">March</option><option value="4">April</option>
+                  <option value="5">May</option><option value="6">June</option>
+                  <option value="7">July</option><option value="8">August</option>
+                  <option value="9">September</option><option value="10">October</option>
+                  <option value="11">November</option><option value="12">December</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="cz-day">Day</label>
+                <input id="cz-day" type="number" min="1" max="31" value="15">
+              </div>
+            </div>
+            <button class="btn" id="cz-go" type="button">Find my Chinese zodiac sign</button>
+            <p class="small muted" style="margin-top:10px;">The zodiac year begins at Lunar New Year (late January to mid February). If your birthday falls in that window the exact date matters — the calculator flags it.</p>
+          </div>
+
+          <div class="panel">
+            <h2 style="margin-top:0;">Result</h2>
+            <div id="cz-result" aria-live="polite"><p class="placeholder">Enter your birth year and press the button. Everything is calculated in your browser — nothing is uploaded.</p></div>
+          </div>
+        </div>
+
+        <div class="calc-grid mt-3">
+          <div class="panel">
+            <h2 style="margin-top:0;">Chinese zodiac compatibility</h2>
+            <p class="small muted">Compare any two animals. Scores follow the classical San He (三合), Liu He (六合) and Liu Chong (六冲) relationships.</p>
+            <div class="field">
+              <label for="cp-a">First sign</label>
+              <select id="cp-a">
+            <option value="Rat">🐀 Rat (鼠)</option>
+            <option value="Ox">🐂 Ox (牛)</option>
+            <option value="Tiger">🐅 Tiger (虎)</option>
+            <option value="Rabbit">🐇 Rabbit (兔)</option>
+            <option value="Dragon">🐉 Dragon (龙)</option>
+            <option value="Snake">🐍 Snake (蛇)</option>
+            <option value="Horse">🐴 Horse (马)</option>
+            <option value="Goat">🐑 Goat (羊)</option>
+            <option value="Monkey">🐒 Monkey (猴)</option>
+            <option value="Rooster">🐓 Rooster (鸡)</option>
+            <option value="Dog">🐕 Dog (狗)</option>
+            <option value="Pig">🐖 Pig (猪)</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="cp-b">Second sign</label>
+              <select id="cp-b">
+            <option value="Rat">🐀 Rat (鼠)</option>
+            <option value="Ox">🐂 Ox (牛)</option>
+            <option value="Tiger">🐅 Tiger (虎)</option>
+            <option value="Rabbit">🐇 Rabbit (兔)</option>
+            <option value="Dragon">🐉 Dragon (龙)</option>
+            <option value="Snake">🐍 Snake (蛇)</option>
+            <option value="Horse">🐴 Horse (马)</option>
+            <option value="Goat">🐑 Goat (羊)</option>
+            <option value="Monkey">🐒 Monkey (猴)</option>
+            <option value="Rooster">🐓 Rooster (鸡)</option>
+            <option value="Dog">🐕 Dog (狗)</option>
+            <option value="Pig">🐖 Pig (猪)</option>
+              </select>
+            </div>
+            <button class="btn secondary" id="cp-go" type="button">Check compatibility</button>
+          </div>
+
+          <div class="panel">
+            <h2 style="margin-top:0;">Compatibility result</h2>
+            <div id="cp-result" aria-live="polite"><p class="placeholder">Pick two signs and press the button to see the score and the reason behind it.</p></div>
+          </div>
+        </div>
+
+        <div class="prose mt-3">
+          <h2>How the Chinese zodiac calculator works</h2>
+          <p>The animal is derived from the year using the sexagenary cycle: subtract 4 from the birth year, take the remainder modulo 12, and read off the animal in fixed order from the Rat. The fixed element and polarity come from the same table, which is why each animal always carries the same element in this traditional scheme — the rotating five-element layer that produces Wood Horses and Fire Horses is a separate BaZi calculation.</p>
+          <p class="small muted">For deeper reading, the <a href="../kua-number-calculator/">Kua number calculator</a> gives personal feng shui directions, and the <a href="../iching/">I Ching generator</a> handles a specific question.</p>
+
+          <h2>Chinese zodiac calculator FAQ</h2>
+          <div class="faq">
+            <details><summary>How does this Chinese zodiac calculator work?</summary><p>It converts your birth year into one of the twelve animals using the sexagenary cycle, then reports the fixed element, the yin or yang polarity and the compatibility score against any other animal you choose.</p></details>
+            <details><summary>Does the calculator use the lunar new year boundary?</summary><p>Yes. Because the Chinese zodiac year starts at Lunar New Year rather than 1 January, the calculator warns you when a January or February birth date sits close to the boundary, where a year-only chart would assign the wrong animal.</p></details>
+            <details><summary>How is Chinese zodiac compatibility scored?</summary><p>Scores follow the classical relationships: San He trine pairs score 95, Liu He secret friends 90, the same animal 75, same element 80, five-element feeding pairs 65, and Liu Chong clashes 20.</p></details>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <h4>AstroLens</h4>
+        <p class="blurb">Western astrology and Eastern metaphysics side by side — zodiac signs, Chinese zodiac, BaZi elements, feng shui, I Ching and tarot. Every page written and checked by hand, with the method shown.</p>
+      </div>
+      <div>
+        <h4>Eastern tools</h4>
+        <ul>
+          <li><a href="../../chinese-zodiac/">Chinese Zodiac Signs</a></li>
+          <li><a href="../../free-tools/chinese-zodiac-calculator/">Chinese Zodiac Calculator</a></li>
+          <li><a href="../../free-tools/kua-number-calculator/">Kua Number Calculator</a></li>
+          <li><a href="../../free-tools/iching/">I Ching Hexagrams</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Western tools</h4>
+        <ul>
+          <li><a href="../../zodiac/">Zodiac Signs</a></li>
+          <li><a href="../../free-tools/numerology-calculator/">Numerology Calculator</a></li>
+          <li><a href="../../free-tools/zodiac-compatibility/">Zodiac Compatibility</a></li>
+          <li><a href="../../free-tools/tarot-reader/">Tarot Reader</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+          <li><a href="../../privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">© 2026 AstroLens · Content is for entertainment and self-reflection only.
+      <span class="disc">Not medical, psychological, legal or financial advice.</span>
+    </div>
+  </footer>
+
+  <script src="../../js/site-config.js"></script>
+  <script src="../../js/chinese-zodiac-data.js"></script>
+  <script src="../../js/ads.js"></script>
+  <script>
+  (function () {
+    var Z = window.CHINESE_ZODIAC, U = window.ChineseZodiac;
+    var MONTH_NAMES = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+
+    function elFor(a) { return a.element; }
+
+    document.getElementById('cz-go').addEventListener('click', function () {
+      var y = parseInt(document.getElementById('cz-year').value, 10);
+      var m = parseInt(document.getElementById('cz-month').value, 10);
+      var d = parseInt(document.getElementById('cz-day').value, 10);
+      var a = U.getSign(y);
+      if (!a) { document.getElementById('cz-result').textContent = 'Please enter a valid birth year.'; return; }
+
+      var boundary = (m === 1 || m === 2);
+      var warn = boundary
+        ? '<p class="small"><strong>Heads up:</strong> a ' + MONTH_NAMES[m - 1] + ' birthday can fall before or after Lunar New Year. If yours does, you may belong to <strong>' + U.getSign(y - 1).name + '</strong> instead. Check the exact lunar boundary date for ' + y + '.</p>'
+        : '';
+
+      document.getElementById('cz-result').innerHTML =
+        '<div class="sign-head"><span class="big-symbol" aria-hidden="true">' + a.emoji + '</span>' +
+        '<div><div class="rb-date">Your Chinese zodiac sign</div>' +
+        '<div class="big">' + a.name + ' (' + a.cn + ')</div></div></div>' +
+        '<div class="sign-meta">' +
+        '<span class="tag">Element: <b>' + elFor(a) + '</b></span>' +
+        '<span class="tag">Polarity: <b>' + a.yinYang + '</b></span>' +
+        '<span class="tag">Trine: <b>' + a.trines.join(' · ') + '</b></span>' +
+        '<span class="tag">Secret friend: <b>' + a.compat.join(' · ') + '</b></span>' +
+        '<span class="tag">Clash: <b>' + a.clashes.join(' · ') + '</b></span>' +
+        '</div>' +
+        '<p>' + a.personality + '</p>' +
+        '<p class="small"><strong>Born in ' + y + '</strong> — ' + a.years[0] + ' through ' + a.years[a.years.length - 1] + ' are all ' + a.name + ' years.</p>' +
+        warn +
+        '<p class="small muted"><strong>Next step:</strong> read the full <a href="../../chinese-zodiac/' + a.slug + '/">' + a.name + ' profile</a>, or calculate your <a href="../kua-number-calculator/">Kua number</a> for personal feng shui directions.</p>';
+    });
+
+    document.getElementById('cp-go').addEventListener('click', function () {
+      var A = document.getElementById('cp-a').value, B = document.getElementById('cp-b').value;
+      var c = U.getCompat(A, B);
+      var pa = U._byName(A), pb = U._byName(B);
+      if (!c) { document.getElementById('cp-result').textContent = 'Pick two signs first.'; return; }
+      var verdict = c.score >= 90 ? 'Excellent match' : c.score >= 75 ? 'Strong match' : c.score >= 60 ? 'Workable' : c.score >= 40 ? 'Needs effort' : 'Difficult pairing';
+      document.getElementById('cp-result').innerHTML =
+        '<div class="big">' + c.score + '<span class="small muted"> /100</span></div>' +
+        '<p><strong>' + pa.name + ' ' + pa.emoji + ' + ' + pb.name + ' ' + pb.emoji + '</strong> — ' + verdict + '</p>' +
+        '<p>' + c.reason + '</p>' +
+        '<div class="sign-meta">' +
+        '<span class="tag">' + pa.name + ': <b>' + pa.element + '</b></span>' +
+        '<span class="tag">' + pb.name + ': <b>' + pb.element + '</b></span>' +
+        '</div>' +
+        '<p class="small muted">Read more: <a href="../../chinese-zodiac/' + pa.slug + '/">' + pa.name + '</a> · <a href="../../chinese-zodiac/' + pb.slug + '/">' + pb.name + '</a></p>';
+    });
+  })();
+  </script>
+</body>
+</html>
