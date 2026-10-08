@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>高中古文私教 · 个性化学习智能体</title>
+  <meta name="description" content="面向高中生的古文学习智能体：翻译、实词虚词、句式、课文讲解、在线出题，记住你的学习进度与薄弱点，下次继续。">
+  <meta name="robots" content="index,follow">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%238c2f22'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='%23f7f1e4' font-family='KaiTi,serif'%3E文%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-seal">文</span>
+      <div class="brand-text">
+        <h1>高中古文私教</h1>
+        <p id="statusLine">个性化学习智能体 · 免注册</p>
+      </div>
+    </div>
+    <button id="profileBtn" class="icon-btn" aria-label="学习档案">档</button>
+  </header>
+
+  <main id="chat" class="chat" aria-live="polite">
+    <div class="msg tutor" id="welcomeMsg">
+      <div class="bubble">
+        同学你好，我是你的<strong>古文私教</strong>。我会记住你的学习进度和薄弱点，下次来接着学。<br>
+        你可以直接提问，或从下面的卡片开始：
+        <div class="chips">
+          <button class="chip" data-q="请讲解《劝学》的重点和主旨">📖 讲《劝学》</button>
+          <button class="chip" data-q="翻译：君子博学而日参省乎己，则知明而行无过矣">📝 翻译这句</button>
+          <button class="chip" data-q="整理《师说》里'师'的实词用法和一词多义">🔍 实词虚词</button>
+          <button class="chip" data-q="什么是判断句和被动句？各举课本例子">🧱 句式判断</button>
+          <button class="chip" data-q="关于《烛之武退秦师》给我出3道练习题">✍️ 出题考我</button>
+          <button class="chip" data-q="看看我的学习进度">📊 我的进度</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="typing" class="msg tutor typing" hidden>
+    <div class="bubble"><span></span><span></span><span></span></div>
+  </div>
+
+  <footer class="composer">
+    <div class="composer-inner">
+      <textarea id="input" rows="1" placeholder="问古文：翻译 / 实词虚词 / 句式 / 课文讲解 / 出题…" maxlength="1500"></textarea>
+      <button id="sendBtn" class="send-btn" aria-label="发送">↑</button>
+    </div>
+    <p class="hint" id="quotaHint">AI 生成内容仅供参考，请以课本为准 · 内容不代表任何机构观点</p>
+  </footer>
+
+  <!-- 学习档案抽屉 -->
+  <div id="drawerMask" class="drawer-mask" hidden></div>
+  <aside id="drawer" class="drawer" hidden aria-label="学习档案">
+    <div class="drawer-head">
+      <h2>我的学习档案</h2>
+      <button id="drawerClose" class="icon-btn" aria-label="关闭">✕</button>
+    </div>
+    <div class="drawer-body">
+      <section>
+        <h3>学习概览</h3>
+        <div class="stats" id="statsGrid">
+          <div class="stat"><b id="statStreak">0</b><span>连续天数</span></div>
+          <div class="stat"><b id="statQuestions">0</b><span>做过的题</span></div>
+          <div class="stat"><b id="statLessons">0</b><span>学过篇目</span></div>
+          <div class="stat"><b id="statToday">0</b><span>今日提问</span></div>
+        </div>
+      </section>
+      <section>
+        <h3>练习分布</h3>
+        <div id="modeBars" class="bars"><p class="empty">还没有记录，去聊几句吧～</p></div>
+      </section>
+      <section>
+        <h3>薄弱环节 <small>（私教会重点照顾）</small></h3>
+        <div id="weakTags" class="tags"><p class="empty">暂无，继续保持</p></div>
+      </section>
+      <section>
+        <h3>最近学习</h3>
+        <p id="lastLesson" class="last-lesson">—</p>
+      </section>
+      <section>
+        <h3>身份说明</h3>
+        <p class="muted">本工具<strong>免注册</strong>：身份标识只保存在你的浏览器里（清除浏览器数据会重置）。学习数据加密存储于服务器，仅用于给你提供个性化辅导。</p>
+        <button id="resetBtn" class="danger-btn">清空我的学习数据</button>
+      </section>
+    </div>
+  </aside>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
