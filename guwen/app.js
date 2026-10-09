@@ -98,6 +98,9 @@
 
   // ---- 网络 ----
   function api(path, opts) {
+    if (!API || API.indexOf('__API_BASE__') >= 0) {
+      return Promise.reject(new Error('后端接口尚未接入（部署中），稍后再试'));
+    }
     opts = opts || {};
     var headers = { 'X-Learner-Id': getId() };
     if (opts.body) headers['Content-Type'] = 'application/json';
